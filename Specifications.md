@@ -9,10 +9,11 @@ Les mutations
 
 Voici notre ensemble d’opérateurs de mutations. Ceux-ci visent surtout traiter des détails spécieux du code orienté objet qui peuvent souvent faire tromper le programmateur. Comme exemple là-dessus, on peut citer les détails de l’héritage, du polymorphisme, de la surcharges de méthodes, de controle d’accès, aussi bien des détails particuliers de la language java. On propose aussi quelques opérateurs de mutations classiques.
 
-### Op1 - AMC (héritage et controle d’accès): 
+### Op1 (héritage et controle d’accès): #
 <p>Soit <i>A</i> une classe qui a une déclaration d’attribut <i>protected a </i>. Soit <i>B</i> une classe que hérite d’A et qui utilise l'attribut <i>a</i>. Cet opérateur propose de changer le controle d’accès d’<i>a</i> par <i>private</i>.</p>
 
-### Op2 - IHD (héritage et redéfinition d’attribut): <p>Soit <i>A</i> une classe qui a une déclaration d’attribut <i> a </i> quelconque. Soit <i>B</i> une classe que hérite d’A et qui redefine l’attribut <i>a</i> (c’est-à-dire, <i>B</i> a une définition d’un attribut qui a le même nom d‘<i>a</i> ). Cet opérateur propose d’enlever la définition d‘<i>a</i> en <i>B</i>.</p> 
+### Op2 (héritage et redéfinition d’attribut): #
+ <p>Soit <i>A</i> une classe qui a une déclaration d’attribut <i> a </i> quelconque. Soit <i>B</i> une classe que hérite d’A et qui redefine l’attribut <i>a</i> (c’est-à-dire, <i>B</i> a une définition d’un attribut qui a le même nom d‘<i>a</i> ). Cet opérateur propose d’enlever la définition d‘<i>a</i> en <i>B</i>.</p> 
 ### Op3 #
 ### Op4 #
 ### Op5 #
