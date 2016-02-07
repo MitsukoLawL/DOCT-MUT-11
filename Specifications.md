@@ -12,6 +12,10 @@ Source -> Programme -> Mutations -> Tests -> Xml -> HTML
 <p>javac</p>
 <p>$ mvn compile (?)</p>
 ### Transition Programme -> Mutation #
+<ul>Utilisation de spoon
+<li>mutations</li>
+<li>selecteurs</li>
+</ul>
 <p>generate-source (?)</p>
 ### Transition Mutation -> Test #
 <p>JUnit</p>
@@ -82,7 +86,7 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 ### Op11 (Java et la méthode <i> equals() </i>): #
 <p> Soient deux objets, <i>a </i> et <i>b </i>, qui sont comparés par référence avec <i>== </i>. Cet opérateur substitue le <i>== </i> par la méthode <i> equals() </i>. Cela permettra de vérifier que les concepts de comparaison par référence et contenu. </p>
 
-### Op12 (operateurs): #
+### Op12 (operateurs arithmétiques): #
 <p> Nous pouvons changer les opérateurs tels que : <br/>
 "+" soit remplacé par "-", "* " ou "/"</p>
 
@@ -101,7 +105,7 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 </ul>
 
 ### Op14 (les valeurs absolues): #
-<p> Nous pouvons changer les variables numériques tels que : <br/>
+<p> Nous pouvons passer les valeurs numériques en leur valeur absolue telles que : <br/>
 "a" deviennent "|a|"</p>
 
 -
@@ -114,5 +118,6 @@ Il existe plusieurs manière d'appliquer des mutations au programme.
 <ul>Nous pouvons
 <li>Appliquer toutes les mutations au programme</li>
 <li>Appliquer une seule mutation au programme à la fois</li>
+<li>Appliquer un certain nombre de mutation au programme</li>
 <li>...</li>
 </ul>
