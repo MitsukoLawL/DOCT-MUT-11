@@ -23,7 +23,7 @@ Présentation du projet
 
 En suite, c’est possible de spécifier les sélecteurs avec les commendes: 
 
-<p><b> -t </b> Appliquer toutes les mutations au programme.</p>
-<p><b> -f </b> Appliquer une seule mutation au programme à la fois</p>
-<p><b> -c </b> Appliquer des combinaisons spécifiques des mutations. Cette commande sera suivie par un sous-ensemble spécifié par <b> -m </b>, qui représentent une combinaison. La commande <b> -c </b> peut être répétée plusieurs fois, en symbolisant qui plusieurs combinaisons seront appliquées à la fois. </p>   
+<p><b> -t </b> pour appliquer toutes les mutations au programme.</p>
+<p><b> -f </b> pour appliquer une seule mutation au programme à la fois</p>
+<p><b> -c </b> pour appliquer des combinaisons spécifiques des mutations. Cette commande sera suivie par un sous-ensemble spécifié par <b> -m </b>, qui représentent une combinaison. La commande <b> -c </b> peut être répétée plusieurs fois, en symbolisant qui plusieurs combinaisons seront appliquées à la fois. </p>   
 
