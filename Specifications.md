@@ -1,7 +1,6 @@
 Description du framework
 ==
 
--
 
 La chaîne de production [à compléter]
 -
@@ -11,14 +10,14 @@ Source -> Programme -> Mutations -> Tests -> Xml -> HTML
 
 ### Transition Source -> Programme #
 <p>javac</p>
+<p>$ mvn compile (?)</p>
 ### Transition Programme -> Mutation #
-<p>generate-source</p>
+<p>generate-source (?)</p>
 ### Transition Mutation -> Test #
 <p>JUnit</p>
 ### Transition Test -> XML#
-<p>mvn test</p>
-### Transition XML -> HTML#
-<p>XSLT</p>
+<p>$ mvn test</p>
+### Transition Test -> HTML#
 
 -
 
@@ -27,20 +26,20 @@ Les outils utilisés [à compléter]
 
 <ul>
 <li>Maven</li>
-<p> Utilisé pour build </p>
+<p> Utilisé pour produire le programme </p>
+<li>Java</li>
+<p>Utilisé pour écrire notre programme source</p>
 <li>JUnit</li>
 <p> Utilisé pour les tests </p>
 <li>Spoon</li>
-<p> Utilisé pour les mutations</p>
+<p> Utilisé pour les mutations et les selecteurs</p>
 <li>XML files</li>
 <p> Résultats du $ mvn test </p>
 <li>HTML files</li>
-<p> Le rapport des résultats, avec analyse </p>
+<p> Le rapport basé sur l'analyse des résultats des fichiers XML </p>
 <li>Sonar (?)</li>
 <li>Script Shell</li>
 <p> Ce qui va executer tout le processus </p>
-<li>XSLT</li>
-<p> Pour faire la transformation du contenu en XML vers le HTML </p>
 </ul>
 
 -
@@ -95,13 +94,13 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 <p> Nous pouvons inverser les booléens tels que : <br/>
 "false" deviennent "true"</p>
 
-### Op15 (les boucles): #
+### Op13 (les boucles): #
 <ul> Nous pouvons
 <li>Remplacer "++" par "--"</li>
 <li>Augmenter le pas.</li>
 </ul>
 
-### Op16 (les valeurs absolues): #
+### Op14 (les valeurs absolues): #
 <p> Nous pouvons changer les variables numériques tels que : <br/>
 "a" deviennent "|a|"</p>
 
@@ -109,7 +108,7 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 
 Les selecteurs [à compléter]
 -
-Il existe plusieurs manières d'appliquer des mutations au programme.
+Il existe plusieurs manière d'appliquer des mutations au programme.
 
 -
 <ul>Nous pouvons
