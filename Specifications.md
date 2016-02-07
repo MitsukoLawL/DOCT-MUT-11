@@ -9,11 +9,11 @@ La chaîne de production
 
 <p><b>Input</b> : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
 <p><b>Output</b> : Une page HTML </p>
-<br/>
+<p><b>Transition</b></p>
 <ul>
 <li>Transition Source -> Programme
-  <p>Input : Source, liste de mutants, liste de selecteurs</>
-  <p>Commande : mvn generate-source</p>
+  <p>Input : Source, liste de mutants, liste de selecteurs<br/>
+  Commande : mvn generate-source</p>
 </li>
 
 <li>Transition Programme -> Mutation
@@ -26,15 +26,15 @@ La chaîne de production
 </li>
 
 <li>Transition Mutation -> Test
-  <p>JUnit</p>
-  <p>$ mvn test</p>
+  <p>JUnit<br/>
+  $ mvn test</p>
 </li>
 <li>Transition Test -> XML
   <p>$ mvn test</p>
 </li>
 <li>Transition XML -> HTML
-  <p>XSLT</p>
-  <p> Commande : appel du programme xslt</p>
+  <p>XSLT<br/>
+  Commande : appel du programme xslt</p>
 </li>
 </ul>
 -
@@ -132,7 +132,8 @@ Les selecteurs
 Il existe plusieurs manières d'appliquer des mutations au programme.
 
 -
-<ul>Nous pouvons
+<p><b>Nous pouvons</b></p>
+<ul>
 <li>Appliquer toutes les mutations au programme</li>
 <li>Appliquer une seule mutation au programme à la fois</li>
 <li>Appliquer un certain nombre de mutation au programme</li>
