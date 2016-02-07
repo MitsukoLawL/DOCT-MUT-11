@@ -7,13 +7,13 @@ La chaîne de production
 
 ### Source -> Programme -> Mutations -> Tests -> Xml -> HTML #
 
-<p>Input : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
-<p>Output : Une page HTML </p>
-
-<ul>Transition
+<p><b>Input</b> : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
+<p><b>Output</b> : Une page HTML </p>
+<br/>
+<ul>
 <li>Transition Source -> Programme
   <p>Input : Source, liste de mutants, liste de selecteurs</>
-  <p>Commande : javac</p>
+  <p>Commande : mvn generate-source</p>
 </li>
 
 <li>Transition Programme -> Mutation
@@ -21,8 +21,8 @@ La chaîne de production
   <li>mutations</li>
   <li>selecteurs</li>
   </ul>
-  <p>Commande : Application des mutations au programme, grâce aux selecteurs. <br/>
-  + $ mvn generate-source</p>
+  <p>Commande : Application des mutations et selecteurs au programme <br/>
+  + $ mvn compile</p>
 </li>
 
 <li>Transition Mutation -> Test
@@ -36,6 +36,7 @@ La chaîne de production
   <p>XSLT</p>
   <p> Commande : appel du programme xslt</p>
 </li>
+</ul>
 -
 
 Les outils utilisés
