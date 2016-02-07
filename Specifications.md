@@ -2,30 +2,34 @@ Description du framework
 ==
 
 
-La chaîne de production [à compléter]
+La chaîne de production
 -
 
 Source -> Programme -> Mutations -> Tests -> Xml -> HTML
 
-
+<p>Commande/Input : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
+<p>Output : Une page HTML </p>
 ### Transition Source -> Programme #
-<p>javac</p>
-<p>$ mvn compile (?)</p>
+<p>Input : Source, liste de mutants, liste de selecteurs</>
+<p>Commande : javac</p>
 ### Transition Programme -> Mutation #
-<ul>Utilisation de spoon
+<ul>Outils : Utilisation de spoon
 <li>mutations</li>
 <li>selecteurs</li>
 </ul>
-<p>generate-source (?)</p>
+<p>Commande : Application des mutations au programme, grâce aux selecteurs. <br/>
++ $ mvn generate-source</p>
 ### Transition Mutation -> Test #
 <p>JUnit</p>
+<p>$ mvn test</p>
 ### Transition Test -> XML#
 <p>$ mvn test</p>
 ### Transition XML -> HTML#
 <p>XSLT</p>
+<p> Commande : appel du programme xslt
 -
 
-Les outils utilisés [à compléter]
+Les outils utilisés
 -
 
 <ul>
@@ -45,7 +49,7 @@ Les outils utilisés [à compléter]
 <li>Script Shell</li>
 <p> Ce qui va executer tout le processus </p>
 <li>XSLT</li>
-<p>Ce qui va faire la transformation du XML pour HTML</p>
+<p>Ce qui va faire la transformation du XML en HTML</p>
 </ul>
 
 -
@@ -88,9 +92,10 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 ### Op11 (Java et la méthode <i> equals() </i>): #
 <p> Soient deux objets, <i>a </i> et <i>b </i>, qui sont comparés par référence avec <i>== </i>. Cet opérateur substitue le <i>== </i> par la méthode <i> equals() </i>. Cela permettra de vérifier que les concepts de comparaison par référence et contenu. </p>
 
-### Op12 (operateurs arithmétiques): #
+### Op12 (operateurs): #
 <p> Nous pouvons changer les opérateurs tels que : <br/>
-"+" soit remplacé par "-", "* " ou "/"</p>
+"+" soit remplacé par "-", "* " ou "/"<br/>
+"&&" soit remplacé par "||"</p>
 
 ### Op13 (comparaison): #
 <p> Nous pouvons changer les comparateurs tels que : <br/>
@@ -112,9 +117,9 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 
 -
 
-Les selecteurs [à compléter]
+Les selecteurs
 -
-Il existe plusieurs manière d'appliquer des mutations au programme.
+Il existe plusieurs manières d'appliquer des mutations au programme.
 
 -
 <ul>Nous pouvons
