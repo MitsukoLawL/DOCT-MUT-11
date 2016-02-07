@@ -39,7 +39,7 @@ La chaîne de production
   </li>
   <li>Transition XML -> HTML
     <p>Regroupe tous les fichiers .XML de toutes les itérations en une page HTML<br/>
-    Outil : XSLT<br/>
+    Outil : XSLT, Sonar<br/>
   </li>
 </ul>
 -
@@ -62,6 +62,8 @@ Les outils utilisés
   <p>Le rapport basé sur l'analyse des résultats des fichiers XML</p>
   <li>XSLT</li>
   <p>Ce qui va faire la transformation du XML en HTML</p>
+  <li>Sonar</li>
+  <p>Plugin de maven, qui va nous aider à analyser le code</p>
   <li>Script Shell</li>
   <p>Ce qui va executer tout le processus </p>
 </ul>
