@@ -16,7 +16,7 @@ La chaîne de production
     Commande :<br/>
     Application des mutations et selecteurs au programme <br/>
     </p>
-    <p>Outils : Utilisation de spoon</p>
+    <p>Outil : Utilisation de spoon</p>
     <ul>
       <li>mutations</li>
       <li>selecteurs</li>
@@ -31,16 +31,15 @@ La chaîne de production
   </li>
 
   <li>Transition Programme muté -> Test
-    <p>JUnit<br/>
-    $ mvn test</p>
+  <p>Commande : $ mvn test<br/>
+    Outil : JUnit</p>
   </li>
   <li>Transition Test -> XML
     <p>Un fichier .xml par test</p>
   </li>
   <li>Transition XML -> HTML
     <p>Regroupe tous les fichiers .XML de toutes les itérations en une page HTML<br/>
-    Outils : XSLT<br/>
-    Commande : Appel du programme XSLT</p>
+    Outil : XSLT, Sonar<br/>
   </li>
 </ul>
 -
@@ -49,23 +48,24 @@ Les outils utilisés
 -
 
 <ul>
-<li>Maven</li>
-<p> Utilisé pour produire le programme </p>
-<li>Java</li>
-<p>Utilisé pour écrire notre programme source</p>
-<li>JUnit</li>
-<p> Utilisé pour les tests </p>
-<li>Spoon</li>
-<p> Utilisé pour les mutations et les selecteurs</p>
-<li>XML files</li>
-<p> Résultats du $ mvn test </p>
-<li>HTML files</li>
-<p> Le rapport basé sur l'analyse des résultats des fichiers XML </p>
-<li>Sonar (?)</li>
-<li>Script Shell</li>
-<p> Ce qui va executer tout le processus </p>
-<li>XSLT</li>
-<p>Ce qui va faire la transformation du XML en HTML</p>
+  <li>Maven</li>
+  <p> Utilisé dans certaine étape de la production du programme </p>
+  <li>Java</li>
+  <p>Utilisé pour écrire notre programme source</p>
+  <li>JUnit</li>
+  <p> Utilisé pour les tests </p>
+  <li>Spoon</li>
+  <p> Utilisé pour appliquer les mutations et les selecteurs au programme source</p>
+  <li>XML files</li>
+  <p> Résultats du $ mvn test </p>
+  <li>HTML files</li>
+  <p>Le rapport basé sur l'analyse des résultats des fichiers XML</p>
+  <li>XSLT</li>
+  <p>Ce qui va faire la transformation du XML en HTML</p>
+  <li>Sonar</li>
+  <p>Plugin de maven, qui va nous aider à analyser le code</p>
+  <li>Script Shell</li>
+  <p>Ce qui va executer tout le processus </p>
 </ul>
 
 -
@@ -140,7 +140,7 @@ Il existe plusieurs manières d'appliquer des mutations au programme.
 -
 <p><b>Nous pouvons</b></p>
 <ul>
-<li>Appliquer toutes les mutations au programme</li>
-<li>Appliquer une seule mutation au programme à la fois</li>
-<li>Appliquer des combinaisons spécifiques des mutations</li>
+<li>Appliquer toutes les mutations au programme (<b>1</b> itération)</li>
+<li>Appliquer une seule mutation au programme à la fois (<b>n</b> itération)</li>
+<li>Appliquer un ensemble de mutations au programme (<b>entre 1 et n</b> itérations)</li>
 </ul>
