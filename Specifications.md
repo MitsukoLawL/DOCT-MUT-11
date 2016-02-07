@@ -42,23 +42,36 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 ### Op11 (Java et la méthode <i> equals() </i>): #
 <p> Soient deux objets, <i>a </i> et <i>b </i>, qui sont comparés par référence avec <i>== </i>. Cet opérateur substitue le <i>== </i> par la méthode <i> equals() </i>. Cela permettra de vérifier que les concepts de comparaison par référence et contenu. </p>
 
-### Op12 (operateurs et comparaisons): #
-<p> Nous pouvons aussi changer les opérateurs tels que : <br/>
-"+" soit remplacé par "-"<br/>
-"*" soit remplacé par "/"<br/>
-"!=" soit remplacé par "=="<br/>
-">" soit remplacé par "<"<br/>
-</p>
+### Op12 (operateurs): #
+<p> Nous pouvons changer les opérateurs tels que : <br/>
+"+" soit remplacé par "-", "* " ou "/"</p>
+
+### Op13 (comparaison): #
+<p> Nous pouvons changer les comparateurs tels que : <br/>
+">" soit remplacé par ">=", "<", ou "<=" </p>
+
+### Op14 (booleen): #
+<p> Nous pouvons inverser les booléens tels que : <br/>
+"false" deviennent "true"</p>
 
 ### Op13 (les boucles): #
-<p> Nous pouvons remplacer "++" par "--" dans une boucle for, ou augmenter le pas.
-</p>
+<ul> Nous pouvons
+<li>Remplacer "++" par "--"</li>
+<li>Augmenter le pas.</li>
+</ul>
 
 -
 
 Les selecteurs
 -
 Il existe plusieurs manière d'appliquer des mutations au programme.
+
+-
+<ul>Nous pouvons
+<li>Appliquer toutes les mutations au programme</li>
+<li>Appliquer une seule mutation au programme à la fois</li>
+<li>...</li>
+</ul>
 
 -
 
@@ -71,4 +84,23 @@ Les outils utilisés
 <li>Spoon</li>
 <li>XML files</li>
 <li>HTML files</li>
+<li>Sonar (?)</li>
 </ul>
+
+-
+
+La chaîne de production
+-
+
+Source -> Programme -> Mutations -> Tests -> Xml -> HTML
+
+
+### Transition Source -> Programme #
+<p>javac</p>
+### Transition Programme -> Mutation #
+<p>generate-source</p>
+### Transition Mutation -> Test #
+<p>JUnit</p>
+### Transition Test -> XML#
+<p>mvn test</p>
+### Transition Test -> HTML#
