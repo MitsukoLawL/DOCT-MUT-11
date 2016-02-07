@@ -53,7 +53,7 @@ Les outils utilisés [à compléter]
 Les mutations
 -
 
-Vous trouverez ci-dessous l'ensemble des opérateurs de mutations.  Les mutations vont modifier différents aspect de notre code, dans le but de mesurer la fragilité de nos tests.
+Vous trouverez ci-dessous l'ensemble des opérateurs de mutations.  Les mutations vont modifier différents aspect de notre code, dans le but de mesurer la fragilité de nos tests. La plus part d'entre elles s’occupent d’aspects particuliers de l’orientation objet. 
 Comme exemple, nous pouvons citer les aspects d’héritage, du polymorphisme, de la surcharge de méthodes, de controle d’accès, ainsi que les termes particuliers du language Java. Nous proposons aussi quelques opérateurs de mutations classiques.
 
 ### Op1 (héritage et controle d’accès): #
