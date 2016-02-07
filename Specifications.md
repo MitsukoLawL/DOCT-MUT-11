@@ -138,6 +138,5 @@ Il existe plusieurs manières d'appliquer des mutations au programme.
 <ul>
 <li>Appliquer toutes les mutations au programme</li>
 <li>Appliquer une seule mutation au programme à la fois</li>
-<li>Appliquer un certain nombre de mutation au programme</li>
-<li>...</li>
+<li>Appliquer des combinaisons spécifiques des mutations</li>
 </ul>

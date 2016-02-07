@@ -19,7 +19,11 @@ Présentation du projet
 <p>Par rapport aux lignes commandes, la principal est <b> mutationTest  </b> qui démarre le framework et qui peut (doit) être suivie par les options: </p>
 
 <p><b> -s </b> pour le code source qui va être testé. (obligatoire).</p>
-<p><b> -m </b> pour l’ensemble de mutation qui seront appliquées (qui, par default, seront appliquées toues au même temps). Les mutations doivent être spécifiées par sont code (voir le ficher spécifications.md). </p>  
+<p><b> -m </b> pour l’ensemble de mutation qui seront appliquées. Les mutations doivent être spécifiées par sont code (voir le ficher spécifications.md). </p>  
 
-<p>La commende <b> -m </b> peut être répétées plusieurs fois. À chaque fois, l’ensemble correspondant sera appliqué séparément générant les respectives résultats.</p>   
+En suite, c’est possible de spécifier les sélecteurs avec les commendes: 
+
+<b> -t </b> Appliquer toutes les mutations au programme
+<b> -f </b> Appliquer une seule mutation au programme à la fois
+<b> -c </b> Appliquer des combinaisons spécifiques des mutations. Cette commande sera suivie par un sous-ensemble spécifié par <b> -m </b>, qui représentent une combinaison. La commande <b> -c </b> peut être répétée plusieurs fois, en symbolisant qui plusieurs combinaisons seront appliquées à la fois.    
 
