@@ -1,7 +1,45 @@
 Description du framework
 ==
 
-La chaine de build
+-
+
+La chaîne de production [à compléter]
+-
+
+Source -> Programme -> Mutations -> Tests -> Xml -> HTML
+
+
+### Transition Source -> Programme #
+<p>javac</p>
+### Transition Programme -> Mutation #
+<p>generate-source</p>
+### Transition Mutation -> Test #
+<p>JUnit</p>
+### Transition Test -> XML#
+<p>mvn test</p>
+### Transition Test -> HTML#
+
+-
+
+Les outils utilisés [à compléter]
+-
+
+<ul>
+<li>Maven</li>
+<p> Utilisé pour build </p>
+<li>JUnit</li>
+<p> Utilisé pour les tests </p>
+<li>Spoon</li>
+<p> Utilisé pour les mutations</p>
+<li>XML files</li>
+<p> Résultats du $ mvn test </p>
+<li>HTML files</li>
+<p> Le rapport des résultats, avec analyse </p>
+<li>Sonar (?)</li>
+<li>Script Shell</li>
+<p> Ce qui va executer tout le processus </p>
+</ul>
+
 -
 
 Les mutations
@@ -60,9 +98,13 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 <li>Augmenter le pas.</li>
 </ul>
 
+### Op14 (les valeurs absolues): #
+<p> Nous pouvons changer les variables numériques tels que : <br/>
+"a" deviennent "|a|"</p>
+
 -
 
-Les selecteurs
+Les selecteurs [à compléter]
 -
 Il existe plusieurs manière d'appliquer des mutations au programme.
 
@@ -72,35 +114,3 @@ Il existe plusieurs manière d'appliquer des mutations au programme.
 <li>Appliquer une seule mutation au programme à la fois</li>
 <li>...</li>
 </ul>
-
--
-
-Les outils utilisés
--
-
-<ul>
-<li>Maven</li>
-<li>JUnit</li>
-<li>Spoon</li>
-<li>XML files</li>
-<li>HTML files</li>
-<li>Sonar (?)</li>
-</ul>
-
--
-
-La chaîne de production
--
-
-Source -> Programme -> Mutations -> Tests -> Xml -> HTML
-
-
-### Transition Source -> Programme #
-<p>javac</p>
-### Transition Programme -> Mutation #
-<p>generate-source</p>
-### Transition Mutation -> Test #
-<p>JUnit</p>
-### Transition Test -> XML#
-<p>mvn test</p>
-### Transition Test -> HTML#
