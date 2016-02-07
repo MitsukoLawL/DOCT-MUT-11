@@ -11,31 +11,33 @@ La chaîne de production
 <p><b>Output</b> : Une page HTML </p>
 <p><b>Transition</b></p>
 <ul>
-<li>Transition Source -> Programme
-  <p>Input : Source, liste de mutants, liste de selecteurs<br/>
-  Commande : mvn generate-source</p>
-</li>
+  <li>Transition Source -> Programme
+    <p>Input : Source, liste de mutants, liste de selecteurs<br/>
+    Commande : mvn generate-source</p>
+  </li>
 
-<li>Transition Programme -> Mutation
-  <ul>Outils : Utilisation de spoon
-  <li>mutations</li>
-  <li>selecteurs</li>
-  </ul>
-  <p>Commande : Application des mutations et selecteurs au programme <br/>
-  + $ mvn compile</p>
-</li>
+  <li>Transition Programme -> Mutation
+    <p>Outils : Utilisation de spoon</p>
+    <ul>
+      <li>mutations</li>
+      <li>selecteurs</li>
+    </ul>
+    <p>Commande :<br/>
+    Application des mutations et selecteurs au programme <br/>
+    + $ mvn compile</p>
+  </li>
 
-<li>Transition Mutation -> Test
-  <p>JUnit<br/>
-  $ mvn test</p>
-</li>
-<li>Transition Test -> XML
-  <p>$ mvn test</p>
-</li>
-<li>Transition XML -> HTML
-  <p>XSLT<br/>
-  Commande : appel du programme xslt</p>
-</li>
+  <li>Transition Mutation -> Test
+    <p>JUnit<br/>
+    $ mvn test</p>
+  </li>
+  <li>Transition Test -> XML
+    <p>$ mvn test</p>
+  </li>
+  <li>Transition XML -> HTML
+    <p>XSLT<br/>
+    Commande : Appel du programme XSLT</p>
+  </li>
 </ul>
 -
 
@@ -123,7 +125,7 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 
 ### Op16 (les valeurs absolues): #
 <p> Nous pouvons passer les valeurs numériques en leur valeur absolue telles que : <br/>
-"a" deviennent "|a|"</p>
+"a" deviennent "|a|" (Math.abs(a))</p>
 
 -
 
