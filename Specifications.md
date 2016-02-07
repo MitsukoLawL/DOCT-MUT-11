@@ -35,10 +35,10 @@ La chaîne de production
     $ mvn test</p>
   </li>
   <li>Transition Test -> XML
-    <p>$ mvn test</p>
+    <p>Un fichier .xml par test</p>
   </li>
   <li>Transition XML -> HTML
-    <p>Regroupe tous les fichiers .XML en une page HTML<br/>
+    <p>Regroupe tous les fichiers .XML de toutes les itérations en une page HTML<br/>
     Outils : XSLT<br/>
     Commande : Appel du programme XSLT</p>
   </li>
