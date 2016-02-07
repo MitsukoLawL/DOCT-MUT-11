@@ -5,29 +5,32 @@ Description du framework
 La chaîne de production
 -
 
-### Source -> Programme -> Mutations -> Tests -> Xml -> HTML #
+### Source -> Mutation -> Programme Muté -> Tests -> Xml -> HTML #
 
 <p><b>Input</b> : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
 <p><b>Output</b> : Une page HTML </p>
 <p><b>Transition</b></p>
 <ul>
-  <li>Transition Source -> Programme
+  <li>Transition Source -> Mutation
     <p>Input : Source, liste de mutants, liste de selecteurs<br/>
-    Commande : mvn generate-source</p>
-  </li>
-
-  <li>Transition Programme -> Mutation
+    Commande :<br/>
+    Application des mutations et selecteurs au programme <br/>
+    </p>
     <p>Outils : Utilisation de spoon</p>
     <ul>
       <li>mutations</li>
       <li>selecteurs</li>
     </ul>
-    <p>Commande :<br/>
-    Application des mutations et selecteurs au programme <br/>
-    + $ mvn compile</p>
   </li>
 
-  <li>Transition Mutation -> Test
+  <li>Transition Mutation -> Programme muté<br/>
+    <p>
+      Commande : $ mvn compile<br/>
+      Compilation du programme une fois les mutants ajoutés aux sources
+    </p>
+  </li>
+
+  <li>Transition Programme muté -> Test
     <p>JUnit<br/>
     $ mvn test</p>
   </li>
@@ -35,7 +38,8 @@ La chaîne de production
     <p>$ mvn test</p>
   </li>
   <li>Transition XML -> HTML
-    <p>XSLT<br/>
+    <p>Regroupe tous les fichiers .XML en une page HTML<br/>
+    Outils : XSLT<br/>
     Commande : Appel du programme XSLT</p>
   </li>
 </ul>
@@ -69,7 +73,7 @@ Les outils utilisés
 Les mutations
 -
 
-Vous trouverez ci-dessous l'ensemble des opérateurs de mutations.  Les mutations vont modifier différents aspect de notre code, dans le but de mesurer la fragilité de nos tests. La plus part d'entre elles s’occupent d’aspects particuliers de l’orientation objet. 
+Vous trouverez ci-dessous l'ensemble des opérateurs de mutations.  Les mutations vont modifier différents aspect de notre code, dans le but de mesurer la fragilité de nos tests. La plus part d'entre elles s’occupent d’aspects particuliers de l’orientation objet.
 Comme exemple, nous pouvons citer les aspects d’héritage, du polymorphisme, de la surcharge de méthodes, de controle d’accès, ainsi que les termes particuliers du language Java. Nous proposons aussi quelques opérateurs de mutations classiques.
 
 ### Op1 (héritage et controle d’accès): #
