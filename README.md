@@ -14,16 +14,16 @@ Présentation de l'équipe
 Présentation du projet
 -
 
-<p>On propose un framework pour automatiser des testes par mutation au niveau du code orienté objet de la langage Java. De manière général, notre framework reçoit, en lignes de commands, le code qui va être testé et les mutations qui lui seront appliqués; comme sortie, il donne des pages HTML qui affichent les statistiques des testes réalisés: les mutations qui ont été tuées, des graphiques circulaires représentant le pourcentage, des graphiques sur la progression des itérations, s’il y a eu des erreurs ou échecs et etc.</p>
+<p>Nous proposons un framework afin d'automatiser des testes par mutation dans le langage Java. Pour l'utiliser, il faudra passer par la ligne de commande en ajoutant comme parametre le code qui va être testé, une liste de mutations qui lui seront appliqués ainsi qu'une liste de selecteurs.
+En sortie, le framework génère des pages HTML où seront affichés les statistiques des testes réalisés. C'est-à-dire les mutations appliquées, celles qui ont été tuées. Il y aura de plus un diagramme circulaire représentant le pourcentage de mutants tués, ainsi qu'un graphiques représentant les résultats en fonction de l'itérations.</p>
 
-<p>Par rapport aux lignes commandes, la principal est <b> mutationTest  </b> qui démarre le framework et qui peut (doit) être suivie par les options: </p>
+<p>Pour lancer le framework en ligne de commande, il faudra utiliser <b>$ mutationTest</b> et devra être suivie par les options: </p>
 
 <p><b> -s </b> pour le code source qui va être testé. (obligatoire).</p>
-<p><b> -m </b> pour l’ensemble de mutation qui seront appliquées. Les mutations doivent être spécifiées par sont code (voir le ficher spécifications.md). </p>  
+<p><b> -m </b> pour l’ensemble de mutation qui seront appliquées. Les mutations doivent être spécifiées par sont code (cf spécifications.md). </p>  
 
-En suite, c’est possible de spécifier les sélecteurs avec les commendes: 
+En suite, il est possible de spécifier les sélecteurs avec les commandes:
 
 <p><b> -t </b> pour appliquer toutes les mutations au programme.</p>
 <p><b> -f </b> pour appliquer une seule mutation au programme à la fois</p>
 <p><b> -c </b> pour appliquer des combinaisons spécifiques des mutations. Cette commande sera suivie par un sous-ensemble spécifié par <b> -m </b>, qui représentent une combinaison. La commande <b> -c </b> peut être répétée plusieurs fois, en symbolisant qui plusieurs combinaisons seront appliquées à la fois. </p>   
-
