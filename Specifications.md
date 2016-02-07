@@ -140,7 +140,7 @@ Il existe plusieurs manières d'appliquer des mutations au programme.
 -
 <p><b>Nous pouvons</b></p>
 <ul>
-<li>Appliquer toutes les mutations au programme (<b>1</b> itération)</li>
-<li>Appliquer une seule mutation au programme à la fois (<b>n</b> itération)</li>
-<li>Appliquer un ensemble de mutations au programme (<b>entre 1 et n</b> itérations)</li>
+<li>Appliquer toutes les mutations au programme (<b>N</b> mutants pour <b>1</b> itération)</li>
+<li>Appliquer une seule mutation au programme à la fois (<b>1</b> mutant <b>N</b> itération)</li>
+<li>Appliquer un ensemble de mutations au programme (<b>m</b> mutants pour <b>m'</b> itérations)</li>
 </ul>
