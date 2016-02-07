@@ -21,8 +21,8 @@ Source -> Programme -> Mutations -> Tests -> Xml -> HTML
 <p>JUnit</p>
 ### Transition Test -> XML#
 <p>$ mvn test</p>
-### Transition Test -> HTML#
-
+### Transition XML -> HTML#
+<p>XSLT</p>
 -
 
 Les outils utilisés [à compléter]
@@ -44,6 +44,8 @@ Les outils utilisés [à compléter]
 <li>Sonar (?)</li>
 <li>Script Shell</li>
 <p> Ce qui va executer tout le processus </p>
+<li>XSLT</li>
+<p>Ce qui va faire la transformation du XML pour HTML</p>
 </ul>
 
 -
@@ -98,13 +100,13 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 <p> Nous pouvons inverser les booléens tels que : <br/>
 "false" deviennent "true"</p>
 
-### Op13 (les boucles): #
+### Op15 (les boucles): #
 <ul> Nous pouvons
 <li>Remplacer "++" par "--"</li>
 <li>Augmenter le pas.</li>
 </ul>
 
-### Op14 (les valeurs absolues): #
+### Op16 (les valeurs absolues): #
 <p> Nous pouvons passer les valeurs numériques en leur valeur absolue telles que : <br/>
 "a" deviennent "|a|"</p>
 
