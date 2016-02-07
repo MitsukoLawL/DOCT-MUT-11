@@ -2,30 +2,46 @@ Description du framework
 ==
 
 
-La chaîne de production [à compléter]
+La chaîne de production
 -
 
-Source -> Programme -> Mutations -> Tests -> Xml -> HTML
+### Source -> Programme -> Mutations -> Tests -> Xml -> HTML #
 
+<p><b>Input</b> : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
+<p><b>Output</b> : Une page HTML </p>
+<p><b>Transition</b></p>
+<ul>
+  <li>Transition Source -> Programme
+    <p>Input : Source, liste de mutants, liste de selecteurs<br/>
+    Commande : mvn generate-source</p>
+  </li>
 
-### Transition Source -> Programme #
-<p>javac</p>
-<p>$ mvn compile (?)</p>
-### Transition Programme -> Mutation #
-<ul>Utilisation de spoon
-<li>mutations</li>
-<li>selecteurs</li>
+  <li>Transition Programme -> Mutation
+    <p>Outils : Utilisation de spoon</p>
+    <ul>
+      <li>mutations</li>
+      <li>selecteurs</li>
+    </ul>
+    <p>Commande :<br/>
+    Application des mutations et selecteurs au programme <br/>
+    + $ mvn compile</p>
+  </li>
+
+  <li>Transition Mutation -> Test
+    <p>JUnit<br/>
+    $ mvn test</p>
+  </li>
+  <li>Transition Test -> XML
+    <p>$ mvn test</p>
+  </li>
+  <li>Transition XML -> HTML
+    <p>XSLT<br/>
+    Commande : Appel du programme XSLT</p>
+  </li>
 </ul>
-<p>generate-source (?)</p>
-### Transition Mutation -> Test #
-<p>JUnit</p>
-### Transition Test -> XML#
-<p>$ mvn test</p>
-### Transition XML -> HTML#
-<p>XSLT</p>
 -
 
-Les outils utilisés [à compléter]
+Les outils utilisés
 -
 
 <ul>
@@ -45,7 +61,7 @@ Les outils utilisés [à compléter]
 <li>Script Shell</li>
 <p> Ce qui va executer tout le processus </p>
 <li>XSLT</li>
-<p>Ce qui va faire la transformation du XML pour HTML</p>
+<p>Ce qui va faire la transformation du XML en HTML</p>
 </ul>
 
 -
@@ -88,9 +104,10 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 ### Op11 (Java et la méthode <i> equals() </i>): #
 <p> Soient deux objets, <i>a </i> et <i>b </i>, qui sont comparés par référence avec <i>== </i>. Cet opérateur substitue le <i>== </i> par la méthode <i> equals() </i>. Cela permettra de vérifier que les concepts de comparaison par référence et contenu. </p>
 
-### Op12 (operateurs arithmétiques): #
+### Op12 (operateurs): #
 <p> Nous pouvons changer les opérateurs tels que : <br/>
-"+" soit remplacé par "-", "* " ou "/"</p>
+"+" soit remplacé par "-", "* " ou "/"<br/>
+"&&" soit remplacé par "||"</p>
 
 ### Op13 (comparaison): #
 <p> Nous pouvons changer les comparateurs tels que : <br/>
@@ -108,16 +125,17 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 
 ### Op16 (les valeurs absolues): #
 <p> Nous pouvons passer les valeurs numériques en leur valeur absolue telles que : <br/>
-"a" deviennent "|a|"</p>
+"a" deviennent "|a|" (Math.abs(a))</p>
 
 -
 
-Les selecteurs [à compléter]
+Les selecteurs
 -
-Il existe plusieurs manière d'appliquer des mutations au programme.
+Il existe plusieurs manières d'appliquer des mutations au programme.
 
 -
-<ul>Nous pouvons
+<p><b>Nous pouvons</b></p>
+<ul>
 <li>Appliquer toutes les mutations au programme</li>
 <li>Appliquer une seule mutation au programme à la fois</li>
 <li>Appliquer un certain nombre de mutation au programme</li>
