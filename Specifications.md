@@ -5,28 +5,37 @@ Description du framework
 La chaîne de production
 -
 
-Source -> Programme -> Mutations -> Tests -> Xml -> HTML
+### Source -> Programme -> Mutations -> Tests -> Xml -> HTML #
 
-<p>Commande/Input : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
+<p>Input : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
 <p>Output : Une page HTML </p>
-### Transition Source -> Programme #
-<p>Input : Source, liste de mutants, liste de selecteurs</>
-<p>Commande : javac</p>
-### Transition Programme -> Mutation #
-<ul>Outils : Utilisation de spoon
-<li>mutations</li>
-<li>selecteurs</li>
-</ul>
-<p>Commande : Application des mutations au programme, grâce aux selecteurs. <br/>
-+ $ mvn generate-source</p>
-### Transition Mutation -> Test #
-<p>JUnit</p>
-<p>$ mvn test</p>
-### Transition Test -> XML#
-<p>$ mvn test</p>
-### Transition XML -> HTML#
-<p>XSLT</p>
-<p> Commande : appel du programme xslt
+
+<ul>Transition
+<li>Transition Source -> Programme
+  <p>Input : Source, liste de mutants, liste de selecteurs</>
+  <p>Commande : javac</p>
+</li>
+
+<li>Transition Programme -> Mutation
+  <ul>Outils : Utilisation de spoon
+  <li>mutations</li>
+  <li>selecteurs</li>
+  </ul>
+  <p>Commande : Application des mutations au programme, grâce aux selecteurs. <br/>
+  + $ mvn generate-source</p>
+</li>
+
+<li>Transition Mutation -> Test
+  <p>JUnit</p>
+  <p>$ mvn test</p>
+</li>
+<li>Transition Test -> XML
+  <p>$ mvn test</p>
+</li>
+<li>Transition XML -> HTML
+  <p>XSLT</p>
+  <p> Commande : appel du programme xslt</p>
+</li>
 -
 
 Les outils utilisés
