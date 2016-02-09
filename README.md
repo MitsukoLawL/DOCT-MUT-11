@@ -28,6 +28,6 @@ En suite, il est possible de spécifier les sélecteurs avec les commandes:
 <p><b> -f </b> pour appliquer une seule mutation au programme à la fois</p>
 <p><b> -c </b> pour appliquer des combinaisons spécifiques des mutations. Cette commande sera suivie par un sous-ensemble spécifié par <b> -m </b>, qui représentent une combinaison. La commande <b> -c </b> peut être répétée plusieurs fois, en symbolisant qui plusieurs combinaisons seront appliquées à la fois. </p>   
 <p>Exemples:</p>
-<p>mutationTest -s source.java -m Op1, Op2, Op3, Op4 -t </p>
+<p>mutationTest -s source -m Op1, Op2, Op3, Op4 -t </p>
 
-<p>mutationTest -s source.java -m Op1, Op2, Op3, Op4 -c  Op1, Op2, Op3 -c Op1, Op4</p>
+<p>mutationTest -s source -m Op1, Op2, Op3, Op4 -c  Op1, Op2, Op3 -c Op1, Op4</p>
