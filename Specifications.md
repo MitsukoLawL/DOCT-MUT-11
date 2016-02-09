@@ -7,7 +7,7 @@ La chaîne de production
 
 ### Source -> Mutation -> Programme Muté -> Tests -> Xml -> HTML #
 
-![Chaîne de Production](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/d_build.jpg)
+![Chaîne de Production](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/d_build.jpg "Chaîne de Production")
 
 <p><b>Input</b> : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
 <p><b>Output</b> : Une page HTML </p>
