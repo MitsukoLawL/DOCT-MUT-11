@@ -1,5 +1,5 @@
 package org.mutation11.maven.transformation;
 
-public class A implements org.mutation11.maven.transformation.Racine{
+public class A implements Racine {
 	protected int a;
 }
