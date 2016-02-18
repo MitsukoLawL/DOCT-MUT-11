@@ -4,11 +4,16 @@ import spoon.processing.AbstractProcessor;
 import spoon.reflect.declaration.ModifierKind;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtModifiable;
+import spoon.reflect.declaration.CtVariable;
 
 public class OperatorMutator1 extends AbstractProcessor<CtElement> {
 	@Override
 	public boolean isToBeProcessed(CtElement candidate) {
-		return candidate instanceof CtModifiable;
+		//return candidate instanceof CtModifiable;
+		if (candidate instanceof CtModifiable){
+			CtModifiable emo = (CtModifiable)candidate;
+			return emo instanceof CtVariable;
+		} else return false;
 	}
 
 	@Override
@@ -17,6 +22,9 @@ public class OperatorMutator1 extends AbstractProcessor<CtElement> {
 			return;
 		}
 		CtModifiable emo = (CtModifiable)candidate;
+		if (!(emo instanceof CtVariable) || emo.getVisibility()!=ModifierKind.PROTECTED) {
+			return;
+		}
 		emo.setVisibility(ModifierKind.PRIVATE);
 	}
 }

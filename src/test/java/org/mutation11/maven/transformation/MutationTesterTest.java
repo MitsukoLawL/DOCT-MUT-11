@@ -3,6 +3,8 @@ package org.mutation11.maven.transformation;
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -23,18 +25,19 @@ public class MutationTesterTest {
 		// 2. the test driver to kill the mutants 
 		// 3. the mutation operator
 		String codeToBeMutated = "src/test/resources/org/mutation11/maven/transformation/A.java";
-		
+		List<String> otherClass = new ArrayList<String>();
+		otherClass.add("src/test/resources/org/mutation11/maven/transformation/B.java");
 		TestDriver<Racine> testDriverForIFooObjects = new TestDriver<Racine>() {
 			@Override
 			public void test(Racine t) {
-
+				//assertEquals(2,3);
 			}
 		};
 		
 		OperatorMutator1 mutationOperator = new OperatorMutator1();
 
 		// we instantiate the mutation tester
-		MutationTester<Racine> mutationTester = new MutationTester<Racine>(codeToBeMutated, testDriverForIFooObjects, mutationOperator);
+		MutationTester<Racine> mutationTester = new MutationTester<Racine>(codeToBeMutated, testDriverForIFooObjects, mutationOperator,otherClass);
 		
 		// generating the mutants
 		mutationTester.generateMutants();
@@ -45,6 +48,7 @@ public class MutationTesterTest {
 		try {
 			mutationTester.killMutants();				
 		} catch (MutantNotKilledException e) {
+			System.out.println("mutant NOT KILLED");
 			Assert.fail();
 		}
 		

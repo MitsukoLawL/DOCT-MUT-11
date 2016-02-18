@@ -13,6 +13,9 @@ import spoon.reflect.code.CtExpression;
 import spoon.reflect.code.CtStatement;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtElement;
+
+//import spoon.support.reflect.declaration.CtFieldImpl;
+import spoon.reflect.declaration.CtField;
 import spoon.reflect.visitor.Filter;
 import spoon.reflect.visitor.filter.TypeFilter;
 
@@ -32,13 +35,31 @@ public class MutationTester<T> {
 	/** the produced mutants */
 	private final List<CtClass> mutants = new ArrayList<CtClass>();
 
+	/** for the otherCalss that should be compiled */
+	private final List<String> otherClass;
+	private final List<CtClass> otherComp = new ArrayList<CtClass>();
+
+
 	// public for testing
 	public final List<T> mutantInstances = new ArrayList<T>();
 
-	public MutationTester(String src, TestDriver tester, Processor mutator) {
+	public MutationTester(String src, TestDriver tester, Processor mutator, List<String> otherClass) {
 		this.sourceCodeToBeMutated = src;
 		this.testDriver = tester;
 		this.mutator = mutator;
+		this.otherClass = otherClass;
+	}
+
+	private void gererateOthersClass(){
+		for (String source: otherClass){
+			Launcher l = new Launcher();
+			l.addInputResource(source);
+			l.buildModel();
+			CtClass origClass1 = (CtClass) l.getFactory().Package().getRootPackage().getElements(new TypeFilter(CtClass.class)).get(1);
+			otherComp.add(origClass1);
+			System.out.println("\n\n"+origClass1.toString()+"\n\n");
+		
+		}
 	}
 
 	/** returns a list of mutant classes */
@@ -49,9 +70,9 @@ public class MutationTester<T> {
 
 		CtClass origClass = (CtClass) l.getFactory().Package().getRootPackage()
 				.getElements(new TypeFilter(CtClass.class)).get(0);
-
+		//System.out.println(origClass.toString());
+				
 		// now we apply a transformation
-		// we replace "+" and "*" by "-"
 		List<CtElement> elementsToBeMutated = origClass.getElements(new Filter<CtElement>() {
 
 			@Override
@@ -59,7 +80,7 @@ public class MutationTester<T> {
 				return mutator.isToBeProcessed(arg0);
 			}
 		});
-		
+		//System.out.println("kdjkdjfkjdkfjdkfj : "+elementsToBeMutated.size());
 		for (CtElement e : elementsToBeMutated) {
 			// this loop is the trickiest part
 			// because we want one mutation after the other
@@ -74,14 +95,14 @@ public class MutationTester<T> {
 			replace(e,op);
 
 			// creating a new class containing the mutating code
-			CtClass klass = l.getFactory().Core()
-					.clone(op.getParent(CtClass.class));
+			CtClass klass = l.getFactory().Core().clone(op.getParent(CtClass.class));
 			// setting the package
 			klass.setParent(origClass.getParent());
 
 			// adding the new mutant to the list
 			mutants.add(klass);
-
+			System.out.println(klass.toString());
+		
 			// restoring the original code
 			replace(op, e);
 		}
@@ -100,17 +121,34 @@ public class MutationTester<T> {
 			((CtExpression)e).replace((CtExpression) op);
 			return;
 		}
+
+		 if (e instanceof CtField && op instanceof CtField) {
+		 	//System.out.println(((CtField)e).toString()+" "+((CtField) op).toString());
+		
+		 	((CtField)e).replace((CtField) op);
+		 	return;
+		 }		
+		
+		//System.out.println(e.toString()+" "+op.toString());
 		throw new IllegalArgumentException(e.getClass()+" "+op.getClass());
 	}
 
 	/** tries to kill all generated mutants, throws an AssertionError if one mutant is not killed */
-	public void killMutants() throws Exception {
+	public void killMutants()  throws Exception{
 		
-		List<Class> compiledMutants = compileMutants(mutants);
-
-		List<T> mutantInstances = instantiateMutants(compiledMutants);
-
+		try{
+			
+			List<Class> compiledMutants = compileMutants(mutants);
+			gererateOthersClass();
+			compileMutants(otherComp);
+			System.out.println("AQUI1!!!!");
+			List<T> mutantInstances = instantiateMutants(compiledMutants);
+			System.out.println("AQUI2!!!!");
+		} catch (Exception expected) {
+			System.out.println("mutant killed (Il n'a pas compilé)!");
+		}
 		runTestsOnEachMutantInstance(mutantInstances);
+		
 		
 	}
 
