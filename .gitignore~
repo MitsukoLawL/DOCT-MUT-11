@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+/spoon-examples-copy/target
+/spoon-simple/target
+/spoon-examples-copy/.idea
+/spoon-simple/.idea
+.DS_STORE
+/.idea
+*.iml
