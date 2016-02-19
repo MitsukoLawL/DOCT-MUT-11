@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.mutation11.maven.transformation.MutationTesterTest" time="1.694" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="org.mutation11.maven.transformation.MutationTesterTest" time="1.802" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib"/>
@@ -61,33 +61,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testMutationTester" classname="org.mutation11.maven.transformation.MutationTesterTest" time="1.694">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.fail(Assert.java:95)
-	at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:52)
-</failure>
-    <system-out><![CDATA[public class A implements org.mutation11.maven.transformation.Racine {
-    private int a;
-}
-
-
-public class B extends org.mutation11.maven.transformation.A {
-    int calc() {
-        a = 2;
-        return (a) + 2;
-    }
-
-    public static void main(java.lang.String[] args) {
-        org.mutation11.maven.transformation.B b = new org.mutation11.maven.transformation.B();
-        java.lang.System.out.println(b.calc());
-    }
-}
-
-
-AQUI1!!!!
-AQUI2!!!!
-mutant NOT KILLED
-]]></system-out>
-  </testcase>
+  <testcase name="testMutationTester" classname="org.mutation11.maven.transformation.MutationTesterTest" time="1.802"/>
 </testsuite>

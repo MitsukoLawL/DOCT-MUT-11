@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.mutation11.maven.transformation.MutationTesterTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.721 sec <<< FAILURE! - in org.mutation11.maven.transformation.MutationTesterTest
-testMutationTester(org.mutation11.maven.transformation.MutationTesterTest)  Time elapsed: 1.694 sec  <<< FAILURE!
-java.lang.AssertionError: null
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.fail(Assert.java:95)
-	at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:52)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.822 sec - in org.mutation11.maven.transformation.MutationTesterTest
