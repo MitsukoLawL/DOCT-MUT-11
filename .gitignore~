@@ -7,4 +7,5 @@
 /.idea
 *.iml
 /target
-SpoonAutreSolution/mutatedCode/target
+/SpoonAutreSolution/mutatedCode/target
+/SpoonAutreSolution/spoonProcess/target
