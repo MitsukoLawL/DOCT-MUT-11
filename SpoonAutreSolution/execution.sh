@@ -2,6 +2,7 @@
 
 
 cd spoonProcess
+mvn compile
 mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"
 
 cd ..
