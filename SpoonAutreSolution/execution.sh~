@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 cd spoonProcess
 mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"
 
