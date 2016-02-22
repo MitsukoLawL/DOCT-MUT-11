@@ -37,18 +37,16 @@ public class MutationTesterTest {
 			@Override
 			public void test(Racine t) {
 				
-				final String[] args = {
-					"-i", "target/generated-sources/",
-					"-o", "target/generated-sources/",
-					"-p", "org.mutation11.maven.transformation.testMutationTester"
-				};
+				// final String[] args = {
+				// 	"-i", "target/generated-sources/",
+				// 	"-o", "target/generated-sources/",
+				// 	"-p", "org.mutation11.maven.transformation.testMutationTester"
+				// };
 
-				final Launcher launcher = new Launcher();
-				launcher.setArgs(args);
-				
+				//final Launcher launcher = new Launcher();
+				//launcher.setArgs(args);
 				assertTrue(Main.compile(Main.tokenize("-1.6 target/generated-sources/"), new PrintWriter(System.out), new PrintWriter(System.err), null));	
 
-				//assertEquals(2,3);
 			}
 		};
 		

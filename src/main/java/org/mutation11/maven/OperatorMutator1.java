@@ -12,7 +12,7 @@ public class OperatorMutator1 extends AbstractProcessor<CtElement> {
 		//return candidate instanceof CtModifiable;
 		if (candidate instanceof CtModifiable){
 			CtModifiable emo = (CtModifiable)candidate;
-			return emo instanceof CtVariable;
+			return emo instanceof CtVariable && emo.getVisibility()==ModifierKind.PROTECTED;
 		} else return false;
 	}
 
