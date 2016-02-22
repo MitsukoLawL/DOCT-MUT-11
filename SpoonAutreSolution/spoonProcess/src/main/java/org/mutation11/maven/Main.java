@@ -35,7 +35,8 @@ public class Main {
     }
 
     private static void convertTheJava(String nameFile) {
-        BinaryOperatorMutator mutationOperator = new BinaryOperatorMutator();
+//        BinaryOperatorMutator mutationOperator = new BinaryOperatorMutator();
+        OperatorMutator1 mutationOperator = new OperatorMutator1();
 
         // we instantiate the mutation tester
         MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  mutationOperator);
