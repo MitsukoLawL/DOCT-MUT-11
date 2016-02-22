@@ -30,7 +30,7 @@ public class MutationTester<T> {
 	/** the content of the Java source code file to be mutated */
 	private String sourceCodeToBeMutated;
 	/** responsible for killing the mutants */
-	//private TestDriver testDriver;
+
 	/** mutation operator */
 	private Processor mutator;
 
@@ -38,8 +38,6 @@ public class MutationTester<T> {
 	private final List<CtClass> mutants = new ArrayList<CtClass>();
 
 	/** for the otherCalss that should be compiled */
-//	private final List<String> otherClass;
-//	private final List<CtClass> otherComp = new ArrayList<CtClass>();
 
 
 	// public for testing
@@ -52,26 +50,6 @@ public class MutationTester<T> {
 //		this.otherClass = otherClass;
 	}
 
-//	private void gererateOthersClass(){
-//
-//		for (String source: otherClass){
-//			Launcher lll = new Launcher();
-//			lll.addInputResource(source);
-//			lll.buildModel();
-//			CtClass origClass1 = (CtClass) lll.getFactory().Package().getRootPackage().getElements(new TypeFilter(CtClass.class)).get(0);
-//
-//			File arquivo = new File("target/generated-sources/"+origClass1.getSimpleName()+".java");
-//			try{
-//				FileWriter fw = new FileWriter(arquivo);
-//			    fw.write("package " + origClass1.getPackage().getQualifiedName() + "; \n" + origClass1.toString());
-//			    fw.flush();
-//			}catch(IOException ex){
-//			  ex.printStackTrace();
-//			}
-//		}
-//		//lll.buildModel();
-//		//lll.run();
-//	}
 
 	/** returns a list of mutant classes */
 	public void generateMutants() {
@@ -149,13 +127,6 @@ public class MutationTester<T> {
 		try{
 
 			List<Class> mutedJava = muteJava(mutants);
-			// System.out.println("AQUI1!!!!");
-			// gererateOthersClass();
-			// System.out.println("AQUI2!!!!");
-//			muteJava(otherComp);
-//			//System.out.println("AQUI3!!!!");
-			// List<T> mutantInstances = instantiateMutants(mutedJava);
-			// System.out.println("AQUI4!!!!");
 		} catch (Exception expected) {
 			// System.out.println("mutant killed!");
 		}
