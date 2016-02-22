@@ -117,7 +117,7 @@ public class MutationTester<T> {
 		 	return;
 		 }
 
-		//System.out.println(e.toString()+" "+op.toString());
+		System.out.println(e.toString()+" "+op.toString());
 		throw new IllegalArgumentException(e.getClass()+" "+op.getClass());
 	}
 

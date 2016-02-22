@@ -33,6 +33,5 @@ if [ $? -eq 0 ]; then
 	# ./EcrireHTML()
 else
     echo COMPILATION OF MUTATION FAILED
-    echo ./EcrireCompilation "FAIL"
       # ./EcrireCompilation "FAIL"
 fi

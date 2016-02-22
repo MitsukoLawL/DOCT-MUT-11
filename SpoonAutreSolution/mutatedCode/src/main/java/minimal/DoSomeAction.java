@@ -1,11 +1,9 @@
-package minimal;
-
-/**
- * Dummy class
- *
- * @author Sascha Tayefeh
- */
+package minimal; 
 public class DoSomeAction {
-	protected int a;
-	
+    protected int a;
+
+    int calc() {
+        a = 3;
+        return (a) - 4;
+    }
 }
