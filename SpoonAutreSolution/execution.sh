@@ -5,26 +5,26 @@ cd spoonProcess
 mvn compile
 mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"
 
-cd ..
-# for VARIABLE in 1 2 3 4 5 .. N
-# do
+if [ $? -eq 0 ]; then
+	echo COMPILATION OF MUTATION SUCEEDED
+	# ./EcrireCompilation "SUCCESS"
+	cd ..
+	# for VARIABLE in 1 2 3 4 5 .. N
+	# do
 
-  # ./EcrireMutations mutation
-  # ./EcrireSelecteur selecteur
+		# ./EcrireMutations mutation
+		# ./EcrireSelecteur selecteur
 
-cd mutatedCode
+		cd mutatedCode
 
-DIR="./target/classes"
-  mvn clean compile
+		DIR="./target/classes"
 
-  if [ "$(ls -A $DIR)" ]; then
-      echo "Take action $DIR is not Empty"
-      # ./EcrireCompilation "SUCCESS"
-      mvn test
-      # ./EcrireTestcase("./target/surefire-reports")
-  else
-      echo "$DIR is Empty"
+		# mvn clean compile      
+		mvn clean test
+	  	# ./EcrireTestcase("./target/surefire-reports")
+	# done
+	# ./EcrireHTML()
+else
+    echo COMPILATION OF MUTATION FAILED
       # ./EcrireCompilation "FAIL"
-  fi
-# done
-# ./EcrireHTML()
+fi

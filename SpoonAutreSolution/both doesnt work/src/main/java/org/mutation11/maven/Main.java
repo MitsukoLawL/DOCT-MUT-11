@@ -15,7 +15,8 @@ public class Main {
         // Copy ALL
 //        String theFolder = args[0];
         String theFolder = "toBeMutated/";
-        copyFile(theFolder, "../mutatedCode/src/main/java/minimal/");
+//        copyFile(theFolder, "both/src/main/java/minimal/");
+        copyFile(theFolder, "target/generated-sources");
 //        copyFile("toBeMutated/", "../mutatedCode/src/main/java/minimal/");
 
         // Mutated
@@ -35,8 +36,8 @@ public class Main {
     }
 
     private static void convertTheJava(String nameFile) {
-//        BinaryOperatorMutator mutationOperator = new BinaryOperatorMutator();
-        OperatorMutator1 mutationOperator = new OperatorMutator1();
+        BinaryOperatorMutator mutationOperator = new BinaryOperatorMutator();
+//        OperatorMutator1 mutationOperator = new OperatorMutator1();
 
         // we instantiate the mutation tester
         MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  mutationOperator);
@@ -50,7 +51,7 @@ public class Main {
             mutationTester.killMutants();
         } catch (MutantNotKilledException e) {
             System.out.println("mutant NOT KILLED");
-            Assert.fail();
+            junit.framework.Assert.fail();
         } catch (Exception e) {
             e.printStackTrace();
         }
