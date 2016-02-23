@@ -6,7 +6,7 @@ import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtModifiable;
 import spoon.reflect.declaration.CtVariable;
 
-public class OperatorMutator1 extends AbstractProcessor<CtElement> {
+public class Op1 extends AbstractProcessor<CtElement> {
 	@Override
 	public boolean isToBeProcessed(CtElement candidate) {
 		//return candidate instanceof CtModifiable;

@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Assert;
-import spoon.Launcher;
 import spoon.processing.AbstractProcessor;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtElement;
@@ -40,8 +39,8 @@ public class Main {
     }
 
     private static void convertTheJava(String nameFile, int indexMutator) {
-//        BinaryOperatorMutator mutationOperator = new BinaryOperatorMutator();
-//        OperatorMutator1 mutationOperator = new OperatorMutator1();
+//        Op12 mutationOperator = new Op12();
+//        Op1 mutationOperator = new Op1();
 //        int index = args[1];
 
         // we instantiate the mutation tester
@@ -64,9 +63,9 @@ public class Main {
 
     private static ArrayList<AbstractProcessor<CtElement>> listMutator() {
         ArrayList<AbstractProcessor<CtElement>> list = new ArrayList<AbstractProcessor<CtElement>>();
-        list.add(new OperatorMutator1());
-        list.add(new BinaryOperatorMutator());
-        list.add(new BinaryOperatorMutatorLogic());
+        list.add(new Op1());
+        list.add(new Op12());
+        list.add(new Op13());
 
         return list;
     }

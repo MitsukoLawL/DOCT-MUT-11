@@ -110,26 +110,29 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 ### Op11 (Java et la méthode <i> equals() </i>): #
 <p> Soient deux objets, <i>a </i> et <i>b </i>, qui sont comparés par référence avec <i>== </i>. Cet opérateur substitue le <i>== </i> par la méthode <i> equals() </i>. Cela permettra de vérifier que les concepts de comparaison par référence et contenu. </p>
 
-### Op12 (operateurs): #
+### Op12 (operateurs arithmétiques): #
 <p> Nous pouvons changer les opérateurs tels que : <br/>
-"+" soit remplacé par "-", "* " ou "/"<br/>
+"+" soit remplacé par "-", "* " ou "/"</p>
+
+### Op12 (operateurs logiques): #
+<p> Nous pouvons changer les opérateurs tels que : <br/>
 "&&" soit remplacé par "||"</p>
 
-### Op13 (comparaison): #
+### Op14 (comparaison): #
 <p> Nous pouvons changer les comparateurs tels que : <br/>
 ">" soit remplacé par ">=", "<", ou "<=" </p>
 
-### Op14 (booleen): #
+### Op15 (booleen): #
 <p> Nous pouvons inverser les booléens tels que : <br/>
 "false" deviennent "true"</p>
 
-### Op15 (les boucles): #
+### Op16 (les boucles): #
 <ul> Nous pouvons
 <li>Remplacer "++" par "--"</li>
 <li>Augmenter le pas.</li>
 </ul>
 
-### Op16 (les valeurs absolues): #
+### Op17 (les valeurs absolues): #
 <p> Nous pouvons passer les valeurs numériques en leur valeur absolue telles que : <br/>
 "a" deviennent "|a|" (Math.abs(a))</p>
 
