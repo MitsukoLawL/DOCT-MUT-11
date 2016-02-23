@@ -56,7 +56,7 @@ public class MutationTester<T> {
 		Launcher l = new Launcher();
 
 		/** get File on a folder **/
-		String theFolder = "toBeMutated/";
+		String theFolder = sourceCodeToBeMutated;
 		File folder = new File(theFolder);
 		File[] listOfFiles = folder.listFiles();
 

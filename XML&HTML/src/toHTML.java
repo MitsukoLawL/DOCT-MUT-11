@@ -21,11 +21,11 @@ public class toHTML {
 
     public static void main(String[] args)
     {
-        Traitement(getAllXML(args[0], ".\\.xml" ),args[0], "./XML&HTML/test.xsl");
+        Traitement(getAllXML(args[0], ".\\.xml" ),args[0], "./test.xsl");
     }
 
 
-
+    // path = ./mutatedCode/target/surefire-reports
     public static void Traitement(List<String> ListeFicher,String path, String xslFile ) {
         try
         {
@@ -33,7 +33,7 @@ public class toHTML {
             Source xmlDoc = new StreamSource(path + ListeFicher.get(0));
             Source xslDoc = new StreamSource(xslFile);
 
-            String outputFileName = "./XML&HTML/test.html";
+            String outputFileName = "../Report/test.html";
             OutputStream htmlFile = new FileOutputStream(outputFileName);
 
             Transformer transformer = tFactory.newTransformer(xslDoc);
