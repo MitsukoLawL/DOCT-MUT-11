@@ -9,5 +9,5 @@
 /target
 /SpoonAutreSolution/mutatedCode/target
 /SpoonAutreSolution/spoonProcess/target
-/mutatedCode/target
-/spoonProcess/target
+mutatedCode/target
+spoonProcess/target
