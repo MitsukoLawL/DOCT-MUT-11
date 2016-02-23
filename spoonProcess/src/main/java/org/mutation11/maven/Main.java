@@ -14,35 +14,16 @@ public class Main {
 
     public static void main(String[] args) {
         // Copy ALL
-//        String theFolder = args[0];
-        String theFolder = "toBeMutated/";
+        String theFolder = args[0];
+//        String theFolder = "toBeMutated/";
         copyFile(theFolder, "../mutatedCode/src/main/java/minimal/");
-//        copyFile("toBeMutated/", "../mutatedCode/src/main/java/minimal/");
 
         // Mutated
-//        File folder = new File(theFolder);
-//        File[] listOfFiles = folder.listFiles();
-
-//        for (int i = 0; i < listOfFiles.length; i++) {
-//        for (int i = listOfFiles.length-1; i >= 0; i--) {
-
           /** Mutated all file.java of a folder **/
-//            if (listOfFiles[i].isFile()) {
-//                convertTheJava("toBeMutated/"+listOfFiles[i].getName(), Integer.parseInt(args[0]));
-                convertTheJava(args[0], Integer.parseInt(args[1]));
-//                convertTheJava("toBeMutated/A.java");
-//            }
-//            else if (listOfFiles[i].isDirectory()) {
-//                System.out.println("Directory " + listOfFiles[i].getName());
-//            }
-//        }
+        convertTheJava(args[0], Integer.parseInt(args[1]));
     }
 
     private static void convertTheJava(String nameFile, int indexMutator) {
-//        Op12 mutationOperator = new Op12();
-//        Op1 mutationOperator = new Op1();
-//        int index = args[1];
-
         // we instantiate the mutation tester
         MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  listMutator().get(indexMutator));
 
@@ -61,6 +42,11 @@ public class Main {
         }
     }
 
+    /**
+     * We add all mutator in a list
+     * One of these mutator is called in {convertTheJava}
+     * @return
+     */
     private static ArrayList<AbstractProcessor<CtElement>> listMutator() {
         ArrayList<AbstractProcessor<CtElement>> list = new ArrayList<AbstractProcessor<CtElement>>();
         list.add(new Op1());
