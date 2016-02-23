@@ -3,7 +3,7 @@
 
 cd spoonProcess
 mvn compile
-mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"  -Dexec.args="toBeMutated/ 1"
+mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"  -Dexec.args="1"
 
 if [ $? -eq 0 ]; then
 	echo COMPILATION OF MUTATION SUCEEDED

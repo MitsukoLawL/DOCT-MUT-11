@@ -29,7 +29,8 @@ public class Main {
 
           /** Mutated all file.java of a folder **/
             if (listOfFiles[i].isFile()) {
-                convertTheJava("toBeMutated/"+listOfFiles[i].getName());
+//                convertTheJava("toBeMutated/"+listOfFiles[i].getName(), Integer.parseInt(args[0]));
+                convertTheJava(args[0]+listOfFiles[i].getName(), Integer.parseInt(args[1]));
 //                convertTheJava("toBeMutated/A.java");
             }
 //            else if (listOfFiles[i].isDirectory()) {
@@ -38,11 +39,9 @@ public class Main {
         }
     }
 
-    private static void convertTheJava(String nameFile) {
+    private static void convertTheJava(String nameFile, int indexMutator) {
 //        BinaryOperatorMutator mutationOperator = new BinaryOperatorMutator();
 //        OperatorMutator1 mutationOperator = new OperatorMutator1();
-
-        int indexMutator = 1;
 //        int index = args[1];
 
         // we instantiate the mutation tester
