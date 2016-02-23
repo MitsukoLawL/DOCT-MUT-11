@@ -54,45 +54,61 @@ public class MutationTester<T> {
 	/** returns a list of mutant classes */
 	public void generateMutants() {
 		Launcher l = new Launcher();
-		l.addInputResource(sourceCodeToBeMutated);
-		l.buildModel();
 
-		CtClass origClass = (CtClass) l.getFactory().Package().getRootPackage()
-				.getElements(new TypeFilter(CtClass.class)).get(0);
-		//System.out.println(origClass.toString());
+		/** get File on a folder **/
+		String theFolder = "toBeMutated/";
+		File folder = new File(theFolder);
+		File[] listOfFiles = folder.listFiles();
 
-		// now we apply a transformation
-		List<CtElement> elementsToBeMutated = origClass.getElements(new Filter<CtElement>() {
-
-			@Override
-			public boolean matches(CtElement arg0) {
-				return mutator.isToBeProcessed(arg0);
+		for (int i = 0; i < listOfFiles.length; i++) {
+			if (listOfFiles[i].isFile()) {
+//                convertTheJava("toBeMutated/"+listOfFiles[i].getName(), Integer.parseInt(args[0]));
+				l.addInputResource(theFolder + listOfFiles[i].getName());
+				System.out.println(theFolder + listOfFiles[i].getName());
+//                convertTheJava("toBeMutated/A.java");
 			}
-		});
-		for (CtElement e : elementsToBeMutated) {
-			// this loop is the trickiest part
-			// because we want one mutation after the other
+		}
+//		l.addInputResource(sourceCodeToBeMutated);
+		l.buildModel();
+		for (int i = 0; i < listOfFiles.length; i++) {
 
-			// cloning the AST element
-			CtElement op = l.getFactory().Core().clone(e);
+			CtClass origClass = (CtClass) l.getFactory().Package().getRootPackage()
+					.getElements(new TypeFilter(CtClass.class)).get(i);
+			System.out.println(origClass.toString());
 
-			// mutate the element
-			mutator.process(op);
+			// now we apply a transformation
+			List<CtElement> elementsToBeMutated = origClass.getElements(new Filter<CtElement>() {
 
-			// temporarily replacing the original AST node with the mutated element
-			replace(e,op);
+				@Override
+				public boolean matches(CtElement arg0) {
+					return mutator.isToBeProcessed(arg0);
+				}
+			});
+			for (CtElement e : elementsToBeMutated) {
+				// this loop is the trickiest part
+				// because we want one mutation after the other
 
-			// creating a new class containing the mutating code
-			CtClass klass = l.getFactory().Core().clone(op.getParent(CtClass.class));
-			// setting the package
-			klass.setParent(origClass.getParent());
+				// cloning the AST element
+				CtElement op = l.getFactory().Core().clone(e);
 
-			// adding the new mutant to the list
-			mutants.add(klass);
-			System.out.println(klass.toString());
+				// mutate the element
+				mutator.process(op);
 
-			// restoring the original code
-			replace(op, e);
+				// temporarily replacing the original AST node with the mutated element
+				replace(e, op);
+
+				// creating a new class containing the mutating code
+				CtClass klass = l.getFactory().Core().clone(op.getParent(CtClass.class));
+				// setting the package
+				klass.setParent(origClass.getParent());
+
+				// adding the new mutant to the list
+				mutants.add(klass);
+				System.out.println(klass.toString());
+
+				// restoring the original code
+				replace(op, e);
+			}
 		}
 	}
 
@@ -174,11 +190,11 @@ public class MutationTester<T> {
 			  ex.printStackTrace();
 			}
 
-			Class<?> klass = InMemoryJavaCompiler.compile(
-					mutantClass.getQualifiedName(), "package "
-							+ mutantClass.getPackage().getQualifiedName() + ";"
-							+ mutantClass);
-			mutedJava.add(klass);
+//			Class<?> klass = InMemoryJavaCompiler.compile(
+//					mutantClass.getQualifiedName(), "package "
+//							+ mutantClass.getPackage().getQualifiedName() + ";"
+//							+ mutantClass);
+//			mutedJava.add(klass);
 		}
 		return mutedJava;
 	}

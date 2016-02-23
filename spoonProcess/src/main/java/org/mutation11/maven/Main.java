@@ -21,22 +21,22 @@ public class Main {
 //        copyFile("toBeMutated/", "../mutatedCode/src/main/java/minimal/");
 
         // Mutated
-        File folder = new File(theFolder);
-        File[] listOfFiles = folder.listFiles();
+//        File folder = new File(theFolder);
+//        File[] listOfFiles = folder.listFiles();
 
-        for (int i = 0; i < listOfFiles.length; i++) {
+//        for (int i = 0; i < listOfFiles.length; i++) {
 //        for (int i = listOfFiles.length-1; i >= 0; i--) {
 
           /** Mutated all file.java of a folder **/
-            if (listOfFiles[i].isFile()) {
+//            if (listOfFiles[i].isFile()) {
 //                convertTheJava("toBeMutated/"+listOfFiles[i].getName(), Integer.parseInt(args[0]));
-                convertTheJava(args[0]+listOfFiles[i].getName(), Integer.parseInt(args[1]));
+                convertTheJava(args[0], Integer.parseInt(args[1]));
 //                convertTheJava("toBeMutated/A.java");
-            }
+//            }
 //            else if (listOfFiles[i].isDirectory()) {
 //                System.out.println("Directory " + listOfFiles[i].getName());
 //            }
-        }
+//        }
     }
 
     private static void convertTheJava(String nameFile, int indexMutator) {
