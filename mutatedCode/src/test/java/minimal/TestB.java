@@ -7,6 +7,6 @@ public class TestB {
     @Test
     public void testSum() {
       B b = new B();
-      assertEquals(4,b.calc());
+      assertEquals(8,b.calc());
     }
 }

@@ -33,8 +33,9 @@ if [ $? -eq 0 ]; then
 		# ecrit Html
 		java toHTML "../mutatedCode/target/surefire-reports/"
 		
+		echo -e "\n \n"
 		echo Op$2 appliqué
-		echo \n \n YOU WILL FIND THE REPORT ON REPORT/test.html
+		echo "YOU WILL FIND THE REPORT ON REPORT/test.html"
 		
 	else
 	    echo COMPILATION OF MUTATED PROJECT FAILED
