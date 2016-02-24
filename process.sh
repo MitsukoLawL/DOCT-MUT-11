@@ -19,24 +19,29 @@ if [ $? -eq 0 ]; then
 	if [ $? -eq 0 ]; then
 		mvn test
 		# ./EcrireCompilation "SUCCESS"	
+
+		# ./EcrireTestcase("./target/surefire-reports")
+
+		# ecrit html
+		cd ..
+
+		# compilation de la classe, pendant la phase d'implementation, risque d'etre modifiée
+		cd XML\&HTML/src
+		javac toHTML.java
+		mv toHTML.class ../
+		cd .. 
+		# ecrit Html
+		java toHTML "../mutatedCode/target/surefire-reports/"
+		
+		echo Op$2 appliqué
+		echo \n \n YOU WILL FIND THE REPORT ON REPORT/test.html
+		
 	else
 	    echo COMPILATION OF MUTATED PROJECT FAILED
 	    echo ./EcrireCompilation "FAIL" 
 	      # ./EcrireCompilation "FAIL"
 	fi
-  	# ./EcrireTestcase("./target/surefire-reports")
-
-	# ecrit html
-	cd ..
-
-	#compilation de la classe, pendant la phase d'implementation, risque d'etre modifiée
-	cd XML\&HTML/src
-	javac toHTML.java
-	mv toHTML.class ../
-	cd .. 
-	# ecrit Html
-	java toHTML "../mutatedCode/target/surefire-reports/"
-
+  	
 else
     echo COMPILATION OF ORIGINAL PROJECT FAILED
     echo ./EcrireCompilation "FAIL"

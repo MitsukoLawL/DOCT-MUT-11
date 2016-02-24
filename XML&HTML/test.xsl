@@ -36,7 +36,7 @@
                 <div class="col-md-6">
                   <table class="table table-striped table-bordered table-hover">
                     <thead>
-                      <tr>
+                      <tr class="info">
                         <th>TestClass</th>
                         <th>Class</th>
                         <th>Error</th>

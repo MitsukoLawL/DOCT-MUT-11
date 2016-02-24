@@ -11,3 +11,5 @@
 /SpoonAutreSolution/spoonProcess/target
 /mutatedCode/target
 /spoonProcess/target
+/mutatedCode/.idea
+/spoonProcess/.idea
