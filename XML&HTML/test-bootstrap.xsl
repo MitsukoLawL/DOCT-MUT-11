@@ -226,7 +226,7 @@
                                                 <!-- ITEM-->
                                                 <div class="row">
                                                     <div class="col-sm-8 col-lg-8">
-                                                        <p>PANE#1 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                                        <p>PANE#1 Graphique Nombre de Test Fail/ Nombre de test total</p>
                                                     </div>
                                                     <div class="col-sm-4 col-lg-4">
                                                         <div class="thumbnail">
@@ -240,7 +240,7 @@
                                                 <!-- ITEM-->
                                                 <div class="row">
                                                     <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                                        <p>Graphique ....</p>
                                                     </div>
                                                     <div class="col-sm-4 col-lg-4">
                                                         <div class="thumbnail">
@@ -254,7 +254,7 @@
                                                 <!-- ITEM-->
                                                 <div class="row">
                                                     <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                                        <p>Graphique ....</p>
                                                     </div>
                                                     <div class="col-sm-4 col-lg-4">
                                                         <div class="thumbnail">
@@ -561,34 +561,6 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 
-                                    <!--<div class="row">
-                                    <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="thumbnail">
-                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                            <div class="caption">
-                                                <strong>BY: ADMIN</strong> | 05.01.2013
-                                            </div>
-
-                                        </div>
-
-                                        <p>
-                                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                                        </p>
-                                    </div>
-                                    <hr class="visible-lg" />
-                                    <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="thumbnail">
-                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                            <div class="caption">
-                                                <strong>BY: ADMIN</strong> | 05.01.2013
-                                            </div>
-
-                                        </div>
-
-                                        <p>
-                                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                                        </p>
-                                    </div></div>-->
                                 </div>
                             </div>
 
@@ -597,87 +569,6 @@
                             <hr/>
                             <!-- related projects -->
                             <div class="articles-grid row">
-
-
-                                <!-- ITEM -->
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="thumbnail">
-                                        <!-- IMAGE CONTAINER-->
-                                        <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                        <!--END IMAGE CONTAINER-->
-                                        <!-- CAPTION -->
-                                        <div class="caption">
-                                            <h3 class="">Article title</h3>
-                                            <p class="">This project presents beautiful style graphic &amp; design. VERSO provides modern features</p>
-                                            <p>
-                                                <a class="" href="#" title="">Read more ></a>
-                                            </p>
-                                        </div>
-                                        <!--END CAPTION -->
-                                    </div>
-                                    <!-- END: THUMBNAIL -->
-                                </div>
-                                <!-- END ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="thumbnail">
-                                        <!-- IMAGE CONTAINER-->
-                                        <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                        <!--END IMAGE CONTAINER-->
-                                        <!-- CAPTION -->
-                                        <div class="caption">
-                                            <h3 class="">Article title</h3>
-                                            <p class="">This project presents beautiful style graphic &amp; design. VERSO provides modern features</p>
-                                            <p>
-                                                <a class="" href="#" title="">Read more ></a>
-                                            </p>
-                                        </div>
-                                        <!--END CAPTION -->
-                                    </div>
-                                    <!-- END: THUMBNAIL -->
-                                </div>
-                                <!-- END ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="thumbnail">
-                                        <!-- IMAGE CONTAINER-->
-                                        <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                        <!--END IMAGE CONTAINER-->
-                                        <!-- CAPTION -->
-                                        <div class="caption">
-                                            <h3 class="">Article title</h3>
-                                            <p class="">This project presents beautiful style graphic &amp; design. VERSO provides modern features</p>
-                                            <p>
-                                                <a class="" href="#" title="">Read more ></a>
-                                            </p>
-                                        </div>
-                                        <!--END CAPTION -->
-                                    </div>
-                                    <!-- END: THUMBNAIL -->
-                                </div>
-                                <!-- END ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="thumbnail">
-                                        <!-- IMAGE CONTAINER-->
-                                        <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                        <!--END IMAGE CONTAINER-->
-                                        <!-- CAPTION -->
-                                        <div class="caption">
-                                            <h3 class="">Article title</h3>
-                                            <p class="">This project presents beautiful style graphic &amp; design. VERSO provides modern features</p>
-                                            <p>
-                                                <a class="" href="#" title="">Read more ></a>
-                                            </p>
-                                        </div>
-                                        <!--END CAPTION -->
-                                    </div>
-                                    <!-- END: THUMBNAIL -->
-                                </div>
-                                <!-- END ITEM -->
 
                             </div>
                             <!-- related projects -->
