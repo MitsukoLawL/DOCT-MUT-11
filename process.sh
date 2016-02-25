@@ -27,11 +27,16 @@ if [ $? -eq 0 ]; then
 
 		# compilation de la classe, pendant la phase d'implementation, risque d'etre modifiée
 		cd XML\&HTML/src
-		javac toHTML.java
-		mv toHTML.class ../
-		cd .. 
+#		javac toHTML.java
+#		mv toHTML.class ../
+		javac MergeXML.java
+#		javac -classpath "../jdom-2.0.6.jar" MergeXML.java
+
+		mv MergeXML.class ../../
+		cd ../../ 
 		# ecrit Html
-		java toHTML "../mutatedCode/target/surefire-reports/"
+#		java toHTML "../mutatedCode/target/surefire-reports/"
+		java MergeXML "mutatedCode/target/surefire-reports/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
 		
 		echo -e "\n \n"
 		echo Op$2 appliqué
