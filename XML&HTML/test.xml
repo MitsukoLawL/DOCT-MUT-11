@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.mutation11.maven.transformation.MutationTesterTest" time="2.171" tests="1" errors="0" skipped="0" failures="1">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="org.mutation11.maven.transformation.MutationTesterTest" skipped="0" tests="1" time="2.171">
     <properties>
         <property name="idea.version" value="15.0.3"/>
         <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,8 +63,308 @@
         <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
     </properties>
 
-    <testcase name="testMutationTester" classname="org.mutation11.maven.transformation.MutationTesterTest" time="2.171">
-
+    
+    
+    <testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
     </testcase>
-
+    <testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+    <testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="Mutant2" time="0.0">Erreure de compilation du mutant</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="Mutant2" time="0.0">Erreure de compilation du mutant</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="Mutant2" time="0.0">Erreure de compilation du mutant</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="Mutant2" time="0.0">Erreure de compilation du mutant</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="Mutant2" time="0.0">Erreure de compilation du mutant</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">AAAA</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="Mutant2" time="0.0">Erreure de compilation du mutant</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171">
+        <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+            at org.junit.Assert.fail(Assert.java:86)
+            at org.junit.Assert.fail(Assert.java:95)
+            at org.mutation11.maven.transformation.MutationTesterTest.testMutationTester(MutationTesterTest.java:68)
+        </failure>
+    </testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="Mutant2" time="0.0">Erreure de compilation du mutant</testcase>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
+<testcase classname="org.mutation11.maven.transformation.MutationTesterTest" name="testMutationTester" time="2.171"/>
 </testsuite>
