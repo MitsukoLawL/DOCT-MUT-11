@@ -5,7 +5,6 @@ import spoon.reflect.code.BinaryOperatorKind;
 import spoon.reflect.code.CtBinaryOperator;
 import spoon.reflect.declaration.CtElement;
 
-/** a trivial mutation operator that transforms all binary operators to minus ("-") */
 public class Op12 extends AbstractProcessor<CtElement> {
 	@Override
 	public boolean isToBeProcessed(CtElement candidate) {

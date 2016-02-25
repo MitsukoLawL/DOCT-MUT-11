@@ -52,6 +52,7 @@ public class Main {
         list.add(new Op1());
         list.add(new Op12());
         list.add(new Op13());
+        list.add(new Op16());
 
         return list;
     }
