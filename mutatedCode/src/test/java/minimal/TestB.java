@@ -9,4 +9,10 @@ public class TestB {
       B b = new B();
       assertEquals(8,b.calc());
     }
+
+    @Test(timeout = 100)
+    public void testLoop() {
+        B b = new B();
+        assertEquals(5,b.boucle());
+    }
 }

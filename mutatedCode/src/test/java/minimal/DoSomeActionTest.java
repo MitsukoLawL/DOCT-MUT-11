@@ -1,12 +1,13 @@
 package minimal;
 
+import static java.lang.Thread.sleep;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import org.junit.Assert;
 
 public class DoSomeActionTest {
-    @Test
+    @Test(timeout=100)
     public void testIsThisReallyTrue() {
         assertTrue(true);
     }
