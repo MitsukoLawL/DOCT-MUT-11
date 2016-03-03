@@ -1,7 +1,6 @@
 package org.mutation11.maven;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -65,18 +64,6 @@ public class Main {
         return convert.get(str);
     }
 
-    public static void displayDirectoryContents(File dir) {
-        File[] files = dir.listFiles();
-        for (File file : files) {
-            if (file.isDirectory()) {
-//                System.out.println("directory:" + file);
-                displayDirectoryContents(file);
-            } else {
-//                System.out.println("     file:" + file);
-                copyFile(file.toString(), "../mutatedCode/src/main/java/minimal");
-            }
-        }
-    }
 
     public static void recursiveCopy(File fSource, File fDest) {
         try {
@@ -129,72 +116,72 @@ public class Main {
         }
     }
 
-    private static void copyFile(String source, String dest) {
+//    private static void copyFile(String source, String dest) {
+//
+//        File srcFolder = new File(source);
+//        File destFolder = new File(dest);
+//
+//        //make sure source exists
+//        if(!srcFolder.exists()){
+//
+//            System.out.println("Directory does not exist.");
+//            //just exit
+//            System.exit(0);
+//
+//        }else{
+//
+//            try{
+//                copyFolder(srcFolder,destFolder);
+//            }catch(IOException e){
+//                e.printStackTrace();
+//                //error, just exit
+//                System.exit(0);
+//            }
+//        }
+//
+//        System.out.println("Done");
+//    }
 
-        File srcFolder = new File(source);
-        File destFolder = new File(dest);
-
-        //make sure source exists
-        if(!srcFolder.exists()){
-
-            System.out.println("Directory does not exist.");
-            //just exit
-            System.exit(0);
-
-        }else{
-
-            try{
-                copyFolder(srcFolder,destFolder);
-            }catch(IOException e){
-                e.printStackTrace();
-                //error, just exit
-                System.exit(0);
-            }
-        }
-
-        System.out.println("Done");
-    }
-
-    public static void copyFolder(File src, File dest)
-            throws IOException{
-
-        if(src.isDirectory()){
-
-            //if directory not exists, create it
-            if(!dest.exists()){
-                dest.mkdir();
-                System.out.println("Directory copied from "
-                        + src + "  to " + dest);
-            }
-
-            //list all the directory contents
-            String files[] = src.list();
-
-            for (String file : files) {
-                //construct the src and dest file structure
-                File srcFile = new File(src, file);
-                File destFile = new File(dest, file);
-                //recursive copy
-                copyFolder(srcFile,destFile);
-            }
-
-        }else{
-            //if file, then copy it
-            //Use bytes stream to support all file types
-            InputStream in = new FileInputStream(src);
-            OutputStream out = new FileOutputStream(dest);
-
-            byte[] buffer = new byte[1024];
-
-            int length;
-            //copy the file content in bytes
-            while ((length = in.read(buffer)) > 0){
-                out.write(buffer, 0, length);
-            }
-
-            in.close();
-            out.close();
-            System.out.println("File copied from " + src + " to " + dest);
-        }
-    }
+//    public static void copyFolder(File src, File dest)
+//            throws IOException{
+//
+//        if(src.isDirectory()){
+//
+//            //if directory not exists, create it
+//            if(!dest.exists()){
+//                dest.mkdir();
+//                System.out.println("Directory copied from "
+//                        + src + "  to " + dest);
+//            }
+//
+//            //list all the directory contents
+//            String files[] = src.list();
+//
+//            for (String file : files) {
+//                //construct the src and dest file structure
+//                File srcFile = new File(src, file);
+//                File destFile = new File(dest, file);
+//                //recursive copy
+//                copyFolder(srcFile,destFile);
+//            }
+//
+//        }else{
+//            //if file, then copy it
+//            //Use bytes stream to support all file types
+//            InputStream in = new FileInputStream(src);
+//            OutputStream out = new FileOutputStream(dest);
+//
+//            byte[] buffer = new byte[1024];
+//
+//            int length;
+//            //copy the file content in bytes
+//            while ((length = in.read(buffer)) > 0){
+//                out.write(buffer, 0, length);
+//            }
+//
+//            in.close();
+//            out.close();
+//            System.out.println("File copied from " + src + " to " + dest);
+//        }
+//    }
 }

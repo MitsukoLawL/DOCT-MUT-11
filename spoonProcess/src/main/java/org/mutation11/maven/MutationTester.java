@@ -56,11 +56,11 @@ public class MutationTester<T> {
 		File[] files = dir.listFiles();
 		for (File file : files) {
 			if (file.isDirectory()) {
-                System.out.println("directory:" + file);
+//                System.out.println("directory:" + file);
 				displayDirectoryContents(file, l);
 			} else {
 				l.addInputResource(dir + "/" + file.getName());
-				System.out.println("     file:" + file);
+//				System.out.println("     file:" + file);
 			}
 		}
 	}
