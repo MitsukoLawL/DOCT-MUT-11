@@ -52,6 +52,7 @@ public class Main {
     private static ArrayList<AbstractProcessor<CtElement>> listMutator() {
         ArrayList<AbstractProcessor<CtElement>> list = new ArrayList<AbstractProcessor<CtElement>>();
         list.add(new Op1());
+        list.add(new Op9());
         list.add(new Op12());
         list.add(new Op13());
         list.add(new Op16());
@@ -62,9 +63,10 @@ public class Main {
     private static int convertParam(String str) {
         HashMap<String, Integer> convert = new HashMap<String, Integer>();
         convert.put("Op1", 0);
-        convert.put("Op12", 1);
-        convert.put("Op13", 2);
-        convert.put("Op16", 3);
+        convert.put("Op9", 1);
+        convert.put("Op12", 2);
+        convert.put("Op13", 3);
+        convert.put("Op16", 4);
 
         return convert.get(str);
     }

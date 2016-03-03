@@ -22,5 +22,5 @@ public class B extends A {
 
 		return i*ai;
 	}
-
+	
 }
