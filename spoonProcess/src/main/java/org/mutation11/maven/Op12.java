@@ -45,9 +45,10 @@ public class Op12 extends AbstractProcessor<CtElement> {
 
 //		System.out.println("coucou");
 		int rand = (int) (Math.random()*4);
+
 		if (rand == 0) {
-//			op.setKind(BinaryOperatorKind.PLUS);
-			op.setKind(BinaryOperatorKind.MINUS);
+			op.setKind(BinaryOperatorKind.PLUS);
+//			op.setKind(BinaryOperatorKind.MINUS);
 		} else if (rand == 1) {
 			op.setKind(BinaryOperatorKind.MINUS);
 		} else if (rand == 2) {

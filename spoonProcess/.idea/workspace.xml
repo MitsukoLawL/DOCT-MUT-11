@@ -34,31 +34,37 @@
       <file leaf-file-name="MutationTester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/MutationTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.862069">
-              <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
-              <folding />
+            <state vertical-scroll-proportion="-7.448276">
+              <caret line="91" column="99" selection-start-line="91" selection-start-column="99" selection-end-line="91" selection-end-column="99" />
+              <folding>
+                <element signature="e#2423#2562#0" expanded="true" />
+                <element signature="e#2561#2562#0" expanded="true" />
+                <element signature="e#4307#4308#0" expanded="true" />
+                <element signature="e#4358#4359#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35064936">
-              <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#954#962#0" expanded="true" />
                 <element signature="e#2044#2061#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Op12.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Op12.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op12.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.5616883">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
               <folding>
                 <element signature="e#466#486#0" expanded="true" />
               </folding>
@@ -116,9 +122,9 @@
         <option value="$PROJECT_DIR$/src/main/java/org/mutation11/maven/BinaryOperatorMutator.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op13.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op16.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op12.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/mutation11/maven/MutationTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/mutation11/maven/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op12.java" />
       </list>
     </option>
   </component>
@@ -676,12 +682,12 @@
       <workItem from="1456251483522" duration="1680000" />
       <workItem from="1457011284900" duration="4145000" />
       <workItem from="1457023326583" duration="373000" />
-      <workItem from="1457033301113" duration="1583000" />
+      <workItem from="1457033301113" duration="1925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30405000" />
+    <option name="totallyTimeSpent" value="30747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="227" y="1078" width="1309" height="770" extended-state="0" />
@@ -695,7 +701,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44813934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44813934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18764846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -759,6 +765,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#962#0" expanded="true" />
             <element signature="e#2044#2061#0" expanded="true" />
           </folding>
         </state>
@@ -775,7 +782,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#2423#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#4307#4308#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -810,6 +822,7 @@
           <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#962#0" expanded="true" />
             <element signature="e#2044#2061#0" expanded="true" />
           </folding>
         </state>
@@ -826,7 +839,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#2423#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#4307#4308#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -867,6 +885,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#962#0" expanded="true" />
             <element signature="e#2044#2061#0" expanded="true" />
           </folding>
         </state>
@@ -883,7 +902,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
-          <folding />
+          <folding>
+            <element signature="e#2423#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#4307#4308#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -910,6 +934,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#962#0" expanded="true" />
             <element signature="e#2044#2061#0" expanded="true" />
           </folding>
         </state>
@@ -919,7 +944,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
-          <folding />
+          <folding>
+            <element signature="e#2423#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#4307#4308#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -946,6 +976,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#962#0" expanded="true" />
             <element signature="e#2044#2061#0" expanded="true" />
           </folding>
         </state>
@@ -963,7 +994,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="196" column="74" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="e#2423#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#4307#4308#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -990,6 +1026,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#962#0" expanded="true" />
             <element signature="e#2044#2061#0" expanded="true" />
           </folding>
         </state>
@@ -999,7 +1036,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2423#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#4307#4308#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,6 +1051,7 @@
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#962#0" expanded="true" />
             <element signature="e#2044#2061#0" expanded="true" />
           </folding>
         </state>
@@ -1018,7 +1061,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="196" column="74" selection-start-line="196" selection-start-column="74" selection-end-line="196" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="e#2423#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#4307#4308#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,6 +1076,7 @@
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#962#0" expanded="true" />
             <element signature="e#2044#2061#0" expanded="true" />
           </folding>
         </state>
@@ -1037,7 +1086,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2423#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#4307#4308#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1137,31 +1191,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op12.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-          <folding>
-            <element signature="e#466#486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/MutationTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.862069">
-          <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
-          <folding />
+        <state vertical-scroll-proportion="-7.448276">
+          <caret line="91" column="99" selection-start-line="91" selection-start-column="99" selection-end-line="91" selection-end-column="99" />
+          <folding>
+            <element signature="e#2423#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#4307#4308#0" expanded="true" />
+            <element signature="e#4358#4359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35064936">
-          <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#962#0" expanded="true" />
             <element signature="e#2044#2061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5616883">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+          <folding>
+            <element signature="e#466#486#0" expanded="true" />
           </folding>
         </state>
       </provider>

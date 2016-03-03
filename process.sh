@@ -2,7 +2,7 @@
 
 cd spoonProcess
 mvn compile
-mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"  -Dexec.args="$1 $2"
+mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"  -Dexec.args="$1 $2 $3"
 
 if [ $? -eq 0 ]; then
 	echo COMPILATION OF ORIGINAL PROJECT SUCEEDED

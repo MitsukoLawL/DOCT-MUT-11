@@ -78,7 +78,7 @@ public class MutationTester<T> {
 			System.out.println(origClass.toString());
 
 			// now we apply a transformation
-			List<CtElement> elementsToBeMutated = origClass.getElements(new Filter<CtElement>() {
+			List<CtElement> elementsToBeMutated1 = origClass.getElements(new Filter<CtElement>() {
 
 				@Override
 				public boolean matches(CtElement arg0) {
@@ -88,8 +88,8 @@ public class MutationTester<T> {
 
 			// selecteur
 			// Recuperer qu'une partie de la liste elementsToBeMutated
-			elementsToBeMutated = selecteurs(elementsToBeMutated, percentSelecteur);
 
+			List<CtElement> elementsToBeMutated = selecteurs(elementsToBeMutated1, percentSelecteur);
 
 			// elementsToBeMutated = liste des elements que l'on va transformer
 			for (CtElement e : elementsToBeMutated) {
@@ -127,7 +127,7 @@ public class MutationTester<T> {
 	 * Input all mutations to do
 	 * Out a percent of mutations to do
 	 */
-	public List<CtElement> selecteurs(List<CtElement> liste, int percent /* args[2]*/) {
+	public List<CtElement> selecteurs(List<CtElement> liste, int percent) { /* args[2]*/
 		Random random = new Random();
 		int tailleListe = liste.size();
 
