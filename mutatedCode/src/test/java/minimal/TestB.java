@@ -13,6 +13,6 @@ public class TestB {
     @Test(timeout = 100)
     public void testLoop() {
         B b = new B();
-        assertEquals(5,b.boucle());
+        assertEquals(0,b.boucle());
     }
 }

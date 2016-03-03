@@ -8,10 +8,19 @@ public class B extends A {
 	}
 
 	int boucle() {
-		int i;
+		int i, ai = 1;
 		for (i = 1; i < 5; i++);
 
-		return i;
+
+		while (ai < 105){ ai++;}
+
+
+		do{
+			ai--;
+		}while (ai>0);
+
+
+		return i*ai;
 	}
 
 }
