@@ -53,7 +53,7 @@ public class MutationTester<T> {
 
 
 	/** returns a list of mutant classes */
-	public void generateMutants() {
+	public void generateMutants(int percentSelecteur) {
 		Launcher l = new Launcher();
 
 		/** get File on a folder **/
@@ -88,10 +88,12 @@ public class MutationTester<T> {
 
 			// selecteur
 			// Recuperer qu'une partie de la liste elementsToBeMutated
-//			elementsToBeMutated = selecteurs(elementsToBeMutated, 100);
+			elementsToBeMutated = selecteurs(elementsToBeMutated, percentSelecteur);
+
 
 			// elementsToBeMutated = liste des elements que l'on va transformer
 			for (CtElement e : elementsToBeMutated) {
+				System.out.println("element "+e.toString());
 				// this loop is the trickiest part
 				// because we want one mutation after the other
 

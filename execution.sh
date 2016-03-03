@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./process.sh toBeMutated/ 1
+./process.sh toBeMutated/ Op12 100

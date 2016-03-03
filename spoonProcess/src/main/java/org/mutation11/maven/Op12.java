@@ -10,7 +10,20 @@ import java.util.ArrayList;
 public class Op12 extends AbstractProcessor<CtElement> {
 	@Override
 	public boolean isToBeProcessed(CtElement candidate) {
-		return candidate instanceof CtBinaryOperator;
+		if (candidate instanceof CtBinaryOperator) {
+			ArrayList<BinaryOperatorKind> toMutated = new ArrayList<BinaryOperatorKind>();
+			// Only operator we want to mute :
+			toMutated.add(BinaryOperatorKind.PLUS); toMutated.add(BinaryOperatorKind.MINUS);
+			toMutated.add(BinaryOperatorKind.MUL); toMutated.add(BinaryOperatorKind.DIV);
+
+			CtBinaryOperator op = (CtBinaryOperator)candidate;
+
+			// Return true if the operator is in on the list
+			return toMutated.contains(op.getKind());
+		}
+
+//		return candidate instanceof CtBinaryOperator;
+		return false;
 	}
 
 	@Override
@@ -21,17 +34,17 @@ public class Op12 extends AbstractProcessor<CtElement> {
 
 		CtBinaryOperator op = (CtBinaryOperator)candidate;
 
-		ArrayList<BinaryOperatorKind> toMutated = new ArrayList<BinaryOperatorKind>();
-		// Only operator we want to mute :
-		toMutated.add(BinaryOperatorKind.PLUS); toMutated.add(BinaryOperatorKind.MINUS);
-		toMutated.add(BinaryOperatorKind.MUL); toMutated.add(BinaryOperatorKind.DIV);
+//		ArrayList<BinaryOperatorKind> toMutated = new ArrayList<BinaryOperatorKind>();
+//		// Only operator we want to mute :
+//		toMutated.add(BinaryOperatorKind.PLUS); toMutated.add(BinaryOperatorKind.MINUS);
+//		toMutated.add(BinaryOperatorKind.MUL); toMutated.add(BinaryOperatorKind.DIV);
+//
+//		if (!toMutated.contains(op.getKind())) {
+//			return;
+//		}
 
-		if (!toMutated.contains(op.getKind())) {
-			return;
-		}
-
-		System.out.println("coucou");
-		int rand = (int) (Math.random()*3);
+//		System.out.println("coucou");
+		int rand = (int) (Math.random()*4);
 		if (rand == 0) {
 //			op.setKind(BinaryOperatorKind.PLUS);
 			op.setKind(BinaryOperatorKind.MINUS);

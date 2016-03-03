@@ -2,6 +2,7 @@ package org.mutation11.maven;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.junit.Assert;
@@ -20,15 +21,16 @@ public class Main {
 
         // Mutated
           /** Mutated all file.java of a folder **/
-        convertTheJava(args[0], Integer.parseInt(args[1]));
+//        convertTheJava(args[0], Integer.parseInt(args[1]));
+        convertTheJava(args[0], convertParam(args[1]), Integer.parseInt(args[2]));
     }
 
-    private static void convertTheJava(String nameFile, int indexMutator) {
+    private static void convertTheJava(String nameFile, int indexMutator, int percentSelecteur) {
         // we instantiate the mutation tester
         MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  listMutator().get(indexMutator));
 
         // generating the mutants
-        mutationTester.generateMutants();
+        mutationTester.generateMutants(percentSelecteur);
         List<CtClass> mutants = mutationTester.getMutants();
 
         // killing the mutants, no exception should be thrown
@@ -55,6 +57,16 @@ public class Main {
         list.add(new Op16());
 
         return list;
+    }
+
+    private static int convertParam(String str) {
+        HashMap<String, Integer> convert = new HashMap<String, Integer>();
+        convert.put("Op1", 0);
+        convert.put("Op12", 1);
+        convert.put("Op13", 2);
+        convert.put("Op16", 3);
+
+        return convert.get(str);
     }
 
     private static void copyFile(String source, String dest) {
