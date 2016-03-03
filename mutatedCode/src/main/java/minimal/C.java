@@ -1,4 +1,4 @@
-package minimal; 
+package minimal;
 
 public class C {
 	private static int a = 0;

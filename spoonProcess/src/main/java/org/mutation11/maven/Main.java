@@ -17,7 +17,11 @@ public class Main {
         // Copy ALL
         String theFolder = args[0];
 //        String theFolder = "toBeMutated/";
-        copyFile(theFolder, "../mutatedCode/src/main/java/minimal/");
+//        copyFile(theFolder, "../mutatedCode/src/main/java/minimal/");
+        recursiveCopy(new File(theFolder), new File("../mutatedCode/src/main/java"));
+
+//        File currentDir = new File("../mutatedCode/src/main/java"); // current directory
+//        displayDirectoryContents(currentDir);
 
         // Mutated
           /** Mutated all file.java of a folder **/
@@ -45,22 +49,11 @@ public class Main {
         }
     }
 
-//    /**
-//     * We add all mutator in a list
-//     * One of these mutator is called in {convertTheJava}
-//     * @return
-//     */
-//    private static ArrayList<AbstractProcessor<CtElement>> listMutator() {
-//        ArrayList<AbstractProcessor<CtElement>> list = new ArrayList<AbstractProcessor<CtElement>>();
-//        list.add(new Op1());
-//        list.add(new Op9());
-//        list.add(new Op12());
-//        list.add(new Op13());
-//        list.add(new Op16());
-//
-//        return list;
-//    }
-
+    /**
+     * HashMap converting the param string in command, in the mutator corresponding
+     * @param str
+     * @return
+     */
     private static AbstractProcessor<CtElement> paramToMutator(String str) {
         HashMap<String, AbstractProcessor<CtElement>> convert = new HashMap<String, AbstractProcessor<CtElement>>();
         convert.put("Op1", new Op1());
@@ -70,6 +63,70 @@ public class Main {
         convert.put("Op16", new Op16());
 
         return convert.get(str);
+    }
+
+    public static void displayDirectoryContents(File dir) {
+        File[] files = dir.listFiles();
+        for (File file : files) {
+            if (file.isDirectory()) {
+//                System.out.println("directory:" + file);
+                displayDirectoryContents(file);
+            } else {
+//                System.out.println("     file:" + file);
+                copyFile(file.toString(), "../mutatedCode/src/main/java/minimal");
+            }
+        }
+    }
+
+    public static void recursiveCopy(File fSource, File fDest) {
+        try {
+            if (fSource.isDirectory()) {
+                // A simple validation, if the destination is not exist then create it
+                if (!fDest.exists()) {
+                    fDest.mkdirs();
+                }
+
+                // Create list of files and directories on the current source
+                // Note: with the recursion 'fSource' changed accordingly
+                String[] fList = fSource.list();
+
+                for (int index = 0; index < fList.length; index++) {
+                    File dest = new File(fDest, fList[index]);
+                    File source = new File(fSource, fList[index]);
+
+                    // Recursion call take place here
+                    recursiveCopy(source, dest);
+                }
+            }
+            else {
+                // Found a file. Copy it into the destination, which is already created in 'if' condition above
+
+                // Open a file for read and write (copy)
+                FileInputStream fInStream = new FileInputStream(fSource);
+                FileOutputStream fOutStream = new FileOutputStream(fDest);
+
+                // Read 2K at a time from the file
+                byte[] buffer = new byte[2048];
+                int iBytesReads;
+
+                // In each successful read, write back to the source
+                while ((iBytesReads = fInStream.read(buffer)) >= 0) {
+                    fOutStream.write(buffer, 0, iBytesReads);
+                }
+
+                // Safe exit
+                if (fInStream != null) {
+                    fInStream.close();
+                }
+
+                if (fOutStream != null) {
+                    fOutStream.close();
+                }
+            }
+        }
+        catch (Exception ex) {
+            // Please handle all the relevant exceptions here
+        }
     }
 
     private static void copyFile(String source, String dest) {
