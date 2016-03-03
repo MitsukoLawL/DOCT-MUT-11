@@ -20,15 +20,15 @@ public class Main {
 
         // Mutated
           /** Mutated all file.java of a folder **/
-        convertTheJava(args[0], Integer.parseInt(args[1]));
+        convertTheJava(args[0], Integer.parseInt(args[1]), Integer.parseInt(args[2]));
     }
 
-    private static void convertTheJava(String nameFile, int indexMutator) {
+    private static void convertTheJava(String nameFile, int indexMutator, int percent) {
         // we instantiate the mutation tester
         MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  listMutator().get(indexMutator));
 
         // generating the mutants
-        mutationTester.generateMutants();
+        mutationTester.generateMutants(percent);
         List<CtClass> mutants = mutationTester.getMutants();
 
         // killing the mutants, no exception should be thrown

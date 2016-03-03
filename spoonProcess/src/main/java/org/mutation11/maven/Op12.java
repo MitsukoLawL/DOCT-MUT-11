@@ -30,7 +30,7 @@ public class Op12 extends AbstractProcessor<CtElement> {
 			return;
 		}
 
-		System.out.println("coucou");
+		//System.out.println("coucou");
 		int rand = (int) (Math.random()*3);
 		if (rand == 0) {
 //			op.setKind(BinaryOperatorKind.PLUS);
