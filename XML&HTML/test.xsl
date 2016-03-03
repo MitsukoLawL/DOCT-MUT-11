@@ -40,14 +40,25 @@
                         <th>TestClass</th>
                         <th>Class</th>
                         <th>Error</th>
+                        <th>Time (s)</th>
                       </tr>
                     </thead>
                     <tbody>
                       <xsl:for-each select="testcase">
-                          <tr>
+                        <xsl:choose>
+                                  <tr
+                                  <xsl:when test="failure !&gt; ' '">
+                                     class="success"
+                                  </xsl:when>
+                                  <xsl:otherwise>
+                                    class="danger"
+                                  </xsl:otherwise>
+                                </xsl:choose>
+                              >
                               <td><xsl:value-of select="@name"/></td>
                               <td><xsl:value-of select="@classname"/></td>
                               <td><xsl:value-of select="failure/@type"/></td>
+                              <td><xsl:value-of select="@time"/></td>
                           </tr>
                       </xsl:for-each>
                     </tbody>

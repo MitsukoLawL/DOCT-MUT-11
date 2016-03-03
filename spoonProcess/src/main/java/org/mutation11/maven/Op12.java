@@ -5,6 +5,8 @@ import spoon.reflect.code.BinaryOperatorKind;
 import spoon.reflect.code.CtBinaryOperator;
 import spoon.reflect.declaration.CtElement;
 
+import java.util.ArrayList;
+
 public class Op12 extends AbstractProcessor<CtElement> {
 	@Override
 	public boolean isToBeProcessed(CtElement candidate) {
@@ -16,12 +18,23 @@ public class Op12 extends AbstractProcessor<CtElement> {
 		if (!(candidate instanceof CtBinaryOperator)) {
 			return;
 		}
+
 		CtBinaryOperator op = (CtBinaryOperator)candidate;
 
+		ArrayList<BinaryOperatorKind> toMutated = new ArrayList<BinaryOperatorKind>();
+		// Only operator we want to mute :
+		toMutated.add(BinaryOperatorKind.PLUS); toMutated.add(BinaryOperatorKind.MINUS);
+		toMutated.add(BinaryOperatorKind.MUL); toMutated.add(BinaryOperatorKind.DIV);
+
+		if (!toMutated.contains(op.getKind())) {
+			return;
+		}
+
+		System.out.println("coucou");
 		int rand = (int) (Math.random()*3);
-		System.out.println(rand);
 		if (rand == 0) {
-			op.setKind(BinaryOperatorKind.PLUS);
+//			op.setKind(BinaryOperatorKind.PLUS);
+			op.setKind(BinaryOperatorKind.MINUS);
 		} else if (rand == 1) {
 			op.setKind(BinaryOperatorKind.MINUS);
 		} else if (rand == 2) {

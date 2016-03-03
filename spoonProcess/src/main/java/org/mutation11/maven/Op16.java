@@ -17,9 +17,9 @@ public class Op16 extends AbstractProcessor<CtElement> {
 			return;
 		}
 		CtUnaryOperator op = (CtUnaryOperator)candidate;
-		if (op.getKind()==UnaryOperatorKind.POSTINC){
+		if (op.getKind().equals(UnaryOperatorKind.POSTINC)){
 			op.setKind(UnaryOperatorKind.POSTDEC);
-		} else if (op.getKind()==UnaryOperatorKind.PREINC){
+		} else if (op.getKind().equals(UnaryOperatorKind.PREINC)){
 			op.setKind(UnaryOperatorKind.PREDEC);
 		}
 		

@@ -18,6 +18,11 @@ public class Op13 extends AbstractProcessor<CtElement> {
 		}
 		CtBinaryOperator op = (CtBinaryOperator)candidate;
 
-		op.setKind(BinaryOperatorKind.AND);
+		if (op.getKind().equals(BinaryOperatorKind.OR)) {
+			op.setKind(BinaryOperatorKind.AND);
+		} else if (op.getKind().equals(BinaryOperatorKind.AND)) {
+			op.setKind(BinaryOperatorKind.OR);
+		}
+
 	}
 }

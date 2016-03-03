@@ -187,7 +187,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-4 col-lg-4">
-                                <a class="brand" href="#">YOURBRAND.COM</a>
+                                <a class="brand" href="#">Mutation Groupe 11</a>
                             </div>
                             <div class="col-sm-8 col-lg-8">
                                 <div class="well text-center">
@@ -197,12 +197,12 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-12 col-lg-12">
+                            <!-- <div class="col-sm-12 col-lg-12">
                                 <p class="alert alert-success" style="text-transform:uppercase; display:inline-block; box-sizing:border-box; -moz-box-sizing:border-box;width:100%;"><span class="label label-important">Announcement:</span> Here goes your news and infos lorem ipsum Here goes your news and infos lorem ipsum
                                 </p>
 
 
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!-- PAGE-HEADER-->
@@ -512,34 +512,13 @@
                     </div>-->
                                     <!--<p style="margin-top:10px;"><strong>BY: ADMIN</strong> | 05.01.2013</p>-->
                                     <h2>Mutation Result</h2>
-                                    <table border="1">
-                                        <tr bgcolor="#bbbbbb">
-                                            <th>TestClass</th>
-                                            <th>Class</th>
-                                            <th>Error</th>
-                                        </tr>
-                                        <xsl:for-each select="testcase">
-                                            <tr>
-                                                <td>
-                                                    <xsl:value-of select="@name" />
-                                                </td>
-                                                <td>
-                                                    <xsl:value-of select="@classname" />
-                                                </td>
-                                                <td>
-                                                    <xsl:value-of select="failure/@type" />
-                                                </td>
-                                            </tr>
-                                        </xsl:for-each>
-                                    </table>
-
-                                    <h2>Mutation Result</h2>
                                     <table class="table table-striped table-bordered table-hover">
                                         <thead>
                                             <tr class="info">
                                                 <th>TestClass</th>
                                                 <th>Class</th>
                                                 <th>Error</th>
+                                                <th>Time</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -554,6 +533,8 @@
                                                     <td>
                                                         <xsl:value-of select="failure/@type" />
                                                     </td>
+                                                    <td><xsl:value-of select="@time"/></td>
+
                                                 </tr>
                                             </xsl:for-each>
                                         </tbody>

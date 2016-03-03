@@ -9,6 +9,7 @@ import org.mdkt.compiler.InMemoryJavaCompiler;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Random;
 
 import spoon.Launcher;
 import spoon.processing.Processor;
@@ -84,6 +85,12 @@ public class MutationTester<T> {
 					return mutator.isToBeProcessed(arg0);
 				}
 			});
+
+			// selecteur
+			// Recuperer qu'une partie de la liste elementsToBeMutated
+//			elementsToBeMutated = selecteurs(elementsToBeMutated, 100);
+
+			// elementsToBeMutated = liste des elements que l'on va transformer
 			for (CtElement e : elementsToBeMutated) {
 				// this loop is the trickiest part
 				// because we want one mutation after the other
@@ -106,10 +113,32 @@ public class MutationTester<T> {
 				mutants.add(klass);
 				System.out.println(klass.toString());
 
-				// restoring the original code
-				replace(op, e);
+
+				// restoring the original code - ici commente pour appliquer la mutation à TOUS le fichier
+				// Si on decommente, il applique une mutation par fichier
+				//replace(op, e);
 			}
 		}
+	}
+
+	/**
+	 * Input all mutations to do
+	 * Out a percent of mutations to do
+	 */
+	public List<CtElement> selecteurs(List<CtElement> liste, int percent /* args[2]*/) {
+		Random random = new Random();
+		int tailleListe = liste.size();
+
+		List<CtElement> newList = new ArrayList<CtElement>();
+
+		for (int i=0; (i< tailleListe*percent/100 && !liste.isEmpty()) /*percent*/; i++) {
+			int index = random.nextInt(liste.size());
+			CtElement element = liste.get(index);
+			newList.add(element);
+			liste.remove(element);
+		}
+
+		return newList;
 	}
 
 	public List<CtClass> getMutants() {
@@ -181,7 +210,13 @@ public class MutationTester<T> {
 		List<Class> mutedJava = new ArrayList<Class>();
 		for (CtClass mutantClass : mutants) {
 //			File arquivo = new File("target/generated-sources/"+mutantClass.getSimpleName()+".java");
-			File arquivo = new File("../mutatedCode/src/main/java/minimal/"+mutantClass.getSimpleName()+".java");
+
+			// chemin du fichier dans l'arborescence
+			String chemin = mutantClass.getPackage().getQualifiedName();
+			chemin = chemin.replace(".","/");
+
+//			File arquivo = new File("../mutatedCode/src/main/java/minimal/"+mutantClass.getSimpleName()+".java");
+			File arquivo = new File("../mutatedCode/src/main/java/"+chemin+"/"+mutantClass.getSimpleName()+".java");
 			try{
 				FileWriter fw = new FileWriter(arquivo);
 			    fw.write("package " + mutantClass.getPackage().getQualifiedName() + "; \n" + mutantClass.toString());
@@ -189,7 +224,6 @@ public class MutationTester<T> {
 			}catch(IOException ex){
 			  ex.printStackTrace();
 			}
-
 //			Class<?> klass = InMemoryJavaCompiler.compile(
 //					mutantClass.getQualifiedName(), "package "
 //							+ mutantClass.getPackage().getQualifiedName() + ";"

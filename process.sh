@@ -40,7 +40,7 @@ if [ $? -eq 0 ]; then
 		
 		echo -e "\n \n"
 		echo Op$2 appliqué
-		echo "YOU WILL FIND THE REPORT ON REPORT/test.html"
+		echo "YOU WILL FIND THE REPORT ON REPORT/index.html"
 		
 	else
 	    echo COMPILATION OF MUTATED PROJECT FAILED

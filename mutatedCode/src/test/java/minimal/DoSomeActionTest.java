@@ -17,7 +17,7 @@ public class DoSomeActionTest {
       DoSomeAction d = new DoSomeAction();
       assertEquals(7,d.calc());
     }
-    @Test
+    @Test(timeout=1000)
     public void testLopp() {
       DoSomeAction d = new DoSomeAction();
       assertEquals(10,d.calc2());
