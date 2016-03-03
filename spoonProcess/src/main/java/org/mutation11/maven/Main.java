@@ -22,12 +22,13 @@ public class Main {
         // Mutated
           /** Mutated all file.java of a folder **/
 //        convertTheJava(args[0], Integer.parseInt(args[1]));
-        convertTheJava(args[0], convertParam(args[1]), Integer.parseInt(args[2]));
+        convertTheJava(args[0], paramToMutator(args[1]), Integer.parseInt(args[2]));
     }
 
-    private static void convertTheJava(String nameFile, int indexMutator, int percentSelecteur) {
+    private static void convertTheJava(String nameFile, AbstractProcessor<CtElement> mutator, int percentSelecteur) {
         // we instantiate the mutation tester
-        MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  listMutator().get(indexMutator));
+//        MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  listMutator().get(indexMutator));
+        MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  mutator);
 
         // generating the mutants
         mutationTester.generateMutants(percentSelecteur);
@@ -44,29 +45,29 @@ public class Main {
         }
     }
 
-    /**
-     * We add all mutator in a list
-     * One of these mutator is called in {convertTheJava}
-     * @return
-     */
-    private static ArrayList<AbstractProcessor<CtElement>> listMutator() {
-        ArrayList<AbstractProcessor<CtElement>> list = new ArrayList<AbstractProcessor<CtElement>>();
-        list.add(new Op1());
-        list.add(new Op9());
-        list.add(new Op12());
-        list.add(new Op13());
-        list.add(new Op16());
+//    /**
+//     * We add all mutator in a list
+//     * One of these mutator is called in {convertTheJava}
+//     * @return
+//     */
+//    private static ArrayList<AbstractProcessor<CtElement>> listMutator() {
+//        ArrayList<AbstractProcessor<CtElement>> list = new ArrayList<AbstractProcessor<CtElement>>();
+//        list.add(new Op1());
+//        list.add(new Op9());
+//        list.add(new Op12());
+//        list.add(new Op13());
+//        list.add(new Op16());
+//
+//        return list;
+//    }
 
-        return list;
-    }
-
-    private static int convertParam(String str) {
-        HashMap<String, Integer> convert = new HashMap<String, Integer>();
-        convert.put("Op1", 0);
-        convert.put("Op9", 1);
-        convert.put("Op12", 2);
-        convert.put("Op13", 3);
-        convert.put("Op16", 4);
+    private static AbstractProcessor<CtElement> paramToMutator(String str) {
+        HashMap<String, AbstractProcessor<CtElement>> convert = new HashMap<String, AbstractProcessor<CtElement>>();
+        convert.put("Op1", new Op1());
+        convert.put("Op9", new Op9());
+        convert.put("Op12", new Op12());
+        convert.put("Op13", new Op13());
+        convert.put("Op16", new Op16());
 
         return convert.get(str);
     }
