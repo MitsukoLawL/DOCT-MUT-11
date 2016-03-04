@@ -52,6 +52,33 @@ public class MutationTester<T> {
 	}
 
 
+	public void displayDirectoryContents(File dir, Launcher l) {
+		File[] files = dir.listFiles();
+		for (File file : files) {
+			if (file.isDirectory()) {
+//                System.out.println("directory:" + file);
+				displayDirectoryContents(file, l);
+			} else {
+				l.addInputResource(dir + "/" + file.getName());
+//				System.out.println("     file:" + file);
+			}
+		}
+	}
+
+	public int countFile(File dir) {
+		File[] files = dir.listFiles();
+		int compteur = 0;
+		for (File file : files) {
+			if (file.isDirectory()) {
+//				System.out.println("directory:" + file);
+				compteur += countFile(file);
+			} else {
+				compteur++;
+//				System.out.println("     file:" + file);
+			}
+		}
+		return compteur;
+	}
 	/** returns a list of mutant classes */
 	public void generateMutants(int percentSelecteur) {
 		Launcher l = new Launcher();
@@ -59,19 +86,22 @@ public class MutationTester<T> {
 		/** get File on a folder **/
 		String theFolder = sourceCodeToBeMutated;
 		File folder = new File(theFolder);
-		File[] listOfFiles = folder.listFiles();
-
-		for (int i = 0; i < listOfFiles.length; i++) {
-			if (listOfFiles[i].isFile()) {
-//                convertTheJava("toBeMutated/"+listOfFiles[i].getName(), Integer.parseInt(args[0]));
-				l.addInputResource(theFolder + listOfFiles[i].getName());
-				System.out.println(theFolder + listOfFiles[i].getName());
-//                convertTheJava("toBeMutated/A.java");
-			}
-		}
+		displayDirectoryContents(folder, l);
+//		File[] listOfFiles = folder.listFiles();
+//
+//		for (int i = 0; i < listOfFiles.length; i++) {
+//			if (listOfFiles[i].isFile()) {
+////                convertTheJava("toBeMutated/"+listOfFiles[i].getName(), Integer.parseInt(args[0]));
+//				l.addInputResource(theFolder + listOfFiles[i].getName());
+//				System.out.println(theFolder + listOfFiles[i].getName());
+////                convertTheJava("toBeMutated/A.java");
+//			}
+//		}
 //		l.addInputResource(sourceCodeToBeMutated);
 		l.buildModel();
-		for (int i = 0; i < listOfFiles.length; i++) {
+
+//		for (int i = 0; i < listOfFiles.length; i++) {
+		for (int i = 0; i < countFile(folder); i++) {
 
 			CtClass origClass = (CtClass) l.getFactory().Package().getRootPackage()
 					.getElements(new TypeFilter(CtClass.class)).get(i);
