@@ -2,7 +2,7 @@ package minimal;
 
 public class B extends A {
 	int calc(){
-		a=4;
+		super.a=4;
 		int b = 3+5;
 		return a+4;
 	}
@@ -22,5 +22,5 @@ public class B extends A {
 
 		return i*ai;
 	}
-	
+
 }
