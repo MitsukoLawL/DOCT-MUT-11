@@ -1,0 +1,39 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ad 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ad ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.1:compile (default-compile) @ ad ---
+[INFO] Compiling 1 source file to /home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode/src/main/java/minimal/B.java:[4,8] error: a has private access in A
+
+[ERROR] /home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode/src/main/java/minimal/B.java:[6,16] error: a has private access in A
+
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.243 s
+[INFO] Finished at: 2016-03-04T08:22:28+01:00
+[INFO] Final Memory: 12M/110M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.1:compile (default-compile) on project ad: Compilation failure: Compilation failure:
+[ERROR] /home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode/src/main/java/minimal/B.java:[4,8] error: a has private access in A
+[ERROR] 
+[ERROR] /home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode/src/main/java/minimal/B.java:[6,16] error: a has private access in A
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
