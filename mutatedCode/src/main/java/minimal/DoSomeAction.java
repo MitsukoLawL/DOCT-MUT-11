@@ -4,7 +4,7 @@ public class DoSomeAction {
 
     int calc() {
         a = 3;
-        return (a) / 4;
+        return (a) - 4;
     }
 
     int calc2() {

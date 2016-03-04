@@ -23,7 +23,10 @@ Donner de la confiance :
 - Mutants mort-nés : seulement les compter
 - Mutant tués : (test fail) -> qui les a tué ? (Test "star"/"critique")
 	Histogramme : Nb tests, nb mutants tués |. |.
+			nb de test d'une classe, nb de fail dans cette classe
 - Mutants vivants : 
 	- Modif (ligne, code)
 	ou - afficher couple (selecteur, mutation)
 	ou - Diff des deux fichiers
+	
+
