@@ -31,21 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MutationTester.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MutationTester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/MutationTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.516184">
+            <state vertical-scroll-proportion="-9.774194">
               <caret line="165" column="45" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Op13.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Op13.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op13.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.407767">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -694,12 +694,12 @@
       <workItem from="1457033301113" duration="2436000" />
       <workItem from="1457037041788" duration="3731000" />
       <workItem from="1457074943806" duration="2189000" />
-      <workItem from="1457078420317" duration="1372000" />
+      <workItem from="1457078420317" duration="1898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38550000" />
+    <option name="totallyTimeSpent" value="39076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="24" width="1319" height="744" extended-state="6" />
@@ -1088,14 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op13.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1138,8 +1130,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/MutationTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.516184">
+        <state vertical-scroll-proportion="-9.774194">
           <caret line="165" column="45" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/mutation11/maven/Op13.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.407767">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="33" />
           <folding />
         </state>
       </provider>
