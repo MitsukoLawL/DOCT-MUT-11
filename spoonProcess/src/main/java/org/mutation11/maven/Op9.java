@@ -9,7 +9,6 @@ import spoon.reflect.declaration.CtVariable;
 public class Op9 extends AbstractProcessor<CtElement> {
 	@Override
 	public boolean isToBeProcessed(CtElement candidate) {
-		System.out.println(candidate.toString() + ",  "+ candidate.getClass());
 		if (candidate instanceof CtModifiable){
 			CtModifiable emo = (CtModifiable)candidate;
 			//System.out.println(emo.getVisibility());
