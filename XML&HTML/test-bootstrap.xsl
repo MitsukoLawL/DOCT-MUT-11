@@ -240,7 +240,7 @@
                                                 <!-- ITEM-->
                                                 <div class="row">
                                                     <div class="col-sm-8 col-lg-8">
-                                                        <p>Graphique ....</p>
+                                                        <div id="containerHigh" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
                                                     </div>
                                                     <div class="col-sm-4 col-lg-4">
                                                         <div class="thumbnail">
@@ -533,7 +533,9 @@
                                                     <td>
                                                         <xsl:value-of select="failure/@type" />
                                                     </td>
-                                                    <td><xsl:value-of select="@time"/></td>
+                                                    <td>
+                                                        <xsl:value-of select="@time" />
+                                                    </td>
 
                                                 </tr>
                                             </xsl:for-each>
@@ -664,7 +666,66 @@ do not remove or change this note!
                     });
                 </script>
 
+                <script>
+                    $(function () {
 
+                        $(document).ready(function () {
+
+                            // Build the chart
+                            $('#containerHigh').highcharts({
+                                chart: {
+                                    plotBackgroundColor: null,
+                                    plotBorderWidth: null,
+                                    plotShadow: false,
+                                    type: 'pie'
+                                },
+                                title: {
+                                    text: 'Browser market shares January, 2015 to May, 2015'
+                                },
+                                tooltip: {
+                                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                                },
+                                plotOptions: {
+                                    pie: {
+                                        allowPointSelect: true,
+                                        cursor: 'pointer',
+                                        dataLabels: {
+                                            enabled: false
+                                        },
+                                        showInLegend: true
+                                    }
+                                },
+                                series: [{
+                                    name: 'Brands',
+                                    colorByPoint: true,
+                                    data: [{
+                                        name: 'Microsoft Internet Explorer',
+                                        y: 56.33
+                }, {
+                                        name: 'Chrome',
+                                        y: 24.03,
+                                        sliced: true,
+                                        selected: true
+                }, {
+                                        name: 'Firefox',
+                                        y: 10.38
+                }, {
+                                        name: 'Safari',
+                                        y: 4.77
+                }, {
+                                        name: 'Opera',
+                                        y: 0.91
+                }, {
+                                        name: 'Proprietary or Undetectable',
+                                        y: 0.2
+                }]
+            }]
+                            });
+                        });
+                    });
+                </script>
+                <script src="https://code.highcharts.com/highcharts.js"></script>
+                <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 
                 <!--This function integrated in bootstrap_mode_blogalt.js line 1835
