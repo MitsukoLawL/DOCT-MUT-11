@@ -8,7 +8,10 @@ import spoon.reflect.declaration.CtElement;
 public class Op16 extends AbstractProcessor<CtElement> {
 	@Override
 	public boolean isToBeProcessed(CtElement candidate) {
-		return candidate instanceof CtUnaryOperator;
+		if (candidate instanceof CtUnaryOperator) {
+			CtUnaryOperator op = (CtUnaryOperator)candidate;
+			return op.getKind().equals(UnaryOperatorKind.POSTINC) || op.getKind().equals(UnaryOperatorKind.PREINC); 
+		} else return false;
 	}
 
 	@Override
