@@ -27,4 +27,6 @@ while true; do
     fi
 done
 
+#createHTML "mutatedCode/xmlResult/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
+
 echo -e "\n \n Author : Alicia Marin \n Fernandes Felipe \n Dahmoul Salah"
