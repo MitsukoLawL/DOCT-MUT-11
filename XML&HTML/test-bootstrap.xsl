@@ -153,7 +153,7 @@
                             <div class="row">
                                 <div class="col-sm-12 col-lg-12">
                                     <!-- article-->
-                                    <h1>Rapport de test par mutation - Groupe 11</h1>
+                                    <h1>Tests par mutation - Groupe 11</h1>
 
                                     <!--/ article-->
                                 </div>
@@ -196,8 +196,6 @@
                                                 </xsl:for-each>
                                             </tbody>
                                         </table>
-                                        <p>Mutants tués : <span class="mutantT">5</span> // vivants : <span class="mutantV">3</span> // mort nés : <span class="mutantMN">1</span>
-                                        </p>
                                     </xsl:for-each>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
