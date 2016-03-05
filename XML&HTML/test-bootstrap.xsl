@@ -196,6 +196,8 @@
                                                 </xsl:for-each>
                                             </tbody>
                                         </table>
+                                        <p>Tests success : <span id="mutantT">5</span> /// Tests Failure : <span id="mutantV">1</span>
+                                        </p>
                                     </xsl:for-each>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">

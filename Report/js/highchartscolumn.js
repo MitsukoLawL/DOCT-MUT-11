@@ -11,8 +11,8 @@ $(function () {
         },
         xAxis: {
             categories: [
-                'Jan',
-                'Feb',
+                'Op12 - 100',
+                'Op1 - 100',
                 'Mar',
                 'Apr',
                 'May',
@@ -47,11 +47,11 @@ $(function () {
             }
         },
         series: [{
-            name: 'Mutant Total',
+            name: 'Tests Total',
             data: [83.6, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 106.6, 92.3],
             color: '#1b192e'
         }, {
-            name: 'Mutant vivant',
+            name: 'Test success',
             data: [49.9, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 95.6, 54.4],
             color: '#FF543A'
         }, {
