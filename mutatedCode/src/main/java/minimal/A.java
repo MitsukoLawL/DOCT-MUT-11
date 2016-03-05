@@ -1,4 +1,6 @@
-package minimal; 
+package minimal;
+
 public class A {
-    private int a;
+	protected int a;
+	
 }

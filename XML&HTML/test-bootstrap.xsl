@@ -115,126 +115,10 @@
                                                 <div class="row">
                                                     <div class="col-sm-8 col-lg-8">
                                                         <div id="containerHigh" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
-
                                                     </div>
                                                 </div>
                                                 <!-- / ITEM-->
                                                 <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>PANE#1 Graphique Nombre de Test Fail/ Nombre de test total</p>
-
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Graphique ....</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-
-
                                             </div>
                                             <div class="tab-pane" id="2">
                                                 <!-- ITEM-->
@@ -251,119 +135,6 @@
                                                 </div>
                                                 <!-- / ITEM-->
                                                 <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-
                                             </div>
 
                                         </div>
@@ -388,13 +159,15 @@
                                 </div>
                             </div>
 
-
+                            <div class="row">
+                                <div id="containerColumn" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                            </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                                     <xsl:for-each select="Mutation">
                                         <h2><xsl:value-of select="@operateur"/> - <xsl:value-of select="@selecteur"/></h2>
                                         <table class="table table-striped table-bordered table-hover">
-                                            <tr class="info">
+                                            <tr class="success">
                                                 <thead>
                                                     <th>Class</th>
                                                     <th>TestClass</th>
@@ -425,7 +198,10 @@
                                     </xsl:for-each>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-
+                                    <p>Nombre Mutants tués : <span id="mutantT">12</span>
+                                        <br/> Nombre Mutants vivants : <span id="mutantV">8</span>
+                                        <br/> Nombre Mutants mort nés : <span id="mutantMN">1</span>
+                                    </p>
                                 </div>
                             </div>
 
@@ -493,7 +269,7 @@
                                 <div class="row">
                                     <div class="col-sm-12 col-lg-12">
 
-                                        <p>2016 © DevOps - AD </p>
+                                        <p>2016 © DevOps - 11 </p>
                                     </div>
                                 </div>
                             </footer>
@@ -549,6 +325,7 @@ do not remove or change this note!
                 </script>
 
                 <script src="js/highchartsfunction.js"></script>
+                <script src="js/highchartscolumn.js"></script>
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 

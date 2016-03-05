@@ -1,5 +1,10 @@
 $(function () {
 
+    var mutantT = $('#mutantT').text();
+    var mutantV = $('#mutantV').text();
+    var mutantMN = $('#mutantMN').text();
+    console.log(mutantT);
+
     $(document).ready(function () {
 
         // Build the chart
@@ -11,7 +16,7 @@ $(function () {
                 type: 'pie'
             },
             title: {
-                text: 'Graph about [thing]'
+                text: 'Graphe représentant les états des mutants pour tous les tests'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -31,24 +36,17 @@ $(function () {
                 colorByPoint: true,
                 data: [{
                     name: 'Tués',
-                    y: 56.33
+                    y: parseInt(mutantT),
+                    color: '#86FF8B'
                 }, {
                     name: 'Vivants',
-                    y: 24.03,
+                    y: parseInt(mutantV),
                     sliced: true,
-                    selected: true
+                    selected: true,
+                    color: '#FF543A'
                 }, {
                     name: 'Mort nés',
-                    y: 10.38
-                }, {
-                    name: 'Safari',
-                    y: 4.77
-                }, {
-                    name: 'Opera',
-                    y: 0.91
-                }, {
-                    name: 'Proprietary or Undetectable',
-                    y: 0.2
+                    y: parseInt(mutantMN)
                 }]
             }]
         });
