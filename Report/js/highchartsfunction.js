@@ -37,7 +37,7 @@ $(function () {
                 data: [{
                     name: 'Tués',
                     y: parseInt(mutantT),
-                    color: '#86FF8B'
+                    color: 'rgb(101, 255, 108)'
                 }, {
                     name: 'Vivants',
                     y: parseInt(mutantV),

@@ -153,7 +153,7 @@
                             <div class="row">
                                 <div class="col-sm-12 col-lg-12">
                                     <!-- article-->
-                                    <h1>Your site slogan goes here</h1>
+                                    <h1>Rapport de test par mutation - Groupe 11</h1>
 
                                     <!--/ article-->
                                 </div>
@@ -192,15 +192,18 @@
                                                             <xsl:value-of select="@time" />
                                                         </td>
                                                     </tr>
+
                                                 </xsl:for-each>
                                             </tbody>
                                         </table>
+                                        <p>Mutants tués : <span class="mutantT">5</span> // vivants : <span class="mutantV">3</span> // mort nés : <span class="mutantMN">1</span>
+                                        </p>
                                     </xsl:for-each>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                    <p>Nombre Mutants tués : <span id="mutantT">12</span>
-                                        <br/> Nombre Mutants vivants : <span id="mutantV">8</span>
-                                        <br/> Nombre Mutants mort nés : <span id="mutantMN">1</span>
+                                    <p>Total Mutants tués : <span id="mutantT">12</span>
+                                        <br/> Total Mutants vivants : <span id="mutantV">8</span>
+                                        <br/> Total Mutants mort nés : <span id="mutantMN">1</span>
                                     </p>
                                 </div>
                             </div>
