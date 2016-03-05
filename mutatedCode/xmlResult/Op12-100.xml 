@@ -101,4 +101,7 @@
 <testcase classname="minimal.TestB" name="testSum" time="0.001"/>
 <testcase classname="minimal.TestB" name="testLoop" time="0.005"/>
 </Mutation>
+<Mutation operateur="Op1" selecteur="100">
+<testcase compilation="compilation.error"/>
+</Mutation>
 </testsuite>

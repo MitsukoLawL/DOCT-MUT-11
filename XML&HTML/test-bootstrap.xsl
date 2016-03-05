@@ -391,40 +391,38 @@
 
                             <div class="row">
                                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                                    <!--<div class="thumbnail">
-                        <img class="img-responsive" src="images/thumb.png" alt="post image"/>
-                    </div>-->
-                                    <!--<p style="margin-top:10px;"><strong>BY: ADMIN</strong> | 05.01.2013</p>-->
-                                    <h2>Mutation Result</h2>
-                                    <table class="table table-striped table-bordered table-hover">
-                                        <thead>
+                                    <xsl:for-each select="Mutation">
+                                        <h2><xsl:value-of select="@operateur"/> - <xsl:value-of select="@selecteur"/></h2>
+                                        <table class="table table-striped table-bordered table-hover">
                                             <tr class="info">
-                                                <th>TestClass</th>
-                                                <th>Class</th>
-                                                <th>Error</th>
-                                                <th>Time</th>
+                                                <thead>
+                                                    <th>Class</th>
+                                                    <th>TestClass</th>
+                                                    <th>Error</th>
+                                                    <th>Time</th>
+                                                </thead>
                                             </tr>
-                                        </thead>
-                                        <tbody>
-                                            <xsl:for-each select="testcase">
-                                                <tr>
-                                                    <td>
-                                                        <xsl:value-of select="@name" />
-                                                    </td>
-                                                    <td>
-                                                        <xsl:value-of select="@classname" />
-                                                    </td>
-                                                    <td>
-                                                        <xsl:value-of select="failure/@type" />
-                                                    </td>
-                                                    <td>
-                                                        <xsl:value-of select="@time" />
-                                                    </td>
-
-                                                </tr>
-                                            </xsl:for-each>
-                                        </tbody>
-                                    </table>
+                                            <tbody>
+                                                <xsl:for-each select="testcase">
+                                                    <tr>
+                                                        <td>
+                                                            <xsl:value-of select="@classname" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="@name" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="failure/@type" />
+                                                            <xsl:value-of select="@compilation" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="@time" />
+                                                        </td>
+                                                    </tr>
+                                                </xsl:for-each>
+                                            </tbody>
+                                        </table>
+                                    </xsl:for-each>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 

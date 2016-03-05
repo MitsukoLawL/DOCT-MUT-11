@@ -1,10 +1,10 @@
 package minimal; 
 public class DoSomeAction {
-    protected int a;
+    private int a;
 
     int calc() {
         a = 3;
-        return (a) / 4;
+        return (a) + 4;
     }
 
     int calc2() {

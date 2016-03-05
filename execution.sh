@@ -7,5 +7,5 @@
 # ./process.sh toBeMutated/ Op9 100 
 
 
-java CreatHTML "mutatedCode/xmlResult/" "./Report/index.html" "./XML&HTML/test.xsl"
+java CreatHTML "mutatedCode/xmlResult/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
 
