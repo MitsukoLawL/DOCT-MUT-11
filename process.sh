@@ -50,7 +50,7 @@ if [ $? -eq 0 ]; then
 		# ecrit Xml - Html -> last version
 		# java MergeXML "mutatedCode/target/surefire-reports/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
 		# ecrit XML
-		java MergeXML "mutatedCode/target/surefire-reports/" $2 $3 "mutatedCode/xmlResult/"
+		java MergeXML "mutatedCode/target/surefire-reports/" $2 $3 "./xmlResult/"
 
 		
 		echo -e "\n \n"
@@ -59,7 +59,7 @@ if [ $? -eq 0 ]; then
 		
 	else
 		cd ..
-		java CreateXML $2 $3 "mutatedCode/xmlResult/"
+		java CreateXML $2 $3 "./xmlResult/"
 	    echo COMPILATION OF MUTATED PROJECT FAILED
 	    echo ./EcrireCompilation "FAIL" 
 	      # ./EcrireCompilation "FAIL"

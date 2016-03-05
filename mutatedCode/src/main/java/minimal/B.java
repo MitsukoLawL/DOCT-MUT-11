@@ -2,7 +2,7 @@ package minimal;
 public class B extends minimal.A {
     int calc() {
         a = 4;
-        int b = 3 + 5;
+        int b = 3 / 5;
         return (a) * 4;
     }
 
@@ -17,6 +17,6 @@ public class B extends minimal.A {
         do {
             ai--;
         } while (ai > 0 );
-        return i / ai;
+        return i + ai;
     }
 }
