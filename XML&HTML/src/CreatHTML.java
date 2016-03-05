@@ -8,7 +8,11 @@
 //import org.jdom.output.Format;
 //import org.jdom.output.XMLOutputter;
 
-import org.w3c.dom.*;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -24,21 +28,22 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MergeXML {
+public class CreatHTML {
 
     public static void main(String[] args) {
         /**
-         * Liste des argumments necessaire
-         * 0 dossier contenant les .xml
-         * 1 l'operateur de mutation appliqué
-         * 2 le selecteur appliqué
-         * 3 repértoire destination
          *
-         * */
-
+         * * Liste des argumments necessaire
+         *
+         * 0 dossier contenant .xml
+         * 1 html destination (nom compris)
+         * 2 xsl
+         */
+        String xsl = args[2];
         try {
-            Merge(getAllXML(args[0], ".\\.xml" ), args[0], args[1], args[2], args[3]);
+            String xmlFile = testMerge(getAllXML(args[0], ".\\.xml" ), args[0]);
             //TODO chimin du html
+            traitement(xmlFile ,args[1], xsl);
         } catch (TransformerException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -69,23 +74,22 @@ public class MergeXML {
         return listeFichiers;
     }
 
-    public static String Merge(List<String> allXML, String path, String op, String select, String resultPath ) throws TransformerException, IOException, SAXException, ParserConfigurationException {
-        String fileName = resultPath + op +"-"+select +".xml ";
-        //System.out.println(allXML.toString());
+    public static String testMerge(List<String> allXML, String path) throws TransformerException, IOException, SAXException, ParserConfigurationException {
+        System.out.println(allXML.toString());
         String fileresult = allXML.get(0);
-        //System.out.println(fileresult);
+        System.out.println(fileresult);
         allXML.remove(0);
         DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
         domFactory.setIgnoringComments(true);
         DocumentBuilder builder = domFactory.newDocumentBuilder();
         Document doc = builder.parse(new File(path + fileresult));
-        //System.out.println(doc.toString());
-        NodeList nodes = doc.getElementsByTagName("testcase");
+        System.out.println(doc.toString());
+        NodeList nodes = doc.getElementsByTagName("Mutation");
 
         for(String tmp : allXML) {
             Document doc1 = builder.parse(new File(path + tmp));
 
-            NodeList nodes1 = doc1.getElementsByTagName("testcase");
+            NodeList nodes1 = doc1.getElementsByTagName("Mutation");
 
             for (int i = 0; i < nodes1.getLength(); i = i + 1) {
 
@@ -95,16 +99,6 @@ public class MergeXML {
             }
         }
 
-        Element nElem = doc.createElement("Mutation");
-        nElem.setAttribute("operateur", op );
-        nElem.setAttribute("selecteur", select );
-        nodes.item(0).getParentNode().insertBefore(nElem, nodes.item(0));
-
-        for(int i = 0; i < nodes.getLength(); i++){
-            nElem.appendChild(nodes.item(i));
-        }
-
-
         Transformer transformer = TransformerFactory.newInstance().newTransformer();
         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 
@@ -112,7 +106,7 @@ public class MergeXML {
         DOMSource source = new DOMSource(doc);
         transformer.transform(source, result);
         Writer output = null;
-        output = new BufferedWriter(new FileWriter(fileName));
+        output = new BufferedWriter(new FileWriter(path + fileresult));
         String xmlOutput = result.getWriter().toString();
         output.write(xmlOutput);
         output.close();

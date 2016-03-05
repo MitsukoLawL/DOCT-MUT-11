@@ -1,5 +1,17 @@
 #!/bin/bash
 
+
+# compilation de la classe, pendant la phase d'implementation, risque d'etre modifiée
+cd XML\&HTML/src
+#Create a XML to save op and selec
+javac *.java
+
+mv MergeXML.class ../../
+mv CreatHTML.class ../../
+mv CreateXML.class ../../
+cd ../../ 
+
+
 cd spoonProcess
 
 mvn compile
@@ -10,29 +22,35 @@ if [ $? -eq 0 ]; then
 	cd ..
 
 	cd mutatedCode
-
+	
 	DIR="./target/classes"
 
 	mvn clean compile
 
+
 	if [ $? -eq 0 ]; then
+		# java CreateXML $2 $3 "mutatedCode/xmlResult/"
+		
+		cd mutatedCode
 		mvn test
 		# ./EcrireCompilation "SUCCESS"	
 
 		# ecrit html
 		cd ..
 
-		# compilation de la classe, pendant la phase d'implementation, risque d'etre modifiée
-		cd XML\&HTML/src
+		# # compilation de la classe, pendant la phase d'implementation, risque d'etre modifiée
+		# cd XML\&HTML/src
 
-		javac MergeXML.java
+		# javac *.java
 
-		mv MergeXML.class ../../
-		cd ../../ 
+		# mv MergeXML.class ../../
+		# mv CreatHTML.class ../../
+		# mv CreateXML.class ../../
+		# cd ../../ 
 		# ecrit Xml - Html -> last version
-		java MergeXML "mutatedCode/target/surefire-reports/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
+		# java MergeXML "mutatedCode/target/surefire-reports/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
 		# ecrit XML
-		#java MergeXML "mutatedCode/target/surefire-reports/" $2 $3 "mutatedCode/xmlResult/"
+		java MergeXML "mutatedCode/target/surefire-reports/" $2 $3 "mutatedCode/xmlResult/"
 
 		
 		echo -e "\n \n"
@@ -40,6 +58,8 @@ if [ $? -eq 0 ]; then
 		echo "YOU WILL FIND THE REPORT ON report/index.html"
 		
 	else
+		cd ..
+		java CreateXML $2 $3 "mutatedCode/xmlResult/"
 	    echo COMPILATION OF MUTATED PROJECT FAILED
 	    echo ./EcrireCompilation "FAIL" 
 	      # ./EcrireCompilation "FAIL"

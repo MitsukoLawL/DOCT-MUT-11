@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite>
+<Mutation operateur="Op1" selecteur="100">
+<testcase compilation="compilation.error"/>
+</Mutation>
+</testsuite>

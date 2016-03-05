@@ -2,8 +2,6 @@
          
 # until [ -d "./spoonProcess/$folderSource" ]; do
 until [ ! -z $folderSource ]; do
-   echo "toBeMutated/ by default"
-   $folderSource = "toBeMutated/"
    read -p "Please, enter your folder Source: " folderSource
 done
 while true; do
@@ -28,5 +26,6 @@ while true; do
 done
 
 #createHTML "mutatedCode/xmlResult/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
+java CreatHTML "mutatedCode/xmlResult/" "./Report/index.html" "./XML&HTML/test.xsl"
 
 echo -e "\n \n Author : Alicia Marin \n Fernandes Felipe \n Dahmoul Salah"

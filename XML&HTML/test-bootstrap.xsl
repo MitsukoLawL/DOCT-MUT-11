@@ -7,7 +7,7 @@
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
                 <meta charset="utf-8" />
-                <title>Base page</title>
+                <title>Groupe 11 - Mutation Testing</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="" />
                 <meta name="author" content="" />
@@ -22,119 +22,7 @@
                 <!-- GOOGLE FONT-->
                 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700italic,700,500&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
                 <!-- /GOOGLE FONT-->
-                <style type="text/css">
-                    body {
-                        padding-top: 0px;
-                        padding-bottom: 40px;
-                        padding-top: 0px;
-                        padding-bottom: 0px;
-                        font-family: 'Roboto', sans-serif;
-                    }
-                    
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6 {
-                        font-weight: 200;
-                    }
-                    
-                    .navbar-inverse .navbar-inner {
-                        -webkit-border-radius: 0px;
-                        -moz-border-radius: 0px;
-                        border-radius: 0px;
-                        background: #282828;
-                        border: none;
-                    }
-                    
-                    .page-header {
-                        border: none;
-                        padding: 10px 0px 0px;
-                        margin: 0px 0 0px;
-                    }
-                    
-                    .brand {
-                        margin-left: 20px;
-                        font-weight: 700;
-                    }
-                    
-                    .thumbnail {
-                        border: none;
-                        padding: 0px;
-                        -webkit-border-radius: 0px;
-                        -moz-border-radius: 0px;
-                        border-radius: 0px;
-                        -webkit-box-shadow: none;
-                        -moz-box-shadow: none;
-                        box-shadow: none;
-                        margin-bottom: 20px;
-                    }
-                    
-                    .thumbnail img {
-                        min-width: 100%;
-                        height: auto;
-                    }
-                    
-                    .well {
-                        min-height: 20px;
-                        padding: 19px;
-                        margin-bottom: 20px;
-                        -webkit-border-radius: 0px;
-                        -moz-border-radius: 0px;
-                        border-radius: 0px;
-                        -webkit-box-shadow: none;
-                        -moz-box-shadow: none;
-                        box-shadow: none;
-                    }
-                    
-                    .tab-content .tab-pane {
-                        max-height: 600px;
-                        position: relative;
-                        overflow: auto;
-                    }
-                    
-                    .fixed-top {
-                        position: fixed;
-                        top: 0px;
-                        bottom: 0px;
-                        display: inline-block;
-                        max-width: 360px;
-                        z-index: 1030;
-                    }
-                    
-                    footer {
-                        padding-top: 40px;
-                        margin-top: 40px;
-                        border-top: 1px solid #dedede;
-                    }
-                    
-                    .related-projects {
-                        padding-top: 40px;
-                        margin-top: 40px;
-                    }
-                    /*************** @media ******************/
-                    
-                    @media (max-width: 940px) {
-                        .brand {
-                            display: block;
-                            text-align: center;
-                            font-size: 26px;
-                        }
-                    }
-                    
-                    @media (max-width: 1200px) and (min-width: 940px) {
-                        .fixed-top {
-                            max-width: 300px;
-                        }
-                    }
-                    
-                    @media (max-width: 940px) and (min-width: 768px) {
-                        .fixed-top {
-                            max-width: 225px;
-                        }
-                    }
-                </style>
+                <link href="css/style.css" rel="stylesheet" />
 
                 <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
                 <link rel="shortcut icon" href="assets/ico/favicon.ico" />
@@ -226,21 +114,17 @@
                                                 <!-- ITEM-->
                                                 <div class="row">
                                                     <div class="col-sm-8 col-lg-8">
-                                                        <p>PANE#1 Graphique Nombre de Test Fail/ Nombre de test total</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
+                                                        <div id="containerHigh" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 
+                                                    </div>
                                                 </div>
                                                 <!-- / ITEM-->
                                                 <hr/>
                                                 <!-- ITEM-->
                                                 <div class="row">
                                                     <div class="col-sm-8 col-lg-8">
-                                                        <div id="containerHigh" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                                                        <p>PANE#1 Graphique Nombre de Test Fail/ Nombre de test total</p>
+
                                                     </div>
                                                     <div class="col-sm-4 col-lg-4">
                                                         <div class="thumbnail">
@@ -666,64 +550,7 @@ do not remove or change this note!
                     });
                 </script>
 
-                <script>
-                    $(function () {
-
-                        $(document).ready(function () {
-
-                            // Build the chart
-                            $('#containerHigh').highcharts({
-                                chart: {
-                                    plotBackgroundColor: null,
-                                    plotBorderWidth: null,
-                                    plotShadow: false,
-                                    type: 'pie'
-                                },
-                                title: {
-                                    text: 'Graph about [thing]'
-                                },
-                                tooltip: {
-                                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-                                },
-                                plotOptions: {
-                                    pie: {
-                                        allowPointSelect: true,
-                                        cursor: 'pointer',
-                                        dataLabels: {
-                                            enabled: false
-                                        },
-                                        showInLegend: true
-                                    }
-                                },
-                                series: [{
-                                    name: 'Brands',
-                                    colorByPoint: true,
-                                    data: [{
-                                        name: 'Microsoft Internet Explorer',
-                                        y: 56.33
-                }, {
-                                        name: 'Chrome',
-                                        y: 24.03,
-                                        sliced: true,
-                                        selected: true
-                }, {
-                                        name: 'Firefox',
-                                        y: 10.38
-                }, {
-                                        name: 'Safari',
-                                        y: 4.77
-                }, {
-                                        name: 'Opera',
-                                        y: 0.91
-                }, {
-                                        name: 'Proprietary or Undetectable',
-                                        y: 0.2
-                }]
-            }]
-                            });
-                        });
-                    });
-                </script>
+                <script src="js/highchartsfunction.js"></script>
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
