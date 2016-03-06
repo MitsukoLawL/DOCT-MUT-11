@@ -23,8 +23,8 @@ Pour autant de mutation que nous souhaitons appliquer.</p>
 <ul>
   <li>Sources Originales -> Sources mutées
   <p> Nous utilisons le processus du dossier spoonProcess. <br/>
-    <b>Localisation : spoonProcess/</b>
-    Commande : mvn compile <br/>
+    <b>Localisation : spoonProcess/</b><br/>
+    <b>Commande :</b> mvn compile <br/>
       mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"  -Dexec.args="$1 $2 $3" <br/>
 
     Input : $1 = Source, $2 = le mutant, $3 = le selecteur<br/>
@@ -35,8 +35,8 @@ Pour autant de mutation que nous souhaitons appliquer.</p>
   </li>
 
   <li>Sources mutées -> Programme muté<br/>
-  <b>Localisation : mutatedCode/</b>
-      Commande : $ mvn compile<br/>
+  <b>Localisation : mutatedCode/</b><br/>
+      <b>Commande :</b> $ mvn compile<br/>
       Compilation du programme une fois les mutants ajoutés aux sources<br/>
       S'il y a un problème de compilation, nous créons un fichier operateurX-selecteurX.xml reportant l'erreur. Mettant fin au traitement de l'itération.
     </p>
