@@ -9,8 +9,16 @@ La chaîne de production
 
 ![Chaîne de Production](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/d_build.jpg "Chaîne de Production")
 
-<p><b>Input</b> : $ mutationTest "Source" "liste de mutants" "liste de selecteurs"</p>
-<p><b>Output</b> : Une page HTML </p>
+<p><b>Input</b> : $ ./consoleInterface <br/>
+Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive
+<br/> OU<br/>
+
+$ ./execution.sh
+Où nous ajoutons les lignes <i>./process.sh "Dossier Source" "mutant" "selecteur"</i>
+Pour autant de mutation que nous souhaitons appliquer.
+</p>
+
+<p><b>Output</b> : Une page HTML se trouvant dans Report/index.html</p>
 <p><b>Transition</b></p>
 <ul>
   <li>Transition Source -> Mutation

@@ -2,10 +2,11 @@
          
 # until [ -d "./spoonProcess/$folderSource" ]; do
 until [ ! -z $folderSource ]; do
+   echo "Example : toBeMutated/"
    read -p "Please, enter your folder Source: " folderSource
 done
 while true; do
-    echo -e "\n \n Operator : Op1, Op9, Op12, Op13, Op16"
+    echo -e "List of Operators availables : Op1, Op9, Op12, Op13, Op16"
     echo "Example : Op12"
     read -p "Please, enter your operator name (exit to quit): " op
     
@@ -23,6 +24,7 @@ while true; do
        echo "\n $op $s applied"
     else echo "Wrong parameter, try again !"
     fi
+    echo -e "\n \n "
 done
 
 #createHTML "mutatedCode/xmlResult/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
