@@ -15,7 +15,7 @@ Présentation du projet
 -
 
 <p>Nous proposons un framework afin d'automatiser des testes par mutation dans le langage Java. Pour l'utiliser, il faudra passer par la ligne de commande en ajoutant comme parametre le code qui va être testé, une liste de mutations qui lui seront appliqués ainsi qu'une liste de selecteurs.
-En sortie, le framework génère des pages HTML où seront affichés les statistiques des testes réalisés. C'est-à-dire les mutations appliquées, celles qui ont été tuées. Il y aura de plus un diagramme circulaire représentant le pourcentage de mutants tués, ainsi qu'un graphiques représentant les résultats en fonction de l'itérations.</p>
+En sortie, le framework génèrera une page HTML où seront affichés les statistiques des testes réalisés. C'est-à-dire les mutations appliquées, celles qui ont été tuées. Il y aura de plus un diagramme circulaire représentant le pourcentage de mutants tués, ainsi qu'un graphiques représentant les résultats en fonction de l'itérations.</p>
 
 <p>Pour lancer le framework en ligne de commande, il faudra utiliser <b>$ ./consoleInterface</b> et suivre les indications. </p>
 <p> Il faudra préciser le chemin du dossier source à transformer, spécifier le nom de la mutation ainsi que le selecteur que l'on souhaite appliquer. </p>

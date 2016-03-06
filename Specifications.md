@@ -92,7 +92,9 @@ Les mutations
 Vous trouverez ci-dessous l'ensemble des opérateurs de mutations.  Les mutations vont modifier différents aspect de notre code, dans le but de mesurer la fragilité de nos tests. La plus part d'entre elles s’occupent d’aspects particuliers de l’orientation objet.
 Comme exemple, nous pouvons citer les aspects d’héritage, du polymorphisme, de la surcharge de méthodes, de controle d’accès, ainsi que les termes particuliers du language Java. Nous proposons aussi quelques opérateurs de mutations classiques.
 #### Note : les Opérateurs implémentés sont les Op1, Op9, Op12, Op13, Op16 #
-
+Opérateurs générant une erreur de compilation : Op1, Op9
+Opérateurs générant une erreur de test : Op12, Op13, Op16
+-
 ### Op1 (héritage et controle d’accès): #
 <p>Soit <i>A</i> une classe qui a une déclaration d’attribut <i>protected a </i>. Soit <i>B</i> une classe que hérite d’A et qui utilise l'attribut <i>a</i>. Cet opérateur propose de changer le contrôle d’accès de<i>a</i> par <i>private</i>.</p>
 
@@ -129,7 +131,7 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 <p> Nous pouvons changer les opérateurs tels que : <br/>
 "+" soit remplacé par "-", "* " ou "/"</p>
 
-### Op12 (operateurs logiques): #
+### Op13 (operateurs logiques): #
 <p> Nous pouvons changer les opérateurs tels que : <br/>
 "&&" soit remplacé par "||"</p>
 
@@ -156,7 +158,6 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 Les selecteurs
 -
 Les selecteurs que nous avons décidé d'appliquer, sont des pourcentages de la liste du total des candidats
-
 -
 <p><b>Nous pouvons par exemple</b></p>
 <ul>
