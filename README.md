@@ -27,5 +27,5 @@ En sortie, le framework génèrera une page HTML où seront affichés les statis
 <!-- <p><b> -t </b> pour appliquer toutes les mutations au programme.</p>
 <p><b> -f </b> pour appliquer une seule mutation au programme à la fois</p>
 <p><b> -c </b> pour appliquer des combinaisons spécifiques des mutations. Cette commande sera suivie par un sous-ensemble spécifié par <b> -m </b>, qui représentent une combinaison. La commande <b> -c </b> peut être répétée plusieurs fois, en symbolisant qui plusieurs combinaisons seront appliquées à la fois. </p>    -->
-<p>Exemples:</p>
+<p>Exemple:</p>
 ![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation")
