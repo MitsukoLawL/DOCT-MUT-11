@@ -3,9 +3,9 @@
 # How To #
 
 1. Mettre ses sources dans spoonProcess/toBeMutated/
-
 2. Mettre ses sources dans mutatedCode/src
 3. Mettre ses tests dans mutatedCode/test
+
 -
 ## Utilisation interactive : #
 Lancer consoleInterface.sh
