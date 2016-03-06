@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 ##############################
 ##### NE PAS ECRIRE AU DESSUS
 # Utilisation : ./process.sh "dossier à muter" "nom mutant" "pourcentage"

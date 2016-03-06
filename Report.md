@@ -31,3 +31,4 @@ Faiblesse :
 --------
 Sources dupliquées
 SpoonProcess : Un dossier peut-être un peu trop gros pour ce qu'il fait
+On ne peut appliquer au code, qu'un seul opérateur à la fois

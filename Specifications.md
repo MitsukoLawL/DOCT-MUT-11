@@ -11,29 +11,33 @@ La chaîne de production
 
 <p><b>Input</b> : $ ./consoleInterface <br/>
 Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive
+![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
 <br/> OU<br/>
 
 $ ./execution.sh
 Où nous ajoutons les lignes <i>./process.sh "Dossier Source" "mutant" "selecteur"</i>
 Pour autant de mutation que nous souhaitons appliquer.
+![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/execution.png "Exemple d'utilisation de ./execution.sh")
 </p>
 
 <p><b>Output</b> : Une page HTML se trouvant dans Report/index.html</p>
 <p><b>Transition</b></p>
 <ul>
-  <li>Transition Source -> Mutation
-    <p>Input : Source, liste de mutants, liste de selecteurs<br/>
-    Commande :<br/>
-    Application des mutations et selecteurs au programme <br/>
+  <li>Sources Origianles -> Sources mutées
+  <p> Nous utilisons le processus du dossier spoonProcess. <br/>
+
+    Commande :  cd spoonProcess <br/>
+      mvn compile <br/>
+      mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"  -Dexec.args="$1 $2 $3" <br/>
+
+    Input : $1 = Source, $2 = le mutant, $3 = le selecteur<br/>
+
+    Output : Les fichiers java mutés se trouveront dans le dossier mutatedCode/src <br/>
     </p>
     <p>Outil : Utilisation de spoon</p>
-    <ul>
-      <li>mutations</li>
-      <li>selecteurs</li>
-    </ul>
   </li>
 
-  <li>Transition Mutation -> Programme muté<br/>
+  <li>Sources mutées -> Programme muté<br/>
     <p>
       Commande : $ mvn compile<br/>
       Compilation du programme une fois les mutants ajoutés aux sources
