@@ -77,7 +77,7 @@ Les outils utilisés
   <li>XML files</li>
   <p> Résultats du $ mvn test et création à l'aide d'une fonction java si le mvn compile a généré une erreur</p>
   <li>HTML file</li>
-  <p>Le rapport basé sur l'analyse des résultats des fichiers XML. Utilisattion de Bootstrap, Highcharts, JQueries</p>
+  <p>Le rapport basé sur l'analyse des résultats des fichiers XML dans xmlResult/. Utilisattion de Bootstrap, Highcharts, JQueries</p>
   <li>XSLT</li>
   <p>Ce qui va faire la transformation du XML en HTML</p>
   <li>Script Shell</li>
