@@ -12,13 +12,12 @@ La chaîne de production
 <p><b>Input</b> : $ ./consoleInterface <br/>
 Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive</p>
 ![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
-
+<p>Lorsqu'on entrera "exit", cela mettra fin au traitement de mutant et un HTML sera généré</p>
 <p><br/> <b>OU</b><br/>
 $ ./execution.sh
 Où nous ajoutons les lignes <i>./process.sh "Dossier Source" "mutant" "selecteur"</i>
 Pour autant de mutation que nous souhaitons appliquer.</p>
 ![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/execution.png "Exemple d'utilisation de ./execution.sh")
-
 <p><b>Output</b> : Une page HTML se trouvant dans Report/index.html</p>
 <p><b>Transition</b></p>
 <ul>
@@ -49,10 +48,10 @@ Pour autant de mutation que nous souhaitons appliquer.</p>
   Il faut avoir placer nos test unitaires de notre projet dans mutatedCode/test/
     Outil : JUnit</p>
   </li>
-  <li>Transition Test -> XML
+  <li>Transition Test -> XML des test
     <p>Un fichier .xml par test est généré dans le dossier mutatedCode/target/surefire-reports</p>
   </li>
-  <li>XML -> XML Par itération
+  <li>XML des test -> XML Par itération
     <p>Les fichiers XML se trouvant dans mutatedCode/target/surefire-reports sont fusionné dans un fichier xmlResult/operateurX-selecteurX.xml <br/>
     Chaque fichier représente une itération</p>
   </li>
@@ -68,23 +67,21 @@ Les outils utilisés
 
 <ul>
   <li>Maven</li>
-  <p> Utilisé dans certaine étape de la production du programme </p>
+  <p> Utilisé pour executer le processus de mutation (/spoonProcess), et pour compiler et lancer les tests du projet muté</p>
   <li>Java</li>
-  <p>Utilisé pour écrire notre programme source</p>
+  <p>Notre processus de mutation ainsi que le programme source</p>
   <li>JUnit</li>
-  <p> Utilisé pour les tests </p>
+  <p> Test du programme sources, qui doivent être placé dans mutatedCode/test</p>
   <li>Spoon</li>
-  <p> Utilisé pour appliquer les mutations et les selecteurs au programme source</p>
+  <p> Utilisé pour appliquer les mutations et les selecteurs au programme source (programme spoonProcess/)</p>
   <li>XML files</li>
-  <p> Résultats du $ mvn test </p>
-  <li>HTML files</li>
-  <p>Le rapport basé sur l'analyse des résultats des fichiers XML</p>
+  <p> Résultats du $ mvn test et création à l'aide d'une fonction java si le mvn compile a généré une erreur</p>
+  <li>HTML file</li>
+  <p>Le rapport basé sur l'analyse des résultats des fichiers XML. Utilisattion de Bootstrap, Highcharts, JQueries</p>
   <li>XSLT</li>
   <p>Ce qui va faire la transformation du XML en HTML</p>
-  <li>Sonar</li>
-  <p>Plugin de maven, qui va nous aider à analyser le code</p>
   <li>Script Shell</li>
-  <p>Ce qui va executer tout le processus </p>
+  <p>Ce qui va executer tout le processus</p>
 </ul>
 
 -
@@ -94,6 +91,7 @@ Les mutations
 
 Vous trouverez ci-dessous l'ensemble des opérateurs de mutations.  Les mutations vont modifier différents aspect de notre code, dans le but de mesurer la fragilité de nos tests. La plus part d'entre elles s’occupent d’aspects particuliers de l’orientation objet.
 Comme exemple, nous pouvons citer les aspects d’héritage, du polymorphisme, de la surcharge de méthodes, de controle d’accès, ainsi que les termes particuliers du language Java. Nous proposons aussi quelques opérateurs de mutations classiques.
+#### Note : les Opérateurs implémentés sont les Op1, Op9, Op12, Op13, Op16 #
 
 ### Op1 (héritage et controle d’accès): #
 <p>Soit <i>A</i> une classe qui a une déclaration d’attribut <i>protected a </i>. Soit <i>B</i> une classe que hérite d’A et qui utilise l'attribut <i>a</i>. Cet opérateur propose de changer le contrôle d’accès de<i>a</i> par <i>private</i>.</p>
