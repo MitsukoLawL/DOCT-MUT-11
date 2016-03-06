@@ -10,50 +10,55 @@ La chaîne de production
 ![Chaîne de Production](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/d_build.jpg "Chaîne de Production")
 
 <p><b>Input</b> : $ ./consoleInterface <br/>
-Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive
+Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive</p>
 ![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
-<br/> OU<br/>
 
+<p><br/> <b>OU</b><br/>
 $ ./execution.sh
 Où nous ajoutons les lignes <i>./process.sh "Dossier Source" "mutant" "selecteur"</i>
-Pour autant de mutation que nous souhaitons appliquer.
+Pour autant de mutation que nous souhaitons appliquer.</p>
 ![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/execution.png "Exemple d'utilisation de ./execution.sh")
-</p>
 
 <p><b>Output</b> : Une page HTML se trouvant dans Report/index.html</p>
 <p><b>Transition</b></p>
 <ul>
-  <li>Sources Origianles -> Sources mutées
+  <li>Sources Originales -> Sources mutées
   <p> Nous utilisons le processus du dossier spoonProcess. <br/>
-
-    Commande :  cd spoonProcess <br/>
-      mvn compile <br/>
+    <b>Localisation : spoonProcess/</b>
+    Commande : mvn compile <br/>
       mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"  -Dexec.args="$1 $2 $3" <br/>
 
     Input : $1 = Source, $2 = le mutant, $3 = le selecteur<br/>
 
     Output : Les fichiers java mutés se trouveront dans le dossier mutatedCode/src <br/>
     </p>
-    <p>Outil : Utilisation de spoon</p>
+    <p>Outils : Executable java, utilisant spoon, appelé par du shell</p>
   </li>
 
   <li>Sources mutées -> Programme muté<br/>
-    <p>
+  <b>Localisation : mutatedCode/</b>
       Commande : $ mvn compile<br/>
-      Compilation du programme une fois les mutants ajoutés aux sources
+      Compilation du programme une fois les mutants ajoutés aux sources<br/>
+      S'il y a un problème de compilation, nous créons un fichier operateurX-selecteurX.xml reportant l'erreur. Mettant fin au traitement de l'itération.
     </p>
   </li>
 
-  <li>Transition Programme muté -> Test
+  <li>Transition Programme muté -> Tests unitaires
+  <b>Localisation : mutatedCode/</b>
   <p>Commande : $ mvn test<br/>
+  Il faut avoir placer nos test unitaires de notre projet dans mutatedCode/test/
     Outil : JUnit</p>
   </li>
   <li>Transition Test -> XML
-    <p>Un fichier .xml par test</p>
+    <p>Un fichier .xml par test est généré dans le dossier mutatedCode/target/surefire-reports</p>
+  </li>
+  <li>XML -> XML Par itération
+    <p>Les fichiers XML se trouvant dans mutatedCode/target/surefire-reports sont fusionné dans un fichier xmlResult/operateurX-selecteurX.xml <br/>
+    Chaque fichier représente une itération</p>
   </li>
   <li>Transition XML -> HTML
-    <p>Regroupe tous les fichiers .XML de toutes les itérations en une page HTML<br/>
-    Outil : XSLT, Sonar<br/>
+    <p>Fusionne tous les fichiers xmlResult/operateurX-selecteurX.xml et génère une  page Report/index.html<br/>
+    Outil : XSLT, Java<br/>
   </li>
 </ul>
 -
