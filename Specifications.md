@@ -155,12 +155,13 @@ Cet opérateur de mutation propose d’enlever le mot clé  <i>this </i>. </p>
 
 Les selecteurs
 -
-Il existe plusieurs manières d'appliquer des mutations au programme.
+Les selecteurs que nous avons décidé d'appliquer, sont des pourcentages de la liste du total des candidats
 
 -
-<p><b>Nous pouvons</b></p>
+<p><b>Nous pouvons par exemple</b></p>
 <ul>
-<li>Appliquer toutes les mutations au programme (<b>N</b> mutants pour <b>1</b> itération)</li>
-<li>Appliquer une seule mutation au programme à la fois (<b>1</b> mutant <b>N</b> itération)</li>
-<li>Appliquer un ensemble de mutations au programme (<b>m</b> mutants pour <b>m'</b> itérations)</li>
+<li>Appliquer 100% des candidats au programme </li>
+<li>Appliquer 80% des candidats au programme </li>
+<li>Appliquer 50% des candidats au programme </li>
+<li>....</li>
 </ul>
