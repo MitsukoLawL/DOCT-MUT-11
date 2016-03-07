@@ -3,7 +3,6 @@ $(function () {
     var mutantT = $('#mutantT').text();
     var mutantV = $('#mutantV').text();
     var mutantMN = $('#mutantMN').text();
-    console.log(mutantT);
 
     $(document).ready(function () {
 

@@ -6,10 +6,11 @@
 
 ./process.sh toBeMutated/ Op1 100
 ./process.sh toBeMutated/ Op12 100
+./process.sh toBeMutated/ Op12 50
 
-# ./process.sh toBeMutated/ Op12 50
-# ./process.sh toBeMutated/ Op9 100
-# ./process.sh toBeMutated/ Op13 100
+./process.sh toBeMutated/ Op16 100
+./process.sh toBeMutated/ Op9 100
+./process.sh toBeMutated/ Op13 100
 
 ##### NE PAS ECRIRE EN DESSOUS
 ##############################

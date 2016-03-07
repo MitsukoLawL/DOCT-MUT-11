@@ -56,7 +56,9 @@ public class CreateXML {
         nElem.setAttribute("operateur", op );
         nElem.setAttribute("selecteur", select );
         Element childE = doc.createElement("testcase");
-        childE.setAttribute("compilation", "compilation.error");
+        Element childR = doc.createElement("error");
+        childR.setTextContent("compilation error");
+        childE.appendChild(childR);
         nElem.appendChild(childE);
         rootElement.appendChild(nElem);
 
