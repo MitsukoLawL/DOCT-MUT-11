@@ -92,8 +92,8 @@
                                 <div class="well">
                                     <div class="tabbable">
                                         <ul class="nav nav-tabs">
-                                            <li class="active"><a href="#1" data-toggle="tab">Popular</a></li>
-                                            <li><a href="#2" data-toggle="tab">Latest</a></li>
+                                            <li class="active"><a href="#1" data-toggle="tab">Graphe</a></li>
+                                            <li><a href="#2" data-toggle="tab">Graphe</a></li>
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="1">
@@ -106,24 +106,6 @@
                                                 <!-- / ITEM-->
                                                 <hr/>
                                             </div>
-                                            <div class="tab-pane" id="2">
-                                                <!-- ITEM-->
-                                                <div class="row">
-                                                    <div class="col-sm-8 col-lg-8">
-                                                        <p>PANE#2 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                    </div>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <div class="thumbnail">
-                                                            <img class="img-responsive" src="images/thumb.png" alt="post image" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- / ITEM-->
-                                                <hr/>
-                                            </div>
-
-                                        </div>
                                     </div>
                                     <!-- /TABS-->
                                 </div>
@@ -152,7 +134,7 @@
                                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                                     <xsl:for-each select="Mutation">
                                         <div class="row">
-                                        <h2 class="iter"><xsl:value-of select="@operateur"/>-<xsl:value-of select="@selecteur"/> :</h2>
+                                        <h2 class="iter"><xsl:value-of select="@operateur"/>-<xsl:value-of select="@selecteur"/>% :</h2>
                                         <table class="table table-striped table-bordered table-hover">
                                             <tr class="success">
                                                 <thead>
