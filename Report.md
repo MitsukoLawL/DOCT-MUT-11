@@ -7,7 +7,7 @@ Architecture
 Représentation de la chaîne de production
 ![Execution](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/mutationTesting.png "Dessin représentant une execution")
 
-Le framework est divisé en plusieurs parties
+<b>Le framework est divisé en plusieurs parties que nous allons décrire ci-dessous</b>
 ### SpoonProcess/ ##
 Processus de modification du code dans toBeMutated/
 Composé d'un Main.java et de classes d'opérateurs de mutation.
@@ -55,7 +55,7 @@ Pour relier chaque parties du framework, nous utilisons des scripts shell.
 
 Force :
 --------
-Processus détaché/indépendant du projet à tester.
+Processus de transformation est indépendant du projet à tester.
 
 Faiblesse :
 --------
