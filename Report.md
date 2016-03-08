@@ -41,18 +41,18 @@ De plus, ces chiffres sont accompagnés de deux graphes (Highcharts) afin d'illu
 ### Bash ##
 Pour relier chaque parties du framework, nous utilisons des scripts shell.
 <ul>
-<li>./process.sh [dossier Source] [Operation] [Selecteur]
-<br/>Qui permettra de faire tout le process depuis toBeMutated/ à xmlResult/ (cf Dessin)
-</li>
-<li> $ ./consoleInterface <br/>
-Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive
-![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
-Lorsqu'on entrera "exit", cela mettra fin au traitement de mutant et un HTML sera généré (grâce à l'appel de la fonction CreatHTML.java)</li>
-<li> $ ./execution.sh
-Où nous ajoutons les lignes <i>./process.sh "Dossier Source" "mutant" "selecteur"</i>
-Pour autant de mutation que nous souhaitons appliquer.
-![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/execution.png "Exemple d'utilisation de ./execution.sh")
-Après le dernier traitement de mutant, un HTML est généré (grâce à l'appel de la fonction CreatHTML.java)</li>
+    <li>./process.sh [dossier Source] [Operation] [Selecteur]
+    <br/>Qui permettra de faire tout le process depuis toBeMutated/ à xmlResult/ (cf Dessin)
+    </li>
+    <li> $ ./consoleInterface <br/>
+        Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive</li>
+        ![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
+        <p>Lorsqu'on entrera "exit", cela mettra fin au traitement de mutant et un HTML sera généré (grâce à l'appel de la fonction CreatHTML.java)</p>
+    <li> $ ./execution.sh
+        Où nous ajoutons les lignes <i>./process.sh "Dossier Source" "mutant" "selecteur"</i>
+        Pour autant de mutation que nous souhaitons appliquer.</li>
+        ![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/execution.png "Exemple d'utilisation de ./execution.sh")
+        <p>Après le dernier traitement de mutant, un HTML est généré (grâce à l'appel de la fonction CreatHTML.java)</p>
 
 </ul>
 
