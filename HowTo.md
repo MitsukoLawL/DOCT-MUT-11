@@ -4,17 +4,22 @@
   de config, lancer mon script avec machin comme param, et pouf tu regardes le report)-->
 # How To #
 
-1. Mettre ses sources dans spoonProcess/toBeMutated/
-2. Mettre ses sources dans mutatedCode/src
-3. Mettre ses tests dans mutatedCode/test
+1. Déposer ses sources dans <b>spoonProcess/toBeMutated/</b>
+2. Déposer ses sources dans <b>mutatedCode/src</b>
+3. Ajouter son projet en entier dans <b>mutatedCode/</b>
+    1. Ajouter ses tests dans <b>mutatedCode/test/</b>
+    2. Ajouter son fichier <b>POM.xml</b>
+    3. Ajouter les fichiers complémentaires
 
 -
 ## Utilisation interactive : #
 Lancer consoleInterface.sh
+![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
 
 ## Utilisation script : #
 Ecrire les mutations à executer dans ./execution.sh.
-Lancer execution.sh
+Lancer execution.sh![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/execution.png "Exemple d'utilisation de ./execution.sh")
+
 
 Les opérateurs disponibles sont <b>Op1, Op9, Op12, Op13, Op16,</b> (la description est dans Specifications.md). <br/>
 Les deux opérateurs qui suffiront à tester les erreurs de test ou de compilation :
@@ -22,3 +27,6 @@ Les deux opérateurs qui suffiront à tester les erreurs de test ou de compilati
 <br/><b>Op12</b> : Transforme des opérateurs arithmétique -> Bloque au test Unitaire (mvn test)
 
 Les selecteurs sont des pourcentages, nous appliquons s% des candidats à notre projet entier.
+
+Entrez "exit" lorsque vous souhaitez arrêter les transformations, cela generera le rapport.
+Vous trouverez le rapport dans <b>Report/</b>
