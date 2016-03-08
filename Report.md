@@ -45,12 +45,12 @@ Pour relier chaque parties du framework, nous utilisons des scripts shell.
     <br/>Qui permettra de faire tout le process depuis toBeMutated/ à xmlResult/ (cf Dessin)
     </li>
     <li> $ ./consoleInterface <br/>
-        Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive</li>
+        Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive</li></ul>
         ![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
         <p>Lorsqu'on entrera "exit", cela mettra fin au traitement de mutant et un HTML sera généré (grâce à l'appel de la fonction CreatHTML.java)</p>
-    <li> $ ./execution.sh
+    <ul><li> $ ./execution.sh
         Où nous ajoutons les lignes <i>./process.sh "Dossier Source" "mutant" "selecteur"</i>
-        Pour autant de mutation que nous souhaitons appliquer.</li>
+        Pour autant de mutation que nous souhaitons appliquer.</li></ul>
         ![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/execution.png "Exemple d'utilisation de ./execution.sh")
         <p>Après le dernier traitement de mutant, un HTML est généré (grâce à l'appel de la fonction CreatHTML.java)</p>
 
