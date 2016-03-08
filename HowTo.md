@@ -1,5 +1,7 @@
 <!-- Une présentation de votre travail sous la forme d'un tutoriel a suivre. -->
-
+<!--exemples d'utilisation qui montrent le boulot (comment changer tous les + en - des classes
+ dont le nom commence par Pouet : modifier tel fichier de config, ainsi que tel autre fichier
+  de config, lancer mon script avec machin comme param, et pouf tu regardes le report)-->
 # How To #
 
 1. Mettre ses sources dans spoonProcess/toBeMutated/

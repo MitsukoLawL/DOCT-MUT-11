@@ -81,12 +81,16 @@ public class MergeXML {
         Document doc = builder.parse(new File(path + fileresult));
         //System.out.println(doc.toString());
         NodeList nodes = doc.getElementsByTagName("testcase");
+        //TODO
+        int failure = Integer.parseInt(nodes.item(0).getParentNode().getAttributes().getNamedItem("failures").getNodeValue());
+        //int failure = Integer.parseInt(((Node) doc.getElementsByTagName("testsuite"))..getAttributes().getNamedItem("failures").getNodeValue());
 
         for(String tmp : allXML) {
             Document doc1 = builder.parse(new File(path + tmp));
-
+            //TODO
+            //failure = Integer.parseInt(((Node) doc.getElementsByTagName("testsuite")).getAttributes().getNamedItem("failures").getNodeValue());
             NodeList nodes1 = doc1.getElementsByTagName("testcase");
-
+            failure += Integer.parseInt(nodes1.item(0).getParentNode().getAttributes().getNamedItem("failures").getNodeValue());
             for (int i = 0; i < nodes1.getLength(); i = i + 1) {
 
                 Node n = doc.importNode(nodes1.item(i), true);
@@ -98,6 +102,7 @@ public class MergeXML {
         Element nElem = doc.createElement("Mutation");
         nElem.setAttribute("operateur", op );
         nElem.setAttribute("selecteur", select );
+        nElem.setAttribute("failures",  ""+ failure);
         nodes.item(0).getParentNode().insertBefore(nElem, nodes.item(0));
 
         for(int i = 0; i < nodes.getLength(); i++){

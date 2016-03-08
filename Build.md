@@ -1,5 +1,7 @@
 <!-- Comment construire votre framework -->
-
+<!-- Build c'est comment construire le framework,
+le faire fonctionner (avoir ces 3 dossiers à tels endroits, compiler ce machin, avoir python d'installé, ...)
+ donc tout ce qui est nécessaire niveau techniuqe-->
 # Build #
 
 1. Mettre ses sources dans spoonProcess/toBeMutated/

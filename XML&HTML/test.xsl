@@ -7,9 +7,13 @@
         <html>
             <body>
 
+                <xsl:variable name="TotalV">
+                    <xsl:value-of select="0"/>
+                </xsl:variable>
+
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    Total Mutants tués : <span id="mutantT"><xsl:value-of select="count(//failure)"/></span>
-                        <br/> Total Mutants vivants : <span id="mutantV"><xsl:value-of select="count(//testcase) - (count(//failure) + count(//error))"/></span>
+                    Total Mutants tués : <span id="mutantT"><xsl:value-of select="count(//Mutation[@failures!='0'])"/></span>
+                        <br/> Total Mutants vivants : <span id="mutantV"><xsl:value-of select="count(//Mutation) - count(//Mutation[@failures!='0']) - count(//error) "/></span>
                         <br/> Total Mutants mort nés : <span id="mutantMN"><xsl:value-of select="count(//error)"/></span>
 
                 </div>

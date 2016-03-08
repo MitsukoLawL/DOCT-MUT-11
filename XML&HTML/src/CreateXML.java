@@ -55,6 +55,7 @@ public class CreateXML {
         Element nElem = doc.createElement("Mutation");
         nElem.setAttribute("operateur", op );
         nElem.setAttribute("selecteur", select );
+        nElem.setAttribute("errors", "1");
         Element childE = doc.createElement("testcase");
         Element childR = doc.createElement("error");
         childR.setTextContent("compilation error");
