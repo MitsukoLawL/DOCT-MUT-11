@@ -41,11 +41,12 @@ De plus, ces chiffres sont accompagnés de deux graphes (Highcharts) afin d'illu
 ### Bash ##
 Pour relier chaque parties du framework, nous utilisons des scripts shell.
 <ul>
-<li>./process.sh [dossier Source] [Operation] [Selecteur]
+<li>./process.sh [dossier Source] [Operation] [Selecteur]</li>
 <br/>Qui permettra de faire tout le process depuis toBeMutated/ à xmlResult/ (cf Dessin)
 </li>
 <li> $ ./consoleInterface <br/>
-    Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive</li></ul>
+    Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive</li>
+</ul>
 ![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
     <p>Lorsqu'on entrera "exit", cela mettra fin au traitement de mutant et un HTML sera généré (grâce à l'appel de la fonction CreatHTML.java)</p>
 <ul><li> $ ./execution.sh
