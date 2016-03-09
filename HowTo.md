@@ -26,7 +26,7 @@ Les deux opérateurs qui suffiront à tester les erreurs de test ou de compilati
 <br/><b>Op1</b> : Transforme des attributs protected en privé -> Bloque à la compilation (mvn clean compile)
 <br/><b>Op12</b> : Transforme des opérateurs arithmétique -> Bloque au test Unitaire (mvn test)
 
-Les selecteurs sont des pourcentages, nous appliquons s% des candidats à notre projet entier.
+Les selecteurs sont des pourcentages.C’est-à-dire que si on applique un sélecteur de <i>s%</i>, celui-ci prendra <i>s%</i> des éléments dans l’assemble desquels peuvent souffrir mutations dans un code. Le choix de ces éléments est aleatoire. 
 
 Entrez "exit" lorsque vous souhaitez arrêter les transformations, cela generera le rapport.
 Vous trouverez le rapport dans <b>Report/</b>
