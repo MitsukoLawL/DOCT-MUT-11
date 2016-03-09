@@ -24,7 +24,8 @@ Lancer execution.sh![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-M
 Les opérateurs disponibles sont <b>Op1, Op9, Op12, Op13, Op16,</b> (la description est dans Specifications.md). <br/>
 Les deux opérateurs qui suffiront à tester les erreurs de test ou de compilation :
 <br/><b>Op1</b> : Transforme des attributs protected en privé. Cet opérateur permettre de vérifier si les classes filles utilisent de forme correcte les attributs protecteds de la classe mère. Normalement, si la classe fille utilise bien les attributs hérités, ce mouton sera tué à la compilation (mvn clean compile), car ceux-ci ne seront plus visible à la classe fille.
-<br/><b>Op12</b> : Transforme des opérateurs arithmétique -> Bloque au test Unitaire (mvn test)
+<br/><b>Op9</b> : Si un attribut est déclaré avec le modificateur static, cet opérateur de mutation propose d’enlever ce mot-là. Cela permettra d’évaluer le comportement du système par rapport aux variables de classes et d’instance. Ce mouton peut être tué soit à la compilation soit à l’exécution des asserts. Dans le première cas, supposez qu’une classe <i>A</i> accède à une variable static <i>s</i> d’une classe <i>B</i> sans encapsulation, comme: <i>B.s</i>; cette linge dans <i>A</i> doit donner un erreur de compilation. Supposez maintenant qui la classe <i>A</i> accède à <i>s</i> à partir une méthode <i>getS()</i> non static. Cela ne donne plus erreur de compilation, mais devra donner un erreur par rapport les tests, car, probablement, na valeur de s sera sera plus la même dans le mouton. 
+<br/><b>Op12</b> : Transforme des opérateurs arithmétique -> Bloque au test Unitaire (mvn test).
 
 Les selecteurs sont des pourcentages. C'est-à-dire que si on applique un sélecteur de <i>s%</i>, celui-ci prendra <i>s%</i> des éléments dans l’assemble desquels peuvent souffrir mutations dans un code. Le choix de ces éléments est aleatoire. 
 
