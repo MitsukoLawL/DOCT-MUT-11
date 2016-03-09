@@ -23,7 +23,7 @@ Lancer execution.sh![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-M
 
 Les opérateurs disponibles sont <b>Op1, Op9, Op12, Op13, Op16,</b> (la description est dans Specifications.md). <br/>
 Les deux opérateurs qui suffiront à tester les erreurs de test ou de compilation :
-<br/><b>Op1</b> : Transforme des attributs protected en privé -> Bloque à la compilation (mvn clean compile)
+<br/><b>Op1</b> : Transforme des attributs protected en privé. Cet opérateur permettre de vérifier si les classes filles utilisent de forme correcte les attributs protecteds de la classe mère. Normalement, si la classe fille utilise bien les attributs hérités, ce mouton sera tué à la compilation (mvn clean compile), car ceux-ci ne seront plus visible à la classe fille.
 <br/><b>Op12</b> : Transforme des opérateurs arithmétique -> Bloque au test Unitaire (mvn test)
 
 Les selecteurs sont des pourcentages. C'est-à-dire que si on applique un sélecteur de <i>s%</i>, celui-ci prendra <i>s%</i> des éléments dans l’assemble desquels peuvent souffrir mutations dans un code. Le choix de ces éléments est aleatoire. 
