@@ -13,14 +13,14 @@
 
 -
 ## Utilisation interactive : #
-Lancer consoleInterface.sh
+Lancer $ ./consoleInterface.sh
 ![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
 
 ## Utilisation script : #
-Ecrire les mutations à executer dans ./execution.sh.
+Ecrire les mutations à executer dans $ ./execution.sh.
 Lancer execution.sh![Exemple execution.sh](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/execution.png "Exemple d'utilisation de ./execution.sh")
 
-
+#### Opérateurs disponibles #
 Les opérateurs disponibles sont <b>Op1, Op9, Op12, Op13, Op16,</b> (la description est dans Specifications.md). <br/>
 Les deux opérateurs qui suffiront à tester les erreurs de test ou de compilation :
 <br/><b>Op1</b> : Transforme des attributs protected en privé. Cet opérateur permettre de vérifier si les classes filles utilisent de forme correcte les attributs protected de la classe mère. Normalement, si la classe fille utilise bien les attributs hérités, ce mutant sera tué à la compilation (mvn clean compile), car ceux-ci ne seront plus visible à la classe fille.
@@ -30,7 +30,14 @@ Les deux opérateurs qui suffiront à tester les erreurs de test ou de compilati
 <br/><b>Op16</b> : Cet opérateur de mutation remplace les opérateurs d’incrémentation, 
 vers l’opérateur de décrémentation correspondant, en prenant compte des formes préfixée et suffixée. C’est-à-dire, si l’incrémentation est fait comme avec la forme <i>++x</i>, le résultat est <i>--x</i>. Ce mutant est chargé de identifier des inconsistances avec les variables dans les itérations des boucles (qui souvent peut se devenir infinie). Il doit être tué dans les tests d’execution, nous avons ajouté l'annotation timeout afin de gérer les boucles infinies potentielles. 
 
+#### Selecteurs #
 Les <b>selecteurs</b> sont des pourcentages. C'est-à-dire que si on applique un sélecteur de <i>s%</i>, celui-ci prendra <i>s%</i> des éléments dans l’ensemble des candidats pouvant être mutés pour cet opérateur. Le choix de ces éléments est aléatoire. 
 
-Entrez "exit" lorsque vous souhaitez arrêter les transformations, cela generera le rapport.
+#### Générer le rapport #
+<ul>
+<li>Si vous utilisez $ ./consoleInterface.sh <br/>
+Entrez "exit" lorsque vous souhaitez arrêter les transformations, cela generera le rapport.</li>
+<li>Si vous utilisez $ ./execution.sh <br/>
+Le rapport sera généré automatiquement</li>
+</ul>
 Vous trouverez le rapport dans <b>Report/</b>
