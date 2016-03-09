@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="minimal.DoSomeActionTest" skipped="0" tests="3" time="0.005">
+<testsuite errors="0" failures="0" name="minimal.TestC" skipped="0" tests="1" time="0.078">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.73-b02"/>
-    <property name="gopherProxySet" value="false"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.74-b02"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
@@ -14,58 +13,150 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/islamefelipefernandes/Desktop/Velho/DOCT-MUT-11/mutatedCode"/>
-    <property name="java.runtime.version" value="1.8.0_73-b02"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="basedir" value="/Users/islamefelipefernandes/Desktop/Velho/DOCT-MUT-11/mutatedCode"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/"/>
+    <property name="user.dir" value="/home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode"/>
+    <property name="java.runtime.version" value="1.8.0_74-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="basedir" value="/home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value=" "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
+    <property name="os.name" value="Linux"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/islamefelipefernandes/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="surefire.test.class.path" value="/Users/islamefelipefernandes/Desktop/Velho/DOCT-MUT-11/mutatedCode/target/test-classes:/Users/islamefelipefernandes/Desktop/Velho/DOCT-MUT-11/mutatedCode/target/classes:/Users/islamefelipefernandes/.m2/repository/fr/inria/gforge/spoon/spoon-core/4.4.0/spoon-core-4.4.0.jar:/Users/islamefelipefernandes/.m2/repository/org/eclipse/jdt/org.eclipse.jdt.core/3.12.0.v20150913-1717/org.eclipse.jdt.core-3.12.0.v20150913-1717.jar:/Users/islamefelipefernandes/.m2/repository/com/martiansoftware/jsap/2.1/jsap-2.1.jar:/Users/islamefelipefernandes/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/islamefelipefernandes/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/Users/islamefelipefernandes/.m2/repository/org/mdkt/compiler/InMemoryJavaCompiler/1.2/InMemoryJavaCompiler-1.2.jar:/Users/islamefelipefernandes/.m2/repository/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0.jar:/Users/islamefelipefernandes/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar:"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="surefire.test.class.path" value="/home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode/target/test-classes:/home/mitsuko/Documents/DevOps/DOCT-MUT-GitHub-11/mutatedCode/target/classes:/home/mitsuko/.m2/repository/fr/inria/gforge/spoon/spoon-core/4.4.0/spoon-core-4.4.0.jar:/home/mitsuko/.m2/repository/org/eclipse/jdt/org.eclipse.jdt.core/3.12.0.v20150913-1717/org.eclipse.jdt.core-3.12.0.v20150913-1717.jar:/home/mitsuko/.m2/repository/com/martiansoftware/jsap/2.1/jsap-2.1.jar:/home/mitsuko/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/mitsuko/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/home/mitsuko/.m2/repository/org/mdkt/compiler/InMemoryJavaCompiler/1.2/InMemoryJavaCompiler-1.2.jar:/home/mitsuko/.m2/repository/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0.jar:/home/mitsuko/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar:"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.10.3"/>
+    <property name="os.version" value="3.13.0-74-generic"/>
     <property name="gumtree.match.gt.minh" value="1"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/islamefelipefernandes"/>
+    <property name="user.home" value="/home/mitsuko"/>
     <property name="user.timezone" value=""/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="islamefelipefernandes"/>
-    <property name="java.class.path" value="/Users/islamefelipefernandes/.m2/repository/org/apache/maven/surefire/surefire-booter/2.5/surefire-booter-2.5.jar:/Users/islamefelipefernandes/.m2/repository/org/apache/maven/surefire/surefire-api/2.5/surefire-api-2.5.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="mitsuko"/>
+    <property name="java.class.path" value="/home/mitsuko/.m2/repository/org/apache/maven/surefire/surefire-booter/2.5/surefire-booter-2.5.jar:/home/mitsuko/.m2/repository/org/apache/maven/surefire/surefire-api/2.5/surefire-api-2.5.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.SurefireBooter /var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/surefire5587929809051691400tmp /var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/surefire6550000837634409475tmp"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.SurefireBooter /tmp/surefire5225368971903125213tmp /tmp/surefire1925942355540343603tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="fr"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_73"/>
-    <property name="java.ext.dirs" value="/Users/islamefelipefernandes/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/classes"/>
+    <property name="java.version" value="1.8.0_74"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="localRepository" value="/Users/islamefelipefernandes/.m2/repository"/>
+    <property name="localRepository" value="/home/mitsuko/.m2/repository"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <Mutation failures="1" operateur="Op12" selecteur="50">
+  <Mutation failures="0" operateur="Op12" selecteur="50">
+<testcase classname="minimal.TestC" name="testSum" time="0.005"/>
 <testcase classname="minimal.DoSomeActionTest" name="testIsThisReallyTrue" time="0.001"/>
 <testcase classname="minimal.DoSomeActionTest" name="testSum" time="0"/>
 <testcase classname="minimal.DoSomeActionTest" name="testLopp" time="0.001"/>
-<testcase classname="minimal.TestB" name="testLoop" time="0.003">
+<testcase classname="minimal.TestB" name="testSum" time="0.001"/>
+<testcase classname="minimal.TestB" name="testLoop" time="0.002">
+    <error message="/ by zero" type="java.lang.ArithmeticException">java.lang.ArithmeticException: / by zero
+	at minimal.B.boucle(B.java:20)
+	at minimal.TestB.testLoop(TestB.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.FailOnTimeout$1.run(FailOnTimeout.java:28)
+</error>
+  </testcase>
+</Mutation>
+<Mutation failures="3" operateur="Op12" selecteur="100">
+<testcase classname="minimal.TestC" name="testSum" time="0.003"/>
+<testcase classname="minimal.DoSomeActionTest" name="testLopp" time="0.001"/>
+<testcase classname="minimal.DoSomeActionTest" name="testIsThisReallyTrue" time="0"/>
+<testcase classname="minimal.DoSomeActionTest" name="testSum" time="0.002">
+    <failure message="expected:&lt;7&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;7&gt; but was:&lt;-1&gt;
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.failNotEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:126)
+	at org.junit.Assert.assertEquals(Assert.java:470)
+	at org.junit.Assert.assertEquals(Assert.java:454)
+	at minimal.DoSomeActionTest.testSum(DoSomeActionTest.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:59)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:115)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</failure>
+  </testcase>
+<testcase classname="minimal.TestB" name="testSum" time="0.001">
+    <failure message="expected:&lt;8&gt; but was:&lt;1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8&gt; but was:&lt;1&gt;
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.failNotEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:126)
+	at org.junit.Assert.assertEquals(Assert.java:470)
+	at org.junit.Assert.assertEquals(Assert.java:454)
+	at minimal.TestB.testSum(TestB.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:59)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:115)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</failure>
+  </testcase>
+<testcase classname="minimal.TestB" name="testLoop" time="0.001">
     <failure message="expected:&lt;0&gt; but was:&lt;5&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;5&gt;
 	at org.junit.Assert.fail(Assert.java:91)
 	at org.junit.Assert.failNotEquals(Assert.java:645)
@@ -76,7 +167,7 @@
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
@@ -84,9 +175,98 @@
 	at org.junit.internal.runners.statements.FailOnTimeout$1.run(FailOnTimeout.java:28)
 </failure>
   </testcase>
-<testcase classname="minimal.TestB" name="testSum" time="0"/>
-<testcase classname="minimal.TestC" name="testSum" time="0.005"/>
 </Mutation>
-  
-  
+<Mutation failures="0" operateur="Op13" selecteur="100">
+<testcase classname="minimal.TestC" name="testSum" time="0.002"/>
+<testcase classname="minimal.DoSomeActionTest" name="testLopp" time="0.001"/>
+<testcase classname="minimal.DoSomeActionTest" name="testIsThisReallyTrue" time="0"/>
+<testcase classname="minimal.DoSomeActionTest" name="testSum" time="0"/>
+<testcase classname="minimal.TestB" name="testLoop" time="0.006"/>
+<testcase classname="minimal.TestB" name="testSum" time="0"/>
+</Mutation>
+<Mutation failures="2" operateur="Op16" selecteur="100">
+<testcase classname="minimal.TestC" name="testSum" time="0.005">
+    <failure message="expected:&lt;4&gt; but was:&lt;-4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;4&gt; but was:&lt;-4&gt;
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.failNotEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:126)
+	at org.junit.Assert.assertEquals(Assert.java:470)
+	at org.junit.Assert.assertEquals(Assert.java:454)
+	at minimal.TestC.testSum(TestC.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:59)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:115)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</failure>
+  </testcase>
+<testcase classname="minimal.DoSomeActionTest" name="testIsThisReallyTrue" time="0.002"/>
+<testcase classname="minimal.DoSomeActionTest" name="testSum" time="0.001"/>
+<testcase classname="minimal.DoSomeActionTest" name="testLopp" time="0.814">
+    <failure message="expected:&lt;10&gt; but was:&lt;2147483647&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;10&gt; but was:&lt;2147483647&gt;
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.failNotEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:126)
+	at org.junit.Assert.assertEquals(Assert.java:470)
+	at org.junit.Assert.assertEquals(Assert.java:454)
+	at minimal.DoSomeActionTest.testLopp(DoSomeActionTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.FailOnTimeout$1.run(FailOnTimeout.java:28)
+</failure>
+  </testcase>
+<testcase classname="minimal.TestB" name="testLoop" time="0.102">
+    <error message="test timed out after 100 milliseconds" type="java.lang.Exception">java.lang.Exception: test timed out after 100 milliseconds
+	at minimal.B.boucle(B.java:12)
+	at minimal.TestB.testLoop(TestB.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.FailOnTimeout$1.run(FailOnTimeout.java:28)
+</error>
+  </testcase>
+<testcase classname="minimal.TestB" name="testSum" time="0"/>
+</Mutation>
+<Mutation errors="1" operateur="Op9" selecteur="100">
+<testcase>
+<error>compilation error</error>
+</testcase>
+</Mutation>
+<Mutation errors="1" operateur="Op1" selecteur="100">
+<testcase>
+<error>compilation error</error>
+</testcase>
+</Mutation>
 </testsuite>

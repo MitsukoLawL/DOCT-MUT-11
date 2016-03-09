@@ -167,15 +167,15 @@
                                             </tbody>
                                         </table>
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8">
-                                            <p>Nb test total : <span class="totTest"><xsl:value-of select="count(testcase) - count(testcase/error)"/></span> /// Nb test success : <span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/error))"/></span></p>
+                                            <p>Nb test total : <span class="totTest"><xsl:value-of select="count(testcase)"/></span> /// Nb test success : <span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) - count(testcase/error))"/></span></p>
                                         </div>
                                     </div>
                                     </xsl:for-each>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                     <p>Total Mutants tués : <span id="mutantT"><xsl:value-of select="count(//Mutation[@failures!='0'])"/></span>
-                                        <br/> Total Mutants vivants : <span id="mutantV"><xsl:value-of select="count(//Mutation) - count(//Mutation[@failures!='0']) -  count(testcase/error) "/></span>
-                                        <br/> Total Mutants mort nés : <span id="mutantMN"><xsl:value-of select=" count(testcase/error)"/></span>
+                                        <br/> Total Mutants vivants : <span id="mutantV"><xsl:value-of select="count(//Mutation) - count(//Mutation[@failures!='0']) - count(//error) "/></span>
+                                        <br/> Total Mutants mort nés : <span id="mutantMN"><xsl:value-of select="count(//error)"/></span>
                                     </p>
                                 </div>
                             </div>
