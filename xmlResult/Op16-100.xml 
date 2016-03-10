@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="minimal.TestC" skipped="0" tests="1" time="0.073">
+<testsuite errors="0" failures="1" name="minimal.TestC" skipped="0" tests="1" time="0.061">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -41,7 +41,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.SurefireBooter /tmp/surefire2994131030167556409tmp /tmp/surefire1690224280465282334tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.SurefireBooter /tmp/surefire6672189021786926219tmp /tmp/surefire634968255644273837tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="fr"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -59,7 +59,7 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <Mutation failures="2" operateur="Op16" selecteur="100">
-<testcase classname="minimal.TestC" name="testSum" time="0.005">
+<testcase classname="minimal.TestC" name="testSum" time="0.003">
     <failure message="expected:&lt;4&gt; but was:&lt;-4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;4&gt; but was:&lt;-4&gt;
 	at org.junit.Assert.fail(Assert.java:91)
 	at org.junit.Assert.failNotEquals(Assert.java:645)
@@ -95,9 +95,9 @@
 	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
 </failure>
   </testcase>
-<testcase classname="minimal.DoSomeActionTest" name="testIsThisReallyTrue" time="0.002"/>
+<testcase classname="minimal.DoSomeActionTest" name="testIsThisReallyTrue" time="0.001"/>
 <testcase classname="minimal.DoSomeActionTest" name="testSum" time="0.001"/>
-<testcase classname="minimal.DoSomeActionTest" name="testLopp" time="0.814">
+<testcase classname="minimal.DoSomeActionTest" name="testLopp" time="0.756">
     <failure message="expected:&lt;10&gt; but was:&lt;2147483647&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;10&gt; but was:&lt;2147483647&gt;
 	at org.junit.Assert.fail(Assert.java:91)
 	at org.junit.Assert.failNotEquals(Assert.java:645)
@@ -116,7 +116,7 @@
 	at org.junit.internal.runners.statements.FailOnTimeout$1.run(FailOnTimeout.java:28)
 </failure>
   </testcase>
-<testcase classname="minimal.TestB" name="testLoop" time="0.102">
+<testcase classname="minimal.TestB" name="testLoop" time="0.101">
     <error message="test timed out after 100 milliseconds" type="java.lang.Exception">java.lang.Exception: test timed out after 100 milliseconds
 	at minimal.B.boucle(B.java:12)
 	at minimal.TestB.testLoop(TestB.java:16)

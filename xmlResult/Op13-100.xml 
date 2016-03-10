@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="minimal.TestC" skipped="0" tests="1" time="0.061">
+<testsuite errors="0" failures="0" name="minimal.TestC" skipped="0" tests="1" time="0.064">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -41,7 +41,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.SurefireBooter /tmp/surefire864104022180740852tmp /tmp/surefire1439219530235012350tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.SurefireBooter /tmp/surefire2082633165720400536tmp /tmp/surefire8295973664182543795tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="fr"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -59,11 +59,11 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <Mutation failures="0" operateur="Op13" selecteur="100">
-<testcase classname="minimal.TestC" name="testSum" time="0.002"/>
+<testcase classname="minimal.TestC" name="testSum" time="0.003"/>
+<testcase classname="minimal.DoSomeActionTest" name="testIsThisReallyTrue" time="0.001"/>
+<testcase classname="minimal.DoSomeActionTest" name="testSum" time="0.001"/>
 <testcase classname="minimal.DoSomeActionTest" name="testLopp" time="0.001"/>
-<testcase classname="minimal.DoSomeActionTest" name="testIsThisReallyTrue" time="0"/>
-<testcase classname="minimal.DoSomeActionTest" name="testSum" time="0"/>
-<testcase classname="minimal.TestB" name="testLoop" time="0.006"/>
-<testcase classname="minimal.TestB" name="testSum" time="0"/>
+<testcase classname="minimal.TestB" name="testSum" time="0.001"/>
+<testcase classname="minimal.TestB" name="testLoop" time="0"/>
 </Mutation>
 </testsuite>

@@ -10,7 +10,6 @@
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
@@ -42,6 +41,7 @@ public class CreatHTML {
         String xsl = args[2];
         try {
             String xmlFile = testMerge(getAllXML(args[0], ".\\.xml" ), args[0]);
+            System.out.println(xmlFile);
             //TODO chimin du html
             traitement(xmlFile ,args[1], xsl);
         } catch (TransformerException e) {
@@ -75,26 +75,35 @@ public class CreatHTML {
     }
 
     public static String testMerge(List<String> allXML, String path) throws TransformerException, IOException, SAXException, ParserConfigurationException {
-        System.out.println(allXML.toString());
-        String fileresult = allXML.get(0);
-        System.out.println(fileresult);
-        allXML.remove(0);
-        DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
-        domFactory.setIgnoringComments(true);
-        DocumentBuilder builder = domFactory.newDocumentBuilder();
-        Document doc = builder.parse(new File(path + fileresult));
-        System.out.println(doc.toString());
-        NodeList nodes = doc.getElementsByTagName("Mutation");
+        String fileName = "final.xml";
+        // supression du fichier s'il existe deja
+        File f = new File(path + fileName);
+        f.delete();
+
+
+
+
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+        // root elements
+        Document doc = docBuilder.newDocument();
+        Element rootElement = doc.createElement("root");
+        doc.appendChild(rootElement);
+
+
+        allXML.remove("final.xml");
 
         for(String tmp : allXML) {
-            Document doc1 = builder.parse(new File(path + tmp));
+
+
+            Document doc1 = docBuilder.parse(new File(path + tmp));
 
             NodeList nodes1 = doc1.getElementsByTagName("Mutation");
 
             for (int i = 0; i < nodes1.getLength(); i = i + 1) {
 
                 Node n = doc.importNode(nodes1.item(i), true);
-                nodes.item(i).getParentNode().appendChild(n);
+                rootElement.appendChild(n);
 
             }
         }
@@ -106,12 +115,14 @@ public class CreatHTML {
         DOMSource source = new DOMSource(doc);
         transformer.transform(source, result);
         Writer output = null;
-        output = new BufferedWriter(new FileWriter(path + fileresult));
+        output = new BufferedWriter(new FileWriter(path +fileName));
         String xmlOutput = result.getWriter().toString();
         output.write(xmlOutput);
         output.close();
+
+
         System.out.println("merge complete");
-        return path + fileresult;
+        return path + fileName;
     }
 
     public static void traitement(String xmlFile, String resultPath, String xslFile ) {

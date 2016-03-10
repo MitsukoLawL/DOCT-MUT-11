@@ -10,9 +10,6 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.*;
 
-/**
- * Created by Salah on 04/03/2016.
- */
 public class CreateXML {
 
     public static void main(String[] args) {
@@ -57,7 +54,7 @@ public class CreateXML {
         nElem.setAttribute("selecteur", select );
         nElem.setAttribute("errors", "1");
         Element childE = doc.createElement("testcase");
-        Element childR = doc.createElement("error");
+        Element childR = doc.createElement("compilation_error");
         childR.setTextContent("compilation error");
         childE.appendChild(childR);
         nElem.appendChild(childE);

@@ -2,7 +2,7 @@
 <testsuite>
 <Mutation errors="1" operateur="Op1" selecteur="100">
 <testcase>
-<error>compilation error</error>
+<compilation_error>compilation error</compilation_error>
 </testcase>
 </Mutation>
 </testsuite>

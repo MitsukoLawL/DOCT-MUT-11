@@ -59,7 +59,7 @@ Pour relier chaque parties du framework, nous utilisons des scripts shell.
 Force :
 --------
 Processus de transformation est indépendant du projet à tester.
-
+On peut ajouter des opérateurs supplémentaires assez facilement : Il suffit d'ajouter la nouvelle classe au spoonProcess, et d'ajouter cet opérateur dans la liste du Main.
 Faiblesse :
 --------
 Sources dupliquées

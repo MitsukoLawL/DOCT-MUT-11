@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-        <xsl:template match="/testsuite">
+        <xsl:template match="/root">
             <html lang="en">
 
             <head>
@@ -106,7 +106,7 @@
                                                 <!-- / ITEM-->
                                                 <hr/>
                                             </div>
-                                        </div>  
+                                        </div>
                                     </div>
                                     <!-- /TABS-->
                                 </div>
@@ -135,47 +135,49 @@
                                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                                     <xsl:for-each select="Mutation">
                                         <div class="row">
-                                        <h2 class="iter"><xsl:value-of select="@operateur"/>-<xsl:value-of select="@selecteur"/>% :</h2>
-                                        <table class="table table-striped table-bordered table-hover">
-                                            <tr class="success">
-                                                <thead>
-                                                    <th>Class</th>
-                                                    <th>TestClass</th>
-                                                    <th>Error</th>
-                                                    <th>Time</th>
-                                                </thead>
-                                            </tr>
-                                            <tbody>
-                                                <xsl:for-each select="testcase">
-                                                    <tr>
-                                                        <td>
-                                                            <xsl:value-of select="@classname" />
-                                                        </td>
-                                                        <td>
-                                                            <xsl:value-of select="@name" />
-                                                        </td>
-                                                        <td>
-                                                            <xsl:value-of select="failure/@type" />
-                                                            <xsl:value-of select="@compilation" />
-                                                        </td>
-                                                        <td>
-                                                            <xsl:value-of select="@time" />
-                                                        </td>
-                                                    </tr>
+                                            <h2 class="iter"><xsl:value-of select="@operateur"/>-<xsl:value-of select="@selecteur"/>% :</h2>
+                                            <table class="table table-striped table-bordered table-hover">
+                                                <tr class="success">
+                                                    <thead>
+                                                        <th>Class</th>
+                                                        <th>TestClass</th>
+                                                        <th>Error</th>
+                                                        <th>Time</th>
+                                                    </thead>
+                                                </tr>
+                                                <tbody>
+                                                    <xsl:for-each select="testcase">
+                                                        <tr>
+                                                            <td>
+                                                                <xsl:value-of select="@classname" />
+                                                            </td>
+                                                            <td>
+                                                                <xsl:value-of select="@name" />
+                                                            </td>
+                                                            <td>
+                                                                <xsl:value-of select="failure/@type" />
+                                                                <xsl:value-of select="@compilation" />
+                                                            </td>
+                                                            <td>
+                                                                <xsl:value-of select="@time" />
+                                                            </td>
+                                                        </tr>
 
-                                                </xsl:for-each>
-                                            </tbody>
-                                        </table>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-8">
-                                            <p>Nb test total : <span class="totTest"><xsl:value-of select="count(testcase)"/></span> /// Nb test success : <span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) - count(testcase/error))"/></span></p>
+                                                    </xsl:for-each>
+                                                </tbody>
+                                            </table>
+                                            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                                <b>Test totaux : </b> <span class="totTest"><xsl:value-of select="count(testcase)"/></span>
+                                                <b> Test success : </b><span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/></span>
+                                            </div>
                                         </div>
-                                    </div>
+
                                     </xsl:for-each>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                     <p>Total Mutants tués : <span id="mutantT"><xsl:value-of select="count(//Mutation[@failures!='0'])"/></span>
-                                        <br/> Total Mutants vivants : <span id="mutantV"><xsl:value-of select="count(//Mutation) - count(//Mutation[@failures!='0']) - count(//error) "/></span>
-                                        <br/> Total Mutants mort nés : <span id="mutantMN"><xsl:value-of select="count(//error)"/></span>
+                                        <br/> Total Mutants vivants : <span id="mutantV"><xsl:value-of select="count(//Mutation) - count(//Mutation[@failures!='0']) - count(//compilation_error) "/></span>
+                                        <br/> Total Mutants mort nés : <span id="mutantMN"><xsl:value-of select="count(//compilation_error)"/></span>
                                     </p>
                                 </div>
                             </div>
@@ -188,56 +190,14 @@
 
                             </div>
                             <!-- related projects -->
+                            <!--
                             <ul class="pager">
                                 <li class="pull-right"><a href="#">Next page ></a></li>
                             </ul>
-
+-->
                             <!-- FOOTER-->
                             <footer>
                                 <div class="row">
-                                    <!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                                        <h4 class="line3 center standart-h4title"><span>Navigation</span></h4>
-                                        <ul class="footer-links">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">project</a></li>
-                                            <li><a href="#">Elements</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                                        <h4 class="line3 center standart-h4title"><span>Useful Links</span></h4>
-                                        <ul class="footer-links">
-                                            <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-                                            <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-                                            <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-                                            <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-                                            <li><a href="http://www.bootstraptor.com">Bootstrap templates</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                                        <h4 class="line3 center standart-h4title"><span>Useful Links</span></h4>
-                                        <ul class="footer-links">
-                                            <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-                                            <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-                                            <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-                                            <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-                                            <li><a href="http://www.bootstraptor.com">Bootstrap templates</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                                        <h4 class="line3 center standart-h4title"><span>Our office</span></h4>
-                                        <address>
-			<strong>bootstraptor.com, LLC.</strong><br/>
-			<i class="fa-icon-map-marker"></i> 795 Folsom Ave, Suite 600<br/>
-			San Francisco, CA 94107<br/>
-			<i class="fa-icon-phone-sign"></i> + 4 (123) 456-7890
-		
-		</address>
-                                    </div> -->
 
                                 </div>
                                 <hr class="clearfix" />
@@ -251,15 +211,7 @@
 
                         </div>
                         <!-- /CONTENT SIDE-->
-
-
-
-
                     </div>
-
-
-
-
                 </div>
                 <!-- /container -->
                 <!--/ CONTENT -->
