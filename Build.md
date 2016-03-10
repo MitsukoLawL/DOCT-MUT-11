@@ -4,7 +4,6 @@ le faire fonctionner (avoir ces 3 dossiers à tels endroits, compiler ce machin,
  donc tout ce qui est nécessaire niveau techniuqe-->
 # Build #
 
-
 1. Déposer ses <b>sources</b> dans les <b>deux</b> répertoires :
     - <b>spoonProcess/toBeMutated/</b> <b>(**)</b>
     - <b>mutatedCode/src/main/java/</b>
@@ -21,19 +20,6 @@ le faire fonctionner (avoir ces 3 dossiers à tels endroits, compiler ce machin,
 
 -
 ### Projet testé #
-Le projet à tester devra obligatoirement être un projet <b>maven</b> (afin que l'on puisse utiliser $ mvn test), et devra contenir le plugin maven-surefire-plugin.
-
-```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>2.5</version>
-    <configuration>
-        <useSystemClassLoader>false</useSystemClassLoader>
-          <forkCount>1</forkCount>
-          <argLine>-Dgumtree.match.gt.minh=1</argLine>
-    </configuration>
-</plugin>
-```
+Le projet à tester devra obligatoirement être un projet <b>maven</b> (afin que l'on puisse utiliser $ mvn test), et devra générer des fichiers de tests .xml dans le dossier <b>mutatedCode/target/surefire-reports/</b>.
 
 Lorsque vous aurez fini ces étapes, vous pourrez vous référer à [HowTo.md](../blob/master/HowTo.md)

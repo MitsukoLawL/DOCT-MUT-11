@@ -1,0 +1,4 @@
+private static int a = 0;  =====>  private int a = 0;
+
+private static int a = 0;  =====>  private int a = 0;
+

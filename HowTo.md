@@ -4,12 +4,7 @@
   de config, lancer mon script avec machin comme param, et pouf tu regardes le report)-->
 # How To #
 
-1. Déposer ses sources dans <b>spoonProcess/toBeMutated/</b>
-2. Déposer ses sources dans <b>mutatedCode/src/main</b>
-3. Ajouter son projet en entier dans <b>mutatedCode/</b>
-    1. Ajouter ses tests dans <b>mutatedCode/src/test/</b>
-    2. Ajouter son fichier <b>POM.xml</b>
-    3. Ajouter les fichiers complémentaires
+Avant d'entammer cette procédure, veuillez vous référer à [Build.md](../blob/master/Build.md)
 
 -
 ## Utilisation interactive : #
@@ -40,4 +35,4 @@ Entrez "exit" lorsque vous souhaitez arrêter les transformations, cela generera
 <li>Si vous utilisez $ ./execution.sh <br/>
 Le rapport sera généré automatiquement</li>
 </ul>
-Vous trouverez le rapport dans <b>Report/</b>
+Vous trouverez le rapport dans <b>Report/index.html</b>

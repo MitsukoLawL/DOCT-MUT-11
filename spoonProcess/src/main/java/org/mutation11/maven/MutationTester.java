@@ -87,7 +87,6 @@ public class MutationTester<T> {
 		l.buildModel();
 
 		PrintWriter transformation = new PrintWriter(Main.result+"/"+Main.op+"-"+Main.sel+".txt", "UTF-8");
-		PrintWriter problem = new PrintWriter(Main.result+"/"+Main.op+"-"+Main.sel+"-problem.txt", "UTF-8");
 
 		int taille = l.getFactory().Package().getRootPackage()
 				.getElements(new TypeFilter(CtClass.class)).size();
@@ -138,7 +137,7 @@ public class MutationTester<T> {
 					mutants.add(klass);
 //				System.out.println(klass.toString());
 				} catch (ParentNotInitializedException e1) {
-					problem.println(origClass);
+					System.out.println("Problem with "+e.toString() + "  =====>  " + op.toString());
 				}
 
 
