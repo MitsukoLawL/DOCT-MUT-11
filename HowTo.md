@@ -4,7 +4,7 @@
   de config, lancer mon script avec machin comme param, et pouf tu regardes le report)-->
 # How To #
 
-Avant d'entammer cette procédure, veuillez vous référer à [Build.md](../blob/master/Build.md)
+Avant d'entammer cette procédure, veuillez vous référer à [Build.md](../master/Build.md)
 
 -
 ## Utilisation interactive : #

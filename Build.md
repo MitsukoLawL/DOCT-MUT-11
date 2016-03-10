@@ -3,7 +3,7 @@
 le faire fonctionner (avoir ces 3 dossiers à tels endroits, compiler ce machin, avoir python d'installé, ...)
  donc tout ce qui est nécessaire niveau techniuqe-->
 # Build #
-<b>Note:</b> Un projet d'exemple est déjà présent. Si vous souhaitez le manipuler, veuillez vous référer directement à [HowTo.md](../blob/master/HowTo.md)
+<b>Note:</b> Un projet d'exemple est déjà présent. Si vous souhaitez le manipuler, veuillez vous référer directement à [HowTo.md](../master/HowTo.md)
 
 -
 
@@ -25,4 +25,4 @@ le faire fonctionner (avoir ces 3 dossiers à tels endroits, compiler ce machin,
 ### Projet à tester #
 Le projet à tester devra obligatoirement être un projet <b>maven</b> (afin que l'on puisse utiliser $ mvn test), et devra générer des fichiers de tests .xml dans le dossier <b>mutatedCode/target/surefire-reports/</b>.
 
-Lorsque vous aurez fini ces étapes, vous pourrez vous référer à [HowTo.md](../blob/master/HowTo.md)
+Lorsque vous aurez fini ces étapes, vous pourrez vous référer à [HowTo.md](../master/HowTo.md)
