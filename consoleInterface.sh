@@ -33,9 +33,11 @@ while true; do
     else echo "Wrong parameter, try again !"
     fi
     echo -e "\n \n "
+    echo "mutations faites précédemment"
+    ls ./xmlResult/*.xml
 done
 
 #createHTML "./xmlResult/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
-java CreatHTML "./xmlResult/" "./Report/index.html" "./XML&HTML/test.xsl"
+java CreatHTML "./xmlResult/" "./Report/index.html" "./XML&HTML/test-bootstrap.xsl"
 
-echo -e "\n \n Author : Alicia Marin \n Fernandes Felipe \n Dahmoul Salah"
+echo -e "\n \n Author : \n Alicia Marin \n Fernandes Felipe \n Dahmoul Salah"

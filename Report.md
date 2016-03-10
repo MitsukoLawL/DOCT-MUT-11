@@ -47,14 +47,14 @@ Les outils que nous avons utilisé pour ce rapport son XSL, Bootstrap, Highchart
 ## Bash #
 Pour relier chaque partie du framework, nous utilisons des scripts shell.
 <ul>
-<li>./process.sh [dossier Source] [Operation] [Selecteur]</li>
+<li><b>$ ./process.sh</b> [dossier Source] [Operation] [Selecteur]</li>
 <br/>Qui permettra de faire tout le process depuis toBeMutated/ à xmlResult/ (cf Dessin)
 </li>
-<li> $ ./consoleInterface <br/>
+<li><b>$ ./consoleInterface</b> <br/>
     Qui demandera le "Dossier Source", "le mutant", "le selecteur" de facon interactive</li>
 </ul>
 ![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
-    <p>Lorsqu'on entrera "exit", cela mettra fin au traitement de mutant et un HTML sera généré (grâce à l'appel de la fonction CreatHTML.java)</p>
+    <p>Lorsque l'on entrera "exit", cela mettra fin au traitement de mutant et un HTML sera généré (grâce à l'appel de la fonction CreatHTML.java)</p>
 <ul><li> $ ./execution.sh
     Où nous ajoutons les lignes <i>./process.sh "Dossier Source" "mutant" "selecteur"</i>
     Pour autant de mutation que nous souhaitons appliquer.</li>
@@ -65,7 +65,7 @@ Pour relier chaque partie du framework, nous utilisons des scripts shell.
 #### Forces : #
 --------
 <ul>
-<li>Processus de transformation est indépendant du projet à tester.</li>
+<li>Le processus de transformation est indépendant du projet à tester.</li>
 <li>On peut ajouter des opérateurs supplémentaires assez facilement : Il suffit d'ajouter la nouvelle classe au spoonProcess, et d'ajouter cet opérateur dans la liste du Main.</li>
 </ul>
 

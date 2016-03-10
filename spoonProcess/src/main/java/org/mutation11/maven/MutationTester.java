@@ -137,7 +137,7 @@ public class MutationTester<T> {
 					mutants.add(klass);
 //				System.out.println(klass.toString());
 				} catch (ParentNotInitializedException e1) {
-					System.out.println("Problem with "+e.toString() + "  =====>  " + op.toString());
+					System.out.println("Problem with "+e.toString() + "  =====>  " + op.toString()+"<br/>");
 				}
 
 

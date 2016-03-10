@@ -3,6 +3,9 @@
 le faire fonctionner (avoir ces 3 dossiers à tels endroits, compiler ce machin, avoir python d'installé, ...)
  donc tout ce qui est nécessaire niveau techniuqe-->
 # Build #
+<b>Note:</b> Un projet d'exemple est déjà présent. Si vous souhaitez le manipuler, veuillez vous référer directement à [HowTo.md](../blob/master/HowTo.md)
+
+-
 
 1. Déposer ses <b>sources</b> dans les <b>deux</b> répertoires :
     - <b>spoonProcess/toBeMutated/</b> <b>(**)</b>
