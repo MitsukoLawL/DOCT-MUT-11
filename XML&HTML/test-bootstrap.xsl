@@ -167,8 +167,14 @@
                                                 </tbody>
                                             </table>
                                             <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-                                                <b>Test totaux : </b> <span class="totTest"><xsl:value-of select="count(testcase)"/></span>
-                                                <b> Test success : </b><span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/></span>
+                                                Tests réussis :
+                                                <b><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/></b>/
+                                                <xsl:value-of select="count(testcase)" />
+                                                <br/> Tests ratés :
+                                                <b><xsl:value-of select="count(testcase/failure)"/></b>/
+                                                <xsl:value-of select="count(testcase)" />
+                                                <div class="hidden"><b>Test totaux : </b> <span class="totTest"><xsl:value-of select="count(testcase)"/></span>
+                                                    <b> Test success : </b><span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/></span></div>
                                             </div>
                                         </div>
 
