@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite>
+<Mutation errors="1" operateur="Op9" selecteur="100">
+<testcase>
+<compilation_error>compilation error</compilation_error>
+</testcase>
+<diffs/>
+</Mutation>
+</testsuite>

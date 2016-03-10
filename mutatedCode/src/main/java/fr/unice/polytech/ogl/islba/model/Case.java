@@ -46,7 +46,7 @@ public class Case {
         for (fr.unice.polytech.ogl.islba.model.resource.Resource res : ressources) {
             amountRes = res.getAmount();
             condRes = res.getDifficulty();
-            if ((((amountRes != null) && (condRes != null)) && (amountRes.equals(amount))) || (condRes.equals(cond))) {
+            if ((((amountRes != null) || (condRes != null)) && (amountRes.equals(amount))) || (condRes.equals(cond))) {
                 possibleResources.add(res.getName());
             } 
         }

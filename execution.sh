@@ -2,11 +2,11 @@
 
 # Supprime le dossier contenant les fichiers temporaires
 # avant de demarrer le processus de mutation
-#if [ "$(ls -A xmlResult/)" ]; then
-#  cd xmlResult/
-#  rm *
-#  cd ..
-#fi
+if [ "$(ls -A xmlResult/)" ]; then
+  cd xmlResult/
+  rm *
+  cd ..
+fi
 
 
 ##############################

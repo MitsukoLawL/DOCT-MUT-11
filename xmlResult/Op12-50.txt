@@ -1,23 +1,46 @@
-(("Error in parsing the result JSONObject in command." + (getName())) + ".")=====>("Error in parsing the result JSONObject in command." + (getName())) * "."
-("Problem with Exploit.doResult" + e)=====>"Problem with Exploit.doResult" / e
-("Problem with Explore.doResult" + e)=====>"Problem with Explore.doResult" * e
-("Problem with Glimpse.toJSON" + e)=====>"Problem with Glimpse.toJSON" * e
-("Problem with Land.toJSON" + e)=====>"Problem with Land.toJSON" * e
-("Problem with Scout.doResult" + e)=====>"Problem with Scout.doResult" * e
-("Problem with Transform.doResult" + e)=====>"Problem with Transform.doResult" - e
-(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)=====>(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) - ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)
-((int)((res.getAmount()[i]) * (whatWeCanCreate.get(res))))=====>((int)((res.getAmount()[i]) - (whatWeCanCreate.get(res))))
-(numberOfExploit + 1)=====>numberOfExploit * 1
-(code * cle) + (name.hashCode())=====>(code * cle) - (name.hashCode())
-(c.getY()) * mult=====>(c.getY()) / mult
-(code * cle) + (x)=====>(code * cle) * (x)
-(coo1.getY()) + (coo2.getY())=====>(coo1.getY()) - (coo2.getY())
-(coo1.getX()) + (coo2.getX())=====>(coo1.getX()) * (coo2.getX())
-(code * cle)=====>code * cle
-(code * cle) + (men)=====>(code * cle) / (men)
-(code * cle)=====>code + cle
-(code * cle) + (MAXMEN)=====>(code * cle) - (MAXMEN)
-(code * cle) + (inventory.hashCode())=====>(code * cle) - (inventory.hashCode())
-(code * cle) + (objective.hashCode())=====>(code * cle) + (objective.hashCode())
-((int)(amount * (r2.getComponentsNeeded().get(r1))))=====>((int)(amount / (r2.getComponentsNeeded().get(r1))))
-(amount + ancientAmount)=====>amount / ancientAmount
+("Error in parsing the result JSONObject in command." + (getName()))  =====>  "Error in parsing the result JSONObject in command." / (getName())
+
+("Problem with Exploit.toJSON()" + e)  =====>  "Problem with Exploit.toJSON()" * e
+
+("Problem with Explore.doResult" + e)  =====>  "Problem with Explore.doResult" + e
+
+("Problem with Glimpse.toJSON" + e)  =====>  "Problem with Glimpse.toJSON" / e
+
+("Problem with Land.doResult" + e)  =====>  "Problem with Land.doResult" * e
+
+("Problem with Scout.doResult" + e)  =====>  "Problem with Scout.doResult" + e
+
+("Problem with Transform.doResult" + e)  =====>  "Problem with Transform.doResult" * e
+
+(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)  =====>  (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) / ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)
+
+((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) * 3  =====>  ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) + 3
+
+((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())))  =====>  (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) / (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))
+
+(code * cle) + (name.hashCode())  =====>  (code * cle) * (name.hashCode())
+
+(coo1.getY()) + (coo2.getY())  =====>  (coo1.getY()) / (coo2.getY())
+
+(coo1.getX()) + (coo2.getX())  =====>  (coo1.getX()) / (coo2.getX())
+
+(code * cle)  =====>  code * cle
+
+(code * cle) + (y)  =====>  (code * cle) + (y)
+
+(code * cle)  =====>  code + cle
+
+((secondaryObjectives.get(res)) - (inventory.get(resource)))  =====>  (secondaryObjectives.get(res)) / (inventory.get(resource))
+
+(code * cle)  =====>  code - cle
+
+(oldAmount - amount)  =====>  oldAmount + amount
+
+(code + cle) + (men)  =====>  (code + cle) / (men)
+
+(code * cle)  =====>  code + cle
+
+(amount + ancientAmount)  =====>  amount + ancientAmount
+
+((int)(amount * (r2.getComponentsNeeded().get(r1))))  =====>  ((int)(amount - (r2.getComponentsNeeded().get(r1))))
+

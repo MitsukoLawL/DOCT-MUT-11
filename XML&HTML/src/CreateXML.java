@@ -25,7 +25,7 @@ public class CreateXML {
          * 3 nom fichier txt
          *
          * */
-        String txt = fileReader(args[2] + args[3]);
+        String txt = fileReader(args[2] + args[0]+"-"+args[1]+".txt");
         try {
             Create(args[0], args[1],args[2], txt);
         } catch (ParserConfigurationException e) {

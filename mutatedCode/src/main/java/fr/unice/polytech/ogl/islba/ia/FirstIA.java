@@ -140,7 +140,7 @@ public class FirstIA {
     private fr.unice.polytech.ogl.islba.command.Command moveAfterGlimpseWater() {
         fr.unice.polytech.ogl.islba.model.Coordonnees cooCase3 = fr.unice.polytech.ogl.islba.model.Coordonnees.add(etat.getMapMonde().getCurrentCoo(), fr.unice.polytech.ogl.islba.model.Coordonnees.multiplyBy(dirMove.getCoo(), 3));
         fr.unice.polytech.ogl.islba.model.Case nextCase3 = etat.getMapMonde().getCase(cooCase3);
-        if ((nextCase3 == null) && (((nextCase3.isOnMap()) && (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))) {
+        if ((nextCase3 == null) && (((nextCase3.isOnMap()) && (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) && (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))) {
             changeMoveWithoutGlimpse(dirMove);
             exploreThisCase = true;
             exploitPossible = true;
@@ -150,7 +150,7 @@ public class FirstIA {
         for (fr.unice.polytech.ogl.islba.model.Direction dir : fr.unice.polytech.ogl.islba.model.Direction.DIRECTIONS) {
             cooCase3 = fr.unice.polytech.ogl.islba.model.Coordonnees.add(etat.getMapMonde().getCurrentCoo(), fr.unice.polytech.ogl.islba.model.Coordonnees.multiplyBy(dir.getCoo(), 3));
             nextCase3 = etat.getMapMonde().getCase(cooCase3);
-            if (((((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) || (!(nextCase3.getMoveOn()))) {
+            if (((((nextCase3 != null) && (nextCase3.isOnMap())) && (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) && (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) || (!(nextCase3.getMoveOn()))) {
                 changeMoveWithoutGlimpse(dir);
                 dirMove = dir;
                 c = new fr.unice.polytech.ogl.islba.command.Move(dirMove);
@@ -174,7 +174,7 @@ public class FirstIA {
                 nextCoo = fr.unice.polytech.ogl.islba.model.Coordonnees.add(nextCoo, currentCoo);
                 nextCase = etat.getMapMonde().getCase(nextCoo);
                 for (fr.unice.polytech.ogl.islba.model.Biome biome : fr.unice.polytech.ogl.islba.model.Biome.values()) {
-                    if (((nextCase != null) && (nextCase.hasBiome(biome))) || (!(nextCase.getMoveOn()))) {
+                    if (((nextCase != null) || (nextCase.hasBiome(biome))) || (!(nextCase.getMoveOn()))) {
                         for (java.lang.String resource : biome.getResources()) {
                             if (etat.getTeam().isObjective(resource)) {
                                 changeMoveWithoutGlimpse(dir);
@@ -233,7 +233,7 @@ public class FirstIA {
                     exploit = true;
                 } else if ((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || ((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))) {
                     exploit = true;
-                } else if (((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) || (numberOfExploit < 1)) {
+                } else if (((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) && (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) || (numberOfExploit < 1)) {
                     exploit = true;
                 } 
                 if ((!exploit) || (numberOfExploit < 1)) {

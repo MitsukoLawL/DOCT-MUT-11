@@ -123,8 +123,8 @@ public class MutationTester<T> {
 				mutator.process(op);
 
 				// Write on a file the diff
-				transformation.println(e.toString() + "=====>" + op.toString());
-
+				transformation.println(e.toString() + "  =====>  " + op.toString());
+				transformation.println("");
 				// temporarily replacing the original AST node with the mutated element
 				replace(e, op);
 

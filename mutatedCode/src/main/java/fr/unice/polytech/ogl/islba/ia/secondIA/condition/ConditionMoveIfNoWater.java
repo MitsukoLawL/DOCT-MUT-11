@@ -13,7 +13,7 @@ public class ConditionMoveIfNoWater implements fr.unice.polytech.ogl.islba.ia.se
     public boolean isOK() {
         fr.unice.polytech.ogl.islba.model.Coordonnees cooCase3 = fr.unice.polytech.ogl.islba.model.Coordonnees.add(etat.getMapMonde().getCurrentCoo(), fr.unice.polytech.ogl.islba.model.Coordonnees.multiplyBy(this.dir.getCoo(), 3));
         fr.unice.polytech.ogl.islba.model.Case tile = etat.getMapMonde().getCase(cooCase3);
-        return (((tile != null) && (tile.isOnMap())) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)));
+        return (((tile != null) && (tile.isOnMap())) && (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)));
     }
 
     @java.lang.Override

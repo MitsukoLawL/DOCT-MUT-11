@@ -18,7 +18,7 @@ public class ConditionMoveWithBiomes implements fr.unice.polytech.ogl.islba.ia.s
         nextCoo = fr.unice.polytech.ogl.islba.model.Coordonnees.add(nextCoo, this.etat.getMapMonde().getCurrentCoo());
         fr.unice.polytech.ogl.islba.model.Case tile = etat.getMapMonde().getCase(nextCoo);
         for (fr.unice.polytech.ogl.islba.model.Biome biome : fr.unice.polytech.ogl.islba.model.Biome.values()) {
-            if (((tile != null) || (tile.hasBiome(biome))) || (!(tile.getMoveOn()))) {
+            if (((tile != null) && (tile.hasBiome(biome))) || (!(tile.getMoveOn()))) {
                 for (java.lang.String resource : biome.getResources()) {
                     if (etat.getTeam().isObjective(resource)) {
                         return true;

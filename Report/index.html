@@ -86,9 +86,19 @@
 <div id="containerColumn" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 </div>
 <div class="row">
-<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<p>Total Mutants tu&eacute;s : <span id="mutantT">1</span>
+<br> Total Mutants vivants : <span id="mutantV">0</span>
+<br> Total Mutants mort n&eacute;s : <span id="mutantMN">3</span>
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <div class="row">
 <h2 id="Op12-50" class=" iter">Op12-50% :</h2>
+<button class="btn btn-large btn-info pull-right" data-toggle="collapse" data-target="#demoOp12-50">Transformations</button><button class="btn btn-large btn-info" data-toggle="collapse" data-target="#demoOp12-50-table">Resultats</button>
+<div id="demoOp12-50-table" class="collapse">
 <table class="table table-striped table-bordered table-hover">
 <thead>
 <tr class="success">
@@ -97,380 +107,204 @@
 </thead>
 <tbody>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionScout</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionGlimpse</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestMoveWhenNothingLink</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testObjectivesAsPrimaryResources</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testSecondaryResourcesObjectives</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testWithPlank</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testGetRarityOf</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testConstructor</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestDirection</td><td>testCoordonneesDirection</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestDirection</td><td>testGetNewDirection</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestDirection</td><td>testDirectionString</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveWithhBiomes</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionExploit</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestconditionMoveIfNoWater</td><td>test</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeScout</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionResourceAndOnMap</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStop</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testJSONtoString</td><td></td><td>0.017</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testStringtoJSONFalse</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testStringtoJSON</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestIaFirstIA</td><td>testIA</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestIaFirstIA</td><td>testIAOnMap</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA2</td><td>testTransform</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetComponentsNeeded</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testToString</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetComponent</td><td></td><td>0.203</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetAmount</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMoveNorth</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMoveSouth</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMajEdJ</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMauvaiseDirection</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMoveEast</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMoveWest</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestEffetDeBord</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestDeuxMoves</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNothingToDo</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testCreation</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testCreationVide</td><td></td><td>0.002</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testGestionCase</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testGestionPA</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestMoveWhenResourceLink</td><td>test</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeMove</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCoordonnees</td><td>testAdd</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCoordonnees</td><td>testCreateCoordonnees</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCoordonnees</td><td>testMultiplyBy</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testAddRessource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testAddBiome</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testGlimpse</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testMoveAndScout</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testResourceWithAmountAndCond</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testInitCase</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testIsOnMap</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestStopLink</td><td>test</td><td></td><td>0.013</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionTransform</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>testToString</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>outOfMap</td><td>java.lang.AssertionError</td><td>0.003</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>testResult</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testInventory</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testExploitResource</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testIsObjective</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testNoMoreObjectives</td><td></td><td>0.006</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testLandMen</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testLoseMen</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testCanCreate</td><td></td><td>0.002</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testObjectivesByRarity</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testWithAFewPlanks</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testEquipe</td><td>java.lang.AssertionError</td><td>0.004</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testWithPlanks</td><td>java.lang.AssertionError</td><td>0.01</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testExceptionEquipe</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestScoutLink</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.RarityTest</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestGlimpseLink</td><td>test</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStart</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestMemeScout</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutNorth</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutSouth</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestMajEdJ</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutEast</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutWest</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestMauvaiseDirection</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>testResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestEffetDeBord</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestBeginningLandLink</td><td>test</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNoWaterCheckMoveOn</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testExploit</td><td></td><td>0.031</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testIfNoResourceNearUs</td><td></td><td>0.002</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>exploitButNotInGoodCond</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testBeginning</td><td></td><td>0.011</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testGlimpseAfterSeveralMoves</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testMoveWithBiomeResources</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestStop</td><td>testToJSON</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExploit</td><td>exploitInexistant</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExploit</td><td>testToJSON</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandTransform</td><td>initTransform</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandTransform</td><td>initTransformNULL</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandTransform</td><td>testdoResult</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestPrimaryResource</td><td>testToString</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestMapMonde</td><td>TestMM</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestResourcesType</td><td>testGetSecondaryResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestResourcesType</td><td>testGetPrimaryResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestResourcesType</td><td>testIsSecondaryResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestResourcesType</td><td>testIsPrimaryResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestResource</td><td>testCreationRessource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestResource</td><td>testEqualityRessource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeLand</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithObjective</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithNoObjective</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithPA</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testNextNode</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExplore</td><td>testDoResult</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExplore</td><td>testToJSON</td><td></td><td>0</td>
+<td></td><td></td><td></td><td></td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                                 Tests r&eacute;ussis :
-                                                <b>89</b>/
-                                                111<br> Tests rat&eacute;s :
-                                                <b>22</b>/
-                                                111<div class="hidden">
-<b>Test totaux : </b><span class="totTest">111.</span><b> Test success : </b><span class="successTest">89.</span>
+                                                <b>0</b>/
+                                                0<br> Tests rat&eacute;s :
+                                                <b>0</b>/
+                                                0<div class="hidden">
+<b>Test totaux : </b><span class="totTest">1.</span><b> Test success : </b><span class="successTest">0.</span>
 </div>
-<button class="btn btn-large btn-info pull-right" data-toggle="collapse" data-target="#demoOp12-50">Transformations</button>
 <div id="demoOp12-50" class="collapse">
-<br>
-<br>
-<br>("Error in parsing the result JSONObject in command." + (getName()))=====&gt;"Error in parsing the result JSONObject in command." + (getName())
-("Problem with Exploit.toJSON()" + e)=====&gt;"Problem with Exploit.toJSON()" - e
-("Problem with Explore.doResult" + e)=====&gt;"Problem with Explore.doResult" + e
-("Problem with Glimpse.toJSON" + e)=====&gt;"Problem with Glimpse.toJSON" - e
-("Problem with Land.toJSON" + e)=====&gt;"Problem with Land.toJSON" / e
-("Problem with Scout.toJSON()" + e)=====&gt;"Problem with Scout.toJSON()" * e
-("Problem with Transform.toJSON" + e)=====&gt;"Problem with Transform.toJSON" / e
-((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)=====&gt;(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) + 3
-((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())))=====&gt;(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) - (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))
-((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) - (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) * 3=====&gt;((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) - (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) - 3
-(code * cle)=====&gt;code + cle
-(code * cle)=====&gt;code / cle
-(code * cle) + (y)=====&gt;(code * cle) * (y)
-(c.getY()) * mult=====&gt;(c.getY()) * mult
-(code * cle)=====&gt;code / cle
-(code * cle)=====&gt;code + cle
-(oldAmount - amount)=====&gt;oldAmount / amount
-(code * cle)=====&gt;code / cle
-((secondaryObjectives.get(res)) - (inventory.get(resource)))=====&gt;(secondaryObjectives.get(res)) + (inventory.get(resource))
-(code * cle)=====&gt;code * cle
-(code * cle)=====&gt;code - cle
-((objectives.get(resource)) - (inventory.get(resource)))=====&gt;(objectives.get(resource)) - (inventory.get(resource))
-((int)((secondaryRes.get(primeRes)) * amount))=====&gt;((int)((secondaryRes.get(primeRes)) / amount))
+<br>("Error in parsing the result JSONObject in command." + (getName()))  =====&gt;  "Error in parsing the result JSONObject in command." / (getName())
+
+("Problem with Exploit.toJSON()" + e)  =====&gt;  "Problem with Exploit.toJSON()" * e
+
+("Problem with Explore.doResult" + e)  =====&gt;  "Problem with Explore.doResult" + e
+
+("Problem with Glimpse.toJSON" + e)  =====&gt;  "Problem with Glimpse.toJSON" / e
+
+("Problem with Land.doResult" + e)  =====&gt;  "Problem with Land.doResult" * e
+
+("Problem with Scout.doResult" + e)  =====&gt;  "Problem with Scout.doResult" + e
+
+("Problem with Transform.doResult" + e)  =====&gt;  "Problem with Transform.doResult" * e
+
+(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)  =====&gt;  (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) / ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)
+
+((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) * 3  =====&gt;  ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) + 3
+
+((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())))  =====&gt;  (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) / (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))
+
+(code * cle) + (name.hashCode())  =====&gt;  (code * cle) * (name.hashCode())
+
+(coo1.getY()) + (coo2.getY())  =====&gt;  (coo1.getY()) / (coo2.getY())
+
+(coo1.getX()) + (coo2.getX())  =====&gt;  (coo1.getX()) / (coo2.getX())
+
+(code * cle)  =====&gt;  code * cle
+
+(code * cle) + (y)  =====&gt;  (code * cle) + (y)
+
+(code * cle)  =====&gt;  code + cle
+
+((secondaryObjectives.get(res)) - (inventory.get(resource)))  =====&gt;  (secondaryObjectives.get(res)) / (inventory.get(resource))
+
+(code * cle)  =====&gt;  code - cle
+
+(oldAmount - amount)  =====&gt;  oldAmount + amount
+
+(code + cle) + (men)  =====&gt;  (code + cle) / (men)
+
+(code * cle)  =====&gt;  code + cle
+
+(amount + ancientAmount)  =====&gt;  amount + ancientAmount
+
+((int)(amount * (r2.getComponentsNeeded().get(r1))))  =====&gt;  ((int)(amount - (r2.getComponentsNeeded().get(r1))))
+
 </div>
 </div>
 </div>
 <div class="row">
 <h2 id="Op12-100" class=" iter">Op12-100% :</h2>
+<button class="btn btn-large btn-info pull-right" data-toggle="collapse" data-target="#demoOp12-100">Transformations</button><button class="btn btn-large btn-info" data-toggle="collapse" data-target="#demoOp12-100-table">Resultats</button>
+<div id="demoOp12-100-table" class="collapse">
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr class="success">
+<th>Class</th><th>TestClass</th><th>Error</th><th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                Tests r&eacute;ussis :
+                                                <b>0</b>/
+                                                0<br> Tests rat&eacute;s :
+                                                <b>0</b>/
+                                                0<div class="hidden">
+<b>Test totaux : </b><span class="totTest">1.</span><b> Test success : </b><span class="successTest">0.</span>
+</div>
+<div id="demoOp12-100" class="collapse">
+<br>("Error in parsing the result JSONObject in command." + (getName()))  =====&gt;  "Error in parsing the result JSONObject in command." * (getName())
+
+(("Error in parsing the result JSONObject in command." * (getName())) + ".")  =====&gt;  ("Error in parsing the result JSONObject in command." * (getName())) / "."
+
+((("Error in parsing the result JSONObject in command." * (getName())) / ".") + e)  =====&gt;  (("Error in parsing the result JSONObject in command." * (getName())) / ".") - e
+
+("Problem with Exploit.doResult" + e)  =====&gt;  "Problem with Exploit.doResult" - e
+
+("Problem with Exploit.toJSON()" + e)  =====&gt;  "Problem with Exploit.toJSON()" * e
+
+("Problem with Explore.doResult" + e)  =====&gt;  "Problem with Explore.doResult" - e
+
+("Problem with Explore.toJSON()" + e)  =====&gt;  "Problem with Explore.toJSON()" + e
+
+("Problem with Glimpse.doResult" + e)  =====&gt;  "Problem with Glimpse.doResult" / e
+
+("Problem with Glimpse.toJSON" + e)  =====&gt;  "Problem with Glimpse.toJSON" + e
+
+("Problem with Land.toJSON" + e)  =====&gt;  "Problem with Land.toJSON" - e
+
+("Problem with Land.doResult" + e)  =====&gt;  "Problem with Land.doResult" + e
+
+("Problem with Move.toJSON" + e)  =====&gt;  "Problem with Move.toJSON" / e
+
+("Problem with Scout.doResult" + e)  =====&gt;  "Problem with Scout.doResult" + e
+
+("Problem with Scout.toJSON()" + e)  =====&gt;  "Problem with Scout.toJSON()" / e
+
+("Problem with Stop.ToJSon()" + e)  =====&gt;  "Problem with Stop.ToJSon()" / e
+
+("Problem with Transform.doResult" + e)  =====&gt;  "Problem with Transform.doResult" / e
+
+("Problem with Transform.toJSON" + e)  =====&gt;  "Problem with Transform.toJSON" + e
+
+((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)  =====&gt;  (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3
+
+(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)  =====&gt;  (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) - ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)
+
+((int)((res.getAmount()[i]) * (whatWeCanCreate.get(res))))  =====&gt;  ((int)((res.getAmount()[i]) + (whatWeCanCreate.get(res))))
+
+((int)((res.getAmount()[i]) * (whatWeCanCreate.get(res))))  =====&gt;  ((int)((res.getAmount()[i]) + (whatWeCanCreate.get(res))))
+
+(numberOfExploit + 1)  =====&gt;  numberOfExploit + 1
+
+((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())))  =====&gt;  (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) * (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))
+
+((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) * (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) * 3  =====&gt;  ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) * (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) * 3
+
+(code * cle)  =====&gt;  code * cle
+
+(code * cle) + (name.hashCode())  =====&gt;  (code * cle) * (name.hashCode())
+
+(coo1.getY()) + (coo2.getY())  =====&gt;  (coo1.getY()) - (coo2.getY())
+
+(c.getX()) * mult  =====&gt;  (c.getX()) * mult
+
+(coo1.getX()) + (coo2.getX())  =====&gt;  (coo1.getX()) / (coo2.getX())
+
+(c.getY()) * mult  =====&gt;  (c.getY()) / mult
+
+(code * cle)  =====&gt;  code + cle
+
+(code + cle) + (x)  =====&gt;  (code + cle) / (x)
+
+(code * cle) + (y)  =====&gt;  (code * cle) * (y)
+
+(code * cle)  =====&gt;  code / cle
+
+(code * cle)  =====&gt;  code * cle
+
+(code * cle)  =====&gt;  code * cle
+
+((int)((inventory.get(new fr.unice.polytech.ogl.islba.model.resource.Resource(resourcesNeeded[i].toString()))) / (amount[i])))  =====&gt;  ((int)((inventory.get(Error in printing the node. One parent isn't initialized!
+
+(code * cle) + (objective.hashCode())  =====&gt;  (code * cle) - (objective.hashCode())
+
+(code * cle) + (men)  =====&gt;  (code * cle) - (men)
+
+((secondaryObjectives.get(res)) - (inventory.get(resource)))  =====&gt;  (secondaryObjectives.get(res)) * (inventory.get(resource))
+
+(code * cle) + (inventory.hashCode())  =====&gt;  (code * cle) - (inventory.hashCode())
+
+(code * cle) + (MAXMEN)  =====&gt;  (code * cle) - (MAXMEN)
+
+(oldAmount - amount)  =====&gt;  oldAmount * amount
+
+(oldAmount - amount)  =====&gt;  oldAmount / amount
+
+(code * cle)  =====&gt;  code * cle
+
+(code * cle)  =====&gt;  code - cle
+
+((int)(amount * (r2.getComponentsNeeded().get(r1))))  =====&gt;  ((int)(amount + (r2.getComponentsNeeded().get(r1))))
+
+((objectives.get(resource)) - (inventory.get(resource)))  =====&gt;  (objectives.get(resource)) + (inventory.get(resource))
+
+(amount + ancientAmount)  =====&gt;  amount + ancientAmount
+
+((int)((secondaryRes.get(primeRes)) * amount))  =====&gt;  ((int)((secondaryRes.get(primeRes)) - amount))
+
+("Problem when trying to parse the String context" + "to transform it into an JSONObject and getting all the informations")  =====&gt;  "Problem when trying to parse the String context" - "to transform it into an JSONObject and getting all the informations"
+
+</div>
+</div>
+</div>
+<div class="row">
+<h2 id="Op13-100" class=" iter">Op13-100% :</h2>
+<button class="btn btn-large btn-info pull-right" data-toggle="collapse" data-target="#demoOp13-100">Transformations</button><button class="btn btn-large btn-info" data-toggle="collapse" data-target="#demoOp13-100-table">Resultats</button>
+<div id="demoOp13-100-table" class="collapse">
 <table class="table table-striped table-bordered table-hover">
 <thead>
 <tr class="success">
@@ -488,7 +322,7 @@
 <td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestMoveWhenNothingLink</td><td>test</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testObjectivesAsPrimaryResources</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testObjectivesAsPrimaryResources</td><td></td><td>0.005</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testSecondaryResourcesObjectives</td><td></td><td>0</td>
@@ -497,7 +331,7 @@
 <td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testWithPlank</td><td>java.lang.AssertionError</td><td>0.001</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testGetRarityOf</td><td>java.lang.AssertionError</td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testGetRarityOf</td><td>java.lang.AssertionError</td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testConstructor</td><td>java.lang.AssertionError</td><td>0</td>
@@ -518,7 +352,7 @@
 <td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionExploit</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestconditionMoveIfNoWater</td><td>test</td><td>java.lang.AssertionError</td><td>0.001</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestconditionMoveIfNoWater</td><td>test</td><td>java.lang.AssertionError</td><td>0.005</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeScout</td><td>test</td><td></td><td>0</td>
@@ -530,13 +364,13 @@
 <td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStop</td><td>test</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testJSONtoString</td><td></td><td>0.017</td>
+<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testJSONtoString</td><td></td><td>0</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testStringtoJSONFalse</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testStringtoJSON</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testStringtoJSON</td><td></td><td>0.003</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.command.TestIaFirstIA</td><td>testIA</td><td></td><td>0</td>
@@ -545,7 +379,7 @@
 <td>fr.unice.polytech.ogl.islba.command.TestIaFirstIA</td><td>testIAOnMap</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA2</td><td>testTransform</td><td></td><td>0.001</td>
+<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA2</td><td>testTransform</td><td></td><td>0</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetComponentsNeeded</td><td></td><td>0</td>
@@ -554,7 +388,7 @@
 <td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testToString</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetComponent</td><td></td><td>0.203</td>
+<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetComponent</td><td></td><td>0</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetAmount</td><td></td><td>0</td>
@@ -581,7 +415,7 @@
 <td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestEffetDeBord</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestDeuxMoves</td><td>java.lang.AssertionError</td><td>0.001</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestDeuxMoves</td><td>java.lang.AssertionError</td><td>0.002</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNothingToDo</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
@@ -590,13 +424,13 @@
 <td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testCreation</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testCreationVide</td><td></td><td>0.002</td>
+<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testCreationVide</td><td></td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testGestionCase</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testGestionPA</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testGestionPA</td><td></td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestMoveWhenResourceLink</td><td>test</td><td></td><td>0.001</td>
@@ -617,7 +451,7 @@
 <td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testAddRessource</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testAddBiome</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testAddBiome</td><td></td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testGlimpse</td><td></td><td>0</td>
@@ -627,416 +461,6 @@
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testResourceWithAmountAndCond</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testInitCase</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testIsOnMap</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestStopLink</td><td>test</td><td></td><td>0.013</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionTransform</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>testToString</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>outOfMap</td><td>java.lang.AssertionError</td><td>0.003</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>testResult</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testInventory</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testExploitResource</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testIsObjective</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testNoMoreObjectives</td><td></td><td>0.006</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testLandMen</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testLoseMen</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testCanCreate</td><td></td><td>0.002</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testObjectivesByRarity</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testWithAFewPlanks</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testEquipe</td><td>java.lang.AssertionError</td><td>0.004</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testWithPlanks</td><td>java.lang.AssertionError</td><td>0.01</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testExceptionEquipe</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestScoutLink</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.RarityTest</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestGlimpseLink</td><td>test</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStart</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestMemeScout</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutNorth</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutSouth</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestMajEdJ</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutEast</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutWest</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestMauvaiseDirection</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>testResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestEffetDeBord</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestBeginningLandLink</td><td>test</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNoWaterCheckMoveOn</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testExploit</td><td></td><td>0.031</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testIfNoResourceNearUs</td><td></td><td>0.002</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>exploitButNotInGoodCond</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testBeginning</td><td></td><td>0.011</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testGlimpseAfterSeveralMoves</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testMoveWithBiomeResources</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestStop</td><td>testToJSON</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExploit</td><td>exploitInexistant</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExploit</td><td>testToJSON</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandTransform</td><td>initTransform</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandTransform</td><td>initTransformNULL</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandTransform</td><td>testdoResult</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestPrimaryResource</td><td>testToString</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestMapMonde</td><td>TestMM</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestResourcesType</td><td>testGetSecondaryResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestResourcesType</td><td>testGetPrimaryResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestResourcesType</td><td>testIsSecondaryResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestResourcesType</td><td>testIsPrimaryResource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestResource</td><td>testCreationRessource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestResource</td><td>testEqualityRessource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeLand</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithObjective</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithNoObjective</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithPA</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testNextNode</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExplore</td><td>testDoResult</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExplore</td><td>testToJSON</td><td></td><td>0</td>
-</tr>
-</tbody>
-</table>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                Tests r&eacute;ussis :
-                                                <b>89</b>/
-                                                111<br> Tests rat&eacute;s :
-                                                <b>22</b>/
-                                                111<div class="hidden">
-<b>Test totaux : </b><span class="totTest">111.</span><b> Test success : </b><span class="successTest">89.</span>
-</div>
-<button class="btn btn-large btn-info pull-right" data-toggle="collapse" data-target="#demoOp12-100">Transformations</button>
-<div id="demoOp12-100" class="collapse">
-<br>
-<br>
-<br>("Error in parsing the result JSONObject in command." + (getName()))=====&gt;"Error in parsing the result JSONObject in command." + (getName())
-((("Error in parsing the result JSONObject in command." + (getName())) + ".") + e)=====&gt;(("Error in parsing the result JSONObject in command." + (getName())) + ".") + e
-(("Error in parsing the result JSONObject in command." + (getName())) + ".")=====&gt;("Error in parsing the result JSONObject in command." + (getName())) + "."
-("Problem with Exploit.doResult" + e)=====&gt;"Problem with Exploit.doResult" + e
-("Problem with Exploit.toJSON()" + e)=====&gt;"Problem with Exploit.toJSON()" - e
-("Problem with Explore.toJSON()" + e)=====&gt;"Problem with Explore.toJSON()" + e
-("Problem with Explore.doResult" + e)=====&gt;"Problem with Explore.doResult" - e
-("Problem with Glimpse.doResult" + e)=====&gt;"Problem with Glimpse.doResult" / e
-("Problem with Glimpse.toJSON" + e)=====&gt;"Problem with Glimpse.toJSON" * e
-("Problem with Land.doResult" + e)=====&gt;"Problem with Land.doResult" - e
-("Problem with Land.toJSON" + e)=====&gt;"Problem with Land.toJSON" / e
-("Problem with Move.toJSON" + e)=====&gt;"Problem with Move.toJSON" - e
-("Problem with Scout.doResult" + e)=====&gt;"Problem with Scout.doResult" - e
-("Problem with Scout.toJSON()" + e)=====&gt;"Problem with Scout.toJSON()" / e
-("Problem with Stop.ToJSon()" + e)=====&gt;"Problem with Stop.ToJSon()" / e
-("Problem with Transform.toJSON" + e)=====&gt;"Problem with Transform.toJSON" / e
-("Problem with Transform.doResult" + e)=====&gt;"Problem with Transform.doResult" - e
-((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)=====&gt;(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) + 3
-(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) + 3)=====&gt;(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) * ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) + 3)
-((int)((res.getAmount()[i]) * (whatWeCanCreate.get(res))))=====&gt;((int)((res.getAmount()[i]) / (whatWeCanCreate.get(res))))
-(numberOfExploit + 1)=====&gt;numberOfExploit * 1
-((int)((res.getAmount()[i]) * (whatWeCanCreate.get(res))))=====&gt;((int)((res.getAmount()[i]) - (whatWeCanCreate.get(res))))
-((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) * 3=====&gt;((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) / 3
-((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())))=====&gt;(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) / (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))
-(code * cle) + (name.hashCode())=====&gt;(code * cle) + (name.hashCode())
-(code * cle)=====&gt;code - cle
-(code * cle)=====&gt;code + cle
-(code * cle) + (y)=====&gt;(code * cle) - (y)
-(c.getX()) * mult=====&gt;(c.getX()) * mult
-(coo1.getY()) + (coo2.getY())=====&gt;(coo1.getY()) - (coo2.getY())
-(c.getY()) * mult=====&gt;(c.getY()) + mult
-(code * cle)=====&gt;code - cle
-(code + cle) + (x)=====&gt;(code + cle) - (x)
-(coo1.getX()) + (coo2.getX())=====&gt;(coo1.getX()) - (coo2.getX())
-(code * cle)=====&gt;code * cle
-(oldAmount - amount)=====&gt;oldAmount / amount
-(code * cle)=====&gt;code / cle
-(oldAmount - amount)=====&gt;oldAmount + amount
-((int)((inventory.get(new fr.unice.polytech.ogl.islba.model.resource.Resource(resourcesNeeded[i].toString()))) / (amount[i])))=====&gt;((int)((inventory.get(Error in printing the node. One parent isn't initialized!
-(code * cle) + (inventory.hashCode())=====&gt;(code * cle) / (inventory.hashCode())
-((secondaryObjectives.get(res)) - (inventory.get(resource)))=====&gt;(secondaryObjectives.get(res)) / (inventory.get(resource))
-(code * cle) + (MAXMEN)=====&gt;(code * cle) - (MAXMEN)
-(code * cle) + (men)=====&gt;(code * cle) + (men)
-(code * cle)=====&gt;code + cle
-(code * cle)=====&gt;code * cle
-(code / cle) + (objective.hashCode())=====&gt;(code / cle) / (objective.hashCode())
-((int)(amount * (r2.getComponentsNeeded().get(r1))))=====&gt;((int)(amount - (r2.getComponentsNeeded().get(r1))))
-(amount + ancientAmount)=====&gt;amount - ancientAmount
-((objectives.get(resource)) - (inventory.get(resource)))=====&gt;(objectives.get(resource)) - (inventory.get(resource))
-((int)((secondaryRes.get(primeRes)) * amount))=====&gt;((int)((secondaryRes.get(primeRes)) * amount))
-("Problem when trying to parse the String context" + "to transform it into an JSONObject and getting all the informations")=====&gt;"Problem when trying to parse the String context" - "to transform it into an JSONObject and getting all the informations"
-</div>
-</div>
-</div>
-<div class="row">
-<h2 id="Op13-100" class=" iter">Op13-100% :</h2>
-<table class="table table-striped table-bordered table-hover">
-<thead>
-<tr class="success">
-<th>Class</th><th>TestClass</th><th>Error</th><th>Time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionScout</td><td>test</td><td></td><td>0.002</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionGlimpse</td><td>test</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestMoveWhenNothingLink</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testObjectivesAsPrimaryResources</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testSecondaryResourcesObjectives</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testWithPlank</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testGetRarityOf</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestObjective</td><td>testConstructor</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestDirection</td><td>testCoordonneesDirection</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestDirection</td><td>testGetNewDirection</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestDirection</td><td>testDirectionString</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveWithhBiomes</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionExploit</td><td>test</td><td>java.lang.AssertionError</td><td>0.006</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestconditionMoveIfNoWater</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeScout</td><td>test</td><td></td><td>0.002</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionResourceAndOnMap</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStop</td><td>test</td><td></td><td>0.013</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testJSONtoString</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testStringtoJSONFalse</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.parser.TestJSONParser</td><td>testStringtoJSON</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestIaFirstIA</td><td>testIA</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestIaFirstIA</td><td>testIAOnMap</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA2</td><td>testTransform</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetComponentsNeeded</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testToString</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetComponent</td><td></td><td>0.003</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource</td><td>testGetAmount</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMoveNorth</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMoveSouth</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMajEdJ</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMauvaiseDirection</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMoveEast</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestMoveWest</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestEffetDeBord</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandMove</td><td>TestDeuxMoves</td><td>java.lang.AssertionError</td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNothingToDo</td><td>test</td><td>java.lang.AssertionError</td><td>0.006</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testCreation</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testCreationVide</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testGestionCase</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEtatDeJeu</td><td>testGestionPA</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestMoveWhenResourceLink</td><td>test</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeMove</td><td>test</td><td>java.lang.AssertionError</td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCoordonnees</td><td>testAdd</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCoordonnees</td><td>testCreateCoordonnees</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCoordonnees</td><td>testMultiplyBy</td><td></td><td>0.001</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testAddRessource</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testAddBiome</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testGlimpse</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testMoveAndScout</td><td></td><td>0</td>
-</tr>
-<tr>
-<td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testResourceWithAmountAndCond</td><td></td><td>0.004</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestCase</td><td>testInitCase</td><td></td><td>0</td>
@@ -1051,25 +475,25 @@
 <td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionTransform</td><td>test</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>testToString</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>testToString</td><td></td><td>0.001</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>outOfMap</td><td>java.lang.AssertionError</td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>outOfMap</td><td>java.lang.AssertionError</td><td>0.003</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>testResult</td><td>java.lang.AssertionError</td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandGlimpse</td><td>testResult</td><td>java.lang.AssertionError</td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testInventory</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testExploitResource</td><td></td><td>0.003</td>
+<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testExploitResource</td><td></td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testIsObjective</td><td>java.lang.AssertionError</td><td>0.001</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testNoMoreObjectives</td><td></td><td>0.003</td>
+<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testNoMoreObjectives</td><td></td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testLandMen</td><td></td><td>0</td>
@@ -1078,43 +502,43 @@
 <td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testLoseMen</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testCanCreate</td><td></td><td>0.002</td>
+<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testCanCreate</td><td></td><td>0.001</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testObjectivesByRarity</td><td>java.lang.AssertionError</td><td>0.003</td>
+<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testObjectivesByRarity</td><td>java.lang.AssertionError</td><td>0.007</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testWithAFewPlanks</td><td>java.lang.AssertionError</td><td>0.002</td>
+<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testWithAFewPlanks</td><td>java.lang.AssertionError</td><td>0.004</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testEquipe</td><td>java.lang.AssertionError</td><td>0.003</td>
+<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testEquipe</td><td>java.lang.AssertionError</td><td>0.002</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testWithPlanks</td><td>java.lang.AssertionError</td><td>0.012</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testExceptionEquipe</td><td>java.lang.AssertionError</td><td>0.001</td>
+<td>fr.unice.polytech.ogl.islba.model.TestEquipe</td><td>testExceptionEquipe</td><td>java.lang.AssertionError</td><td>0.002</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestScoutLink</td><td>test</td><td>java.lang.AssertionError</td><td>0.001</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestScoutLink</td><td>test</td><td>java.lang.AssertionError</td><td>0.002</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.model.RarityTest</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.model.RarityTest</td><td>test</td><td>java.lang.AssertionError</td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestGlimpseLink</td><td>test</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStart</td><td>test</td><td></td><td>0.016</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStart</td><td>test</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestMemeScout</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestMemeScout</td><td></td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutNorth</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutSouth</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestScoutSouth</td><td></td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestMajEdJ</td><td></td><td>0</td>
@@ -1135,37 +559,37 @@
 <td>fr.unice.polytech.ogl.islba.command.TestCommandScout</td><td>TestEffetDeBord</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestBeginningLandLink</td><td>test</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.link.TestBeginningLandLink</td><td>test</td><td></td><td>0.015</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNoWaterCheckMoveOn</td><td>test</td><td>java.lang.AssertionError</td><td>0.001</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNoWaterCheckMoveOn</td><td>test</td><td>java.lang.AssertionError</td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testExploit</td><td></td><td>0.028</td>
+<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testExploit</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testIfNoResourceNearUs</td><td></td><td>0.002</td>
+<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testIfNoResourceNearUs</td><td></td><td>0</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>exploitButNotInGoodCond</td><td></td><td>0.001</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testBeginning</td><td></td><td>0.001</td>
+<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testBeginning</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testGlimpseAfterSeveralMoves</td><td></td><td>0.001</td>
+<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testGlimpseAfterSeveralMoves</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testMoveWithBiomeResources</td><td></td><td>0.002</td>
+<td>fr.unice.polytech.ogl.islba.ia.TestFirstIA</td><td>testMoveWithBiomeResources</td><td></td><td>0</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.command.TestStop</td><td>testToJSON</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExploit</td><td>exploitInexistant</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandExploit</td><td>exploitInexistant</td><td></td><td>0.008</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExploit</td><td>testToJSON</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandExploit</td><td>testToJSON</td><td></td><td>0.001</td>
 </tr>
 <tr>
 <td>fr.unice.polytech.ogl.islba.command.TestCommandTransform</td><td>initTransform</td><td></td><td>0</td>
@@ -1201,28 +625,29 @@
 <td>fr.unice.polytech.ogl.islba.model.TestResource</td><td>testEqualityRessource</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeLand</td><td>test</td><td></td><td>0.006</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeLand</td><td>test</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithObjective</td><td>java.lang.AssertionError</td><td>0.004</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithObjective</td><td>java.lang.AssertionError</td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithNoObjective</td><td>java.lang.AssertionError</td><td>0.003</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithNoObjective</td><td>java.lang.AssertionError</td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithPA</td><td></td><td>0.005</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testConditionStopWithPA</td><td></td><td>0.001</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testNextNode</td><td></td><td>0.001</td>
+<td>fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop</td><td>testNextNode</td><td></td><td>0</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExplore</td><td>testDoResult</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandExplore</td><td>testDoResult</td><td></td><td>0.001</td>
 </tr>
 <tr>
-<td>fr.unice.polytech.ogl.islba.command.TestCommandExplore</td><td>testToJSON</td><td></td><td>0</td>
+<td>fr.unice.polytech.ogl.islba.command.TestCommandExplore</td><td>testToJSON</td><td></td><td>0.001</td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                                 Tests r&eacute;ussis :
                                                 <b>89</b>/
@@ -1231,72 +656,146 @@
                                                 111<div class="hidden">
 <b>Test totaux : </b><span class="totTest">111.</span><b> Test success : </b><span class="successTest">89.</span>
 </div>
-<button class="btn btn-large btn-info pull-right" data-toggle="collapse" data-target="#demoOp13-100">Transformations</button>
 <div id="demoOp13-100" class="collapse">
+<br>(i == 0) || (i == 1)  =====&gt;  (i == 0) &amp;&amp; (i == 1)
+
+((c.getNumberCaseGlimpse()) == (-1)) || ((c.getNumberCaseGlimpse()) &gt; i)  =====&gt;  ((c.getNumberCaseGlimpse()) == (-1)) &amp;&amp; ((c.getNumberCaseGlimpse()) &gt; i)
+
+(nextCase == null) || ((nextCase.getNumberCaseGlimpse()) &lt; 0)  =====&gt;  (nextCase == null) &amp;&amp; ((nextCase.getNumberCaseGlimpse()) &lt; 0)
+
+(((tile != null) &amp;&amp; (tile.isOnMap())) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))  =====&gt;  (((tile != null) &amp;&amp; (tile.isOnMap())) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
+
+((tile != null) &amp;&amp; (tile.isOnMap()))  =====&gt;  (tile != null) || (tile.isOnMap())
+
+(((tile != null) || (tile.isOnMap())) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))  =====&gt;  ((tile != null) || (tile.isOnMap())) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
+
+(super.isOK()) &amp;&amp; (!(tile.getMoveOn()))  =====&gt;  (super.isOK()) || (!(tile.getMoveOn()))
+
+(next == null) || (!(next.isOnMap()))  =====&gt;  (next == null) &amp;&amp; (!(next.isOnMap()))
+
+((tile != null) &amp;&amp; (tile.hasBiome(biome))) &amp;&amp; (!(tile.getMoveOn()))  =====&gt;  ((tile != null) &amp;&amp; (tile.hasBiome(biome))) || (!(tile.getMoveOn()))
+
+((tile != null) &amp;&amp; (tile.hasBiome(biome)))  =====&gt;  (tile != null) || (tile.hasBiome(biome))
+
+(etat.getTeam().isObjective(res.getName())) &amp;&amp; (!(nextCase.getMoveOn()))  =====&gt;  (etat.getTeam().isObjective(res.getName())) || (!(nextCase.getMoveOn()))
+
+(nextCase == null) || (!(nextCase.getScouted()))  =====&gt;  (nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
+
+(nextCase == null) || (!(nextCase.getScouted()))  =====&gt;  (nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
+
+((etat.getPA()) &lt; (paToStop())) || (etat.getTeam().noMoreObjectives())  =====&gt;  ((etat.getPA()) &lt; (paToStop())) &amp;&amp; (etat.getTeam().noMoreObjectives())
+
+((whatWeCanCreate) == null) || ((whatWeCanCreate.size()) &lt;= 0)  =====&gt;  ((whatWeCanCreate) == null) &amp;&amp; ((whatWeCanCreate.size()) &lt;= 0)
+
+(!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; ((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))  =====&gt;  (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || ((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))
+
+((nextCase != null) &amp;&amp; (nextCase.hasBiome(biome)))  =====&gt;  (nextCase != null) || (nextCase.hasBiome(biome))
+
+((((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) &amp;&amp; (!(nextCase3.getMoveOn()))  =====&gt;  ((((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) || (!(nextCase3.getMoveOn()))
+
+(((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName())))  =====&gt;  ((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))
+
+(nextCase3 == null) || (((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))  =====&gt;  (nextCase3 == null) &amp;&amp; (((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))
+
+((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))  =====&gt;  ((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))
+
+((c) == null) &amp;&amp; ((moveWithoutGlimpse) &gt; 3)  =====&gt;  ((c) == null) || ((moveWithoutGlimpse) &gt; 3)
+
+(!exploit) &amp;&amp; (numberOfExploit &lt; 1)  =====&gt;  (!exploit) || (numberOfExploit &lt; 1)
+
+(checkResourceOnCase(etat.getMapMonde().getCurrentCase())) &amp;&amp; (exploreThisCase)  =====&gt;  (checkResourceOnCase(etat.getMapMonde().getCurrentCase())) || (exploreThisCase)
+
+((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) &amp;&amp; (numberOfExploit &lt; 1)  =====&gt;  ((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) || (numberOfExploit &lt; 1)
+
+(nextCase == null) || (!(nextCase.getScouted()))  =====&gt;  (nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
+
+(nextCase == null) || ((nextCase.getNumberCaseGlimpse()) &lt; 0)  =====&gt;  (nextCase == null) &amp;&amp; ((nextCase.getNumberCaseGlimpse()) &lt; 0)
+
+((((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))  =====&gt;  (((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
+
+(etat.getTeam().isObjective(res.getName())) &amp;&amp; (!(nextCase.getMoveOn()))  =====&gt;  (etat.getTeam().isObjective(res.getName())) || (!(nextCase.getMoveOn()))
+
+((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))  =====&gt;  (nextCase3.isOnMap()) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
+
+((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName())))  =====&gt;  (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))
+
+((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))  =====&gt;  (((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName()))
+
+(next != null) &amp;&amp; (!(next.isOnMap()))  =====&gt;  (next != null) || (!(next.isOnMap()))
+
+(((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))  =====&gt;  ((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
+
+((etat.getPA()) &lt; (paForStop())) || (equipe.noMoreObjectives())  =====&gt;  ((etat.getPA()) &lt; (paForStop())) &amp;&amp; (equipe.noMoreObjectives())
+
+(((nextCase3.isOnMap()) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))  =====&gt;  ((nextCase3.isOnMap()) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
+
+((numberWithoutExploit) &lt; 0) &amp;&amp; (exploitPossible)  =====&gt;  ((numberWithoutExploit) &lt; 0) || (exploitPossible)
+
+((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap()))  =====&gt;  (nextCase3 != null) || (nextCase3.isOnMap())
+
+(numberOfExploit &lt; 1) &amp;&amp; exploit  =====&gt;  (numberOfExploit &lt; 1) || exploit
+
+((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName())))  =====&gt;  (checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))
+
+((nextCase != null) || (nextCase.hasBiome(biome))) &amp;&amp; (!(nextCase.getMoveOn()))  =====&gt;  ((nextCase != null) || (nextCase.hasBiome(biome))) || (!(nextCase.getMoveOn()))
+
+((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON))))  =====&gt;  (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))
+
+((amountRes != null) &amp;&amp; (condRes != null))  =====&gt;  (amountRes != null) || (condRes != null)
+
+(((amountRes != null) || (condRes != null)) &amp;&amp; (amountRes.equals(amount))) &amp;&amp; (condRes.equals(cond))  =====&gt;  (((amountRes != null) || (condRes != null)) &amp;&amp; (amountRes.equals(amount))) || (condRes.equals(cond))
+
+(((amountRes != null) || (condRes != null)) &amp;&amp; (amountRes.equals(amount)))  =====&gt;  ((amountRes != null) || (condRes != null)) || (amountRes.equals(amount))
+
+((coo2.getX()) == (getX())) &amp;&amp; ((coo2.getY()) == (getY()))  =====&gt;  ((coo2.getX()) == (getX())) || ((coo2.getY()) == (getY()))
+
+(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives()))) &amp;&amp; ((equipe2.getMen()) == (this.men))  =====&gt;  (((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives()))) || ((equipe2.getMen()) == (this.men))
+
+(maxMen &lt;= 0) || (objectives == null)  =====&gt;  (maxMen &lt;= 0) &amp;&amp; (objectives == null)
+
+(!(inventory.containsKey(res))) || ((inventory.get(res)) &lt; (objective.getObjectives().get(res)))  =====&gt;  (!(inventory.containsKey(res))) &amp;&amp; ((inventory.get(res)) &lt; (objective.getObjectives().get(res)))
+
+(!(inventory.containsKey(resource))) || ((inventory.get(resource)) &lt; (amount[i]))  =====&gt;  (!(inventory.containsKey(resource))) &amp;&amp; ((inventory.get(resource)) &lt; (amount[i]))
+
+(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives())))  =====&gt;  ((equipe2.getMAXMEN()) == (this.MAXMEN)) || (equipe2.getObjectives().equals(getObjectives()))
+
+(objectives.containsKey(res)) || (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())))  =====&gt;  (objectives.containsKey(res)) &amp;&amp; (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())))
+
+(amount &gt;= (rar.amount)) &amp;&amp; ((rar.amount) &gt;= newAmount)  =====&gt;  (amount &gt;= (rar.amount)) || ((rar.amount) &gt;= newAmount)
+
+</div>
+</div>
+</div>
+<div class="row">
+<h2 id="Op9-100" class=" iter">Op9-100% :</h2>
+<button class="btn btn-large btn-info pull-right" data-toggle="collapse" data-target="#demoOp9-100">Transformations</button><button class="btn btn-large btn-info" data-toggle="collapse" data-target="#demoOp9-100-table">Resultats</button>
+<div id="demoOp9-100-table" class="collapse">
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr class="success">
+<th>Class</th><th>TestClass</th><th>Error</th><th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                Tests r&eacute;ussis :
+                                                <b>0</b>/
+                                                0<br> Tests rat&eacute;s :
+                                                <b>0</b>/
+                                                0<div class="hidden">
+<b>Test totaux : </b><span class="totTest">1.</span><b> Test success : </b><span class="successTest">0.</span>
+</div>
+<div id="demoOp9-100" class="collapse">
 <br>
-<br>
-<br>((c.getNumberCaseGlimpse()) == (-1)) || ((c.getNumberCaseGlimpse()) &gt; i)=====&gt;((c.getNumberCaseGlimpse()) == (-1)) &amp;&amp; ((c.getNumberCaseGlimpse()) &gt; i)
-(i == 0) || (i == 1)=====&gt;(i == 0) &amp;&amp; (i == 1)
-(nextCase == null) || ((nextCase.getNumberCaseGlimpse()) &lt; 0)=====&gt;(nextCase == null) &amp;&amp; ((nextCase.getNumberCaseGlimpse()) &lt; 0)
-(((tile != null) &amp;&amp; (tile.isOnMap())) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))=====&gt;((tile != null) &amp;&amp; (tile.isOnMap())) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
-(((tile != null) &amp;&amp; (tile.isOnMap())) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))=====&gt;(((tile != null) &amp;&amp; (tile.isOnMap())) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
-((tile != null) &amp;&amp; (tile.isOnMap()))=====&gt;(tile != null) || (tile.isOnMap())
-(super.isOK()) &amp;&amp; (!(tile.getMoveOn()))=====&gt;(super.isOK()) || (!(tile.getMoveOn()))
-(next == null) || (!(next.isOnMap()))=====&gt;(next == null) &amp;&amp; (!(next.isOnMap()))
-((tile != null) &amp;&amp; (tile.hasBiome(biome)))=====&gt;(tile != null) || (tile.hasBiome(biome))
-((tile != null) || (tile.hasBiome(biome))) &amp;&amp; (!(tile.getMoveOn()))=====&gt;((tile != null) || (tile.hasBiome(biome))) || (!(tile.getMoveOn()))
-(etat.getTeam().isObjective(res.getName())) &amp;&amp; (!(nextCase.getMoveOn()))=====&gt;(etat.getTeam().isObjective(res.getName())) || (!(nextCase.getMoveOn()))
-(nextCase == null) || (!(nextCase.getScouted()))=====&gt;(nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
-(nextCase == null) || (!(nextCase.getScouted()))=====&gt;(nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
-((etat.getPA()) &lt; (paToStop())) || (etat.getTeam().noMoreObjectives())=====&gt;((etat.getPA()) &lt; (paToStop())) &amp;&amp; (etat.getTeam().noMoreObjectives())
-((whatWeCanCreate) == null) || ((whatWeCanCreate.size()) &lt;= 0)=====&gt;((whatWeCanCreate) == null) &amp;&amp; ((whatWeCanCreate.size()) &lt;= 0)
-(next != null) &amp;&amp; (!(next.isOnMap()))=====&gt;(next != null) || (!(next.isOnMap()))
-((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap()))=====&gt;(nextCase3 != null) || (nextCase3.isOnMap())
-(((nextCase3 != null) || (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))=====&gt;((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
-((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))=====&gt;((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))
-((nextCase != null) &amp;&amp; (nextCase.hasBiome(biome))) &amp;&amp; (!(nextCase.getMoveOn()))=====&gt;((nextCase != null) &amp;&amp; (nextCase.hasBiome(biome))) || (!(nextCase.getMoveOn()))
-((((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))=====&gt;(((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
-((((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) &amp;&amp; (!(nextCase3.getMoveOn()))=====&gt;((((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) || (!(nextCase3.getMoveOn()))
-((numberWithoutExploit) &lt; 0) &amp;&amp; (exploitPossible)=====&gt;((numberWithoutExploit) &lt; 0) || (exploitPossible)
-(!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; ((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))=====&gt;(!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || ((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))
-((nextCase != null) &amp;&amp; (nextCase.hasBiome(biome)))=====&gt;(nextCase != null) || (nextCase.hasBiome(biome))
-((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON))))=====&gt;(!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))
-((c) == null) &amp;&amp; ((moveWithoutGlimpse) &gt; 3)=====&gt;((c) == null) || ((moveWithoutGlimpse) &gt; 3)
-((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) &amp;&amp; (numberOfExploit &lt; 1)=====&gt;((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) || (numberOfExploit &lt; 1)
-((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName())))=====&gt;(checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))
-(((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName())))=====&gt;((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))
-((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName())))=====&gt;(checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))
-(((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))=====&gt;((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
-(nextCase3 == null) || (((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))=====&gt;(nextCase3 == null) &amp;&amp; (((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))
-((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))=====&gt;(((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName()))
-(numberOfExploit &lt; 1) &amp;&amp; exploit=====&gt;(numberOfExploit &lt; 1) || exploit
-(!exploit) &amp;&amp; (numberOfExploit &lt; 1)=====&gt;(!exploit) || (numberOfExploit &lt; 1)
-((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))=====&gt;(nextCase3.isOnMap()) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
-(nextCase == null) || ((nextCase.getNumberCaseGlimpse()) &lt; 0)=====&gt;(nextCase == null) &amp;&amp; ((nextCase.getNumberCaseGlimpse()) &lt; 0)
-(etat.getTeam().isObjective(res.getName())) &amp;&amp; (!(nextCase.getMoveOn()))=====&gt;(etat.getTeam().isObjective(res.getName())) || (!(nextCase.getMoveOn()))
-((etat.getPA()) &lt; (paForStop())) || (equipe.noMoreObjectives())=====&gt;((etat.getPA()) &lt; (paForStop())) &amp;&amp; (equipe.noMoreObjectives())
-(checkResourceOnCase(etat.getMapMonde().getCurrentCase())) &amp;&amp; (exploreThisCase)=====&gt;(checkResourceOnCase(etat.getMapMonde().getCurrentCase())) || (exploreThisCase)
-(nextCase == null) || (!(nextCase.getScouted()))=====&gt;(nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
-(((amountRes != null) &amp;&amp; (condRes != null)) &amp;&amp; (amountRes.equals(amount))) &amp;&amp; (condRes.equals(cond))=====&gt;(((amountRes != null) &amp;&amp; (condRes != null)) &amp;&amp; (amountRes.equals(amount))) || (condRes.equals(cond))
-((amountRes != null) &amp;&amp; (condRes != null))=====&gt;(amountRes != null) || (condRes != null)
-(((amountRes != null) || (condRes != null)) &amp;&amp; (amountRes.equals(amount)))=====&gt;((amountRes != null) || (condRes != null)) || (amountRes.equals(amount))
-((coo2.getX()) == (getX())) &amp;&amp; ((coo2.getY()) == (getY()))=====&gt;((coo2.getX()) == (getX())) || ((coo2.getY()) == (getY()))
-(!(inventory.containsKey(resource))) || ((inventory.get(resource)) &lt; (amount[i]))=====&gt;(!(inventory.containsKey(resource))) &amp;&amp; ((inventory.get(resource)) &lt; (amount[i]))
-(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives()))) &amp;&amp; ((equipe2.getMen()) == (this.men))=====&gt;(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives()))) || ((equipe2.getMen()) == (this.men))
-(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives())))=====&gt;((equipe2.getMAXMEN()) == (this.MAXMEN)) || (equipe2.getObjectives().equals(getObjectives()))
-(!(inventory.containsKey(res))) || ((inventory.get(res)) &lt; (objective.getObjectives().get(res)))=====&gt;(!(inventory.containsKey(res))) &amp;&amp; ((inventory.get(res)) &lt; (objective.getObjectives().get(res)))
-(maxMen &lt;= 0) || (objectives == null)=====&gt;(maxMen &lt;= 0) &amp;&amp; (objectives == null)
-(objectives.containsKey(res)) || (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())))=====&gt;(objectives.containsKey(res)) &amp;&amp; (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())))
-(amount &gt;= (rar.amount)) &amp;&amp; ((rar.amount) &gt;= newAmount)=====&gt;(amount &gt;= (rar.amount)) || ((rar.amount) &gt;= newAmount)
 </div>
 </div>
 </div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<p>Total Mutants tu&eacute;s : <span id="mutantT">3</span>
-<br> Total Mutants vivants : <span id="mutantV">0</span>
-<br> Total Mutants mort n&eacute;s : <span id="mutantMN">0</span>
-</p>
 </div>
 </div>
 <hr>

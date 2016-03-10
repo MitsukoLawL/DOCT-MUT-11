@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="1" failures="0" name="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionScout" skipped="0" tests="1" time="0.002">
+<testsuite errors="1" failures="0" name="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionScout" skipped="0" tests="1" time="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -60,61 +60,114 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <Mutation failures="22" operateur="Op13" selecteur="100">
-<diffs>((c.getNumberCaseGlimpse()) == (-1)) || ((c.getNumberCaseGlimpse()) &gt; i)=====&gt;((c.getNumberCaseGlimpse()) == (-1)) &amp;&amp; ((c.getNumberCaseGlimpse()) &gt; i)
-(i == 0) || (i == 1)=====&gt;(i == 0) &amp;&amp; (i == 1)
-(nextCase == null) || ((nextCase.getNumberCaseGlimpse()) &lt; 0)=====&gt;(nextCase == null) &amp;&amp; ((nextCase.getNumberCaseGlimpse()) &lt; 0)
-(((tile != null) &amp;&amp; (tile.isOnMap())) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))=====&gt;((tile != null) &amp;&amp; (tile.isOnMap())) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
-(((tile != null) &amp;&amp; (tile.isOnMap())) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))=====&gt;(((tile != null) &amp;&amp; (tile.isOnMap())) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
-((tile != null) &amp;&amp; (tile.isOnMap()))=====&gt;(tile != null) || (tile.isOnMap())
-(super.isOK()) &amp;&amp; (!(tile.getMoveOn()))=====&gt;(super.isOK()) || (!(tile.getMoveOn()))
-(next == null) || (!(next.isOnMap()))=====&gt;(next == null) &amp;&amp; (!(next.isOnMap()))
-((tile != null) &amp;&amp; (tile.hasBiome(biome)))=====&gt;(tile != null) || (tile.hasBiome(biome))
-((tile != null) || (tile.hasBiome(biome))) &amp;&amp; (!(tile.getMoveOn()))=====&gt;((tile != null) || (tile.hasBiome(biome))) || (!(tile.getMoveOn()))
-(etat.getTeam().isObjective(res.getName())) &amp;&amp; (!(nextCase.getMoveOn()))=====&gt;(etat.getTeam().isObjective(res.getName())) || (!(nextCase.getMoveOn()))
-(nextCase == null) || (!(nextCase.getScouted()))=====&gt;(nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
-(nextCase == null) || (!(nextCase.getScouted()))=====&gt;(nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
-((etat.getPA()) &lt; (paToStop())) || (etat.getTeam().noMoreObjectives())=====&gt;((etat.getPA()) &lt; (paToStop())) &amp;&amp; (etat.getTeam().noMoreObjectives())
-((whatWeCanCreate) == null) || ((whatWeCanCreate.size()) &lt;= 0)=====&gt;((whatWeCanCreate) == null) &amp;&amp; ((whatWeCanCreate.size()) &lt;= 0)
-(next != null) &amp;&amp; (!(next.isOnMap()))=====&gt;(next != null) || (!(next.isOnMap()))
-((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap()))=====&gt;(nextCase3 != null) || (nextCase3.isOnMap())
-(((nextCase3 != null) || (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))=====&gt;((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
-((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))=====&gt;((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))
-((nextCase != null) &amp;&amp; (nextCase.hasBiome(biome))) &amp;&amp; (!(nextCase.getMoveOn()))=====&gt;((nextCase != null) &amp;&amp; (nextCase.hasBiome(biome))) || (!(nextCase.getMoveOn()))
-((((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))=====&gt;(((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
-((((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) &amp;&amp; (!(nextCase3.getMoveOn()))=====&gt;((((nextCase3 != null) || (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) || (!(nextCase3.getMoveOn()))
-((numberWithoutExploit) &lt; 0) &amp;&amp; (exploitPossible)=====&gt;((numberWithoutExploit) &lt; 0) || (exploitPossible)
-(!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; ((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))=====&gt;(!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || ((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))
-((nextCase != null) &amp;&amp; (nextCase.hasBiome(biome)))=====&gt;(nextCase != null) || (nextCase.hasBiome(biome))
-((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON))))=====&gt;(!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))
-((c) == null) &amp;&amp; ((moveWithoutGlimpse) &gt; 3)=====&gt;((c) == null) || ((moveWithoutGlimpse) &gt; 3)
-((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) &amp;&amp; (numberOfExploit &lt; 1)=====&gt;((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) || (numberOfExploit &lt; 1)
-((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName())))=====&gt;(checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))
-(((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName())))=====&gt;((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))
-((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName())))=====&gt;(checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))
-(((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))=====&gt;((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
-(nextCase3 == null) || (((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))=====&gt;(nextCase3 == null) &amp;&amp; (((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))
-((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))=====&gt;(((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName()))
-(numberOfExploit &lt; 1) &amp;&amp; exploit=====&gt;(numberOfExploit &lt; 1) || exploit
-(!exploit) &amp;&amp; (numberOfExploit &lt; 1)=====&gt;(!exploit) || (numberOfExploit &lt; 1)
-((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))=====&gt;(nextCase3.isOnMap()) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
-(nextCase == null) || ((nextCase.getNumberCaseGlimpse()) &lt; 0)=====&gt;(nextCase == null) &amp;&amp; ((nextCase.getNumberCaseGlimpse()) &lt; 0)
-(etat.getTeam().isObjective(res.getName())) &amp;&amp; (!(nextCase.getMoveOn()))=====&gt;(etat.getTeam().isObjective(res.getName())) || (!(nextCase.getMoveOn()))
-((etat.getPA()) &lt; (paForStop())) || (equipe.noMoreObjectives())=====&gt;((etat.getPA()) &lt; (paForStop())) &amp;&amp; (equipe.noMoreObjectives())
-(checkResourceOnCase(etat.getMapMonde().getCurrentCase())) &amp;&amp; (exploreThisCase)=====&gt;(checkResourceOnCase(etat.getMapMonde().getCurrentCase())) || (exploreThisCase)
-(nextCase == null) || (!(nextCase.getScouted()))=====&gt;(nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
-(((amountRes != null) &amp;&amp; (condRes != null)) &amp;&amp; (amountRes.equals(amount))) &amp;&amp; (condRes.equals(cond))=====&gt;(((amountRes != null) &amp;&amp; (condRes != null)) &amp;&amp; (amountRes.equals(amount))) || (condRes.equals(cond))
-((amountRes != null) &amp;&amp; (condRes != null))=====&gt;(amountRes != null) || (condRes != null)
-(((amountRes != null) || (condRes != null)) &amp;&amp; (amountRes.equals(amount)))=====&gt;((amountRes != null) || (condRes != null)) || (amountRes.equals(amount))
-((coo2.getX()) == (getX())) &amp;&amp; ((coo2.getY()) == (getY()))=====&gt;((coo2.getX()) == (getX())) || ((coo2.getY()) == (getY()))
-(!(inventory.containsKey(resource))) || ((inventory.get(resource)) &lt; (amount[i]))=====&gt;(!(inventory.containsKey(resource))) &amp;&amp; ((inventory.get(resource)) &lt; (amount[i]))
-(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives()))) &amp;&amp; ((equipe2.getMen()) == (this.men))=====&gt;(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives()))) || ((equipe2.getMen()) == (this.men))
-(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives())))=====&gt;((equipe2.getMAXMEN()) == (this.MAXMEN)) || (equipe2.getObjectives().equals(getObjectives()))
-(!(inventory.containsKey(res))) || ((inventory.get(res)) &lt; (objective.getObjectives().get(res)))=====&gt;(!(inventory.containsKey(res))) &amp;&amp; ((inventory.get(res)) &lt; (objective.getObjectives().get(res)))
-(maxMen &lt;= 0) || (objectives == null)=====&gt;(maxMen &lt;= 0) &amp;&amp; (objectives == null)
-(objectives.containsKey(res)) || (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())))=====&gt;(objectives.containsKey(res)) &amp;&amp; (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())))
-(amount &gt;= (rar.amount)) &amp;&amp; ((rar.amount) &gt;= newAmount)=====&gt;(amount &gt;= (rar.amount)) || ((rar.amount) &gt;= newAmount)
+<diffs>(i == 0) || (i == 1)  =====&gt;  (i == 0) &amp;&amp; (i == 1)
+
+((c.getNumberCaseGlimpse()) == (-1)) || ((c.getNumberCaseGlimpse()) &gt; i)  =====&gt;  ((c.getNumberCaseGlimpse()) == (-1)) &amp;&amp; ((c.getNumberCaseGlimpse()) &gt; i)
+
+(nextCase == null) || ((nextCase.getNumberCaseGlimpse()) &lt; 0)  =====&gt;  (nextCase == null) &amp;&amp; ((nextCase.getNumberCaseGlimpse()) &lt; 0)
+
+(((tile != null) &amp;&amp; (tile.isOnMap())) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))  =====&gt;  (((tile != null) &amp;&amp; (tile.isOnMap())) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
+
+((tile != null) &amp;&amp; (tile.isOnMap()))  =====&gt;  (tile != null) || (tile.isOnMap())
+
+(((tile != null) || (tile.isOnMap())) &amp;&amp; (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))  =====&gt;  ((tile != null) || (tile.isOnMap())) || (!(tile.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
+
+(super.isOK()) &amp;&amp; (!(tile.getMoveOn()))  =====&gt;  (super.isOK()) || (!(tile.getMoveOn()))
+
+(next == null) || (!(next.isOnMap()))  =====&gt;  (next == null) &amp;&amp; (!(next.isOnMap()))
+
+((tile != null) &amp;&amp; (tile.hasBiome(biome))) &amp;&amp; (!(tile.getMoveOn()))  =====&gt;  ((tile != null) &amp;&amp; (tile.hasBiome(biome))) || (!(tile.getMoveOn()))
+
+((tile != null) &amp;&amp; (tile.hasBiome(biome)))  =====&gt;  (tile != null) || (tile.hasBiome(biome))
+
+(etat.getTeam().isObjective(res.getName())) &amp;&amp; (!(nextCase.getMoveOn()))  =====&gt;  (etat.getTeam().isObjective(res.getName())) || (!(nextCase.getMoveOn()))
+
+(nextCase == null) || (!(nextCase.getScouted()))  =====&gt;  (nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
+
+(nextCase == null) || (!(nextCase.getScouted()))  =====&gt;  (nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
+
+((etat.getPA()) &lt; (paToStop())) || (etat.getTeam().noMoreObjectives())  =====&gt;  ((etat.getPA()) &lt; (paToStop())) &amp;&amp; (etat.getTeam().noMoreObjectives())
+
+((whatWeCanCreate) == null) || ((whatWeCanCreate.size()) &lt;= 0)  =====&gt;  ((whatWeCanCreate) == null) &amp;&amp; ((whatWeCanCreate.size()) &lt;= 0)
+
+(!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; ((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))  =====&gt;  (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || ((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))
+
+((nextCase != null) &amp;&amp; (nextCase.hasBiome(biome)))  =====&gt;  (nextCase != null) || (nextCase.hasBiome(biome))
+
+((((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) &amp;&amp; (!(nextCase3.getMoveOn()))  =====&gt;  ((((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))) || (!(nextCase3.getMoveOn()))
+
+(((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName())))  =====&gt;  ((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))
+
+(nextCase3 == null) || (((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))  =====&gt;  (nextCase3 == null) &amp;&amp; (((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))
+
+((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))  =====&gt;  ((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))
+
+((c) == null) &amp;&amp; ((moveWithoutGlimpse) &gt; 3)  =====&gt;  ((c) == null) || ((moveWithoutGlimpse) &gt; 3)
+
+(!exploit) &amp;&amp; (numberOfExploit &lt; 1)  =====&gt;  (!exploit) || (numberOfExploit &lt; 1)
+
+(checkResourceOnCase(etat.getMapMonde().getCurrentCase())) &amp;&amp; (exploreThisCase)  =====&gt;  (checkResourceOnCase(etat.getMapMonde().getCurrentCase())) || (exploreThisCase)
+
+((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) &amp;&amp; (numberOfExploit &lt; 1)  =====&gt;  ((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))) || (numberOfExploit &lt; 1)
+
+(nextCase == null) || (!(nextCase.getScouted()))  =====&gt;  (nextCase == null) &amp;&amp; (!(nextCase.getScouted()))
+
+(nextCase == null) || ((nextCase.getNumberCaseGlimpse()) &lt; 0)  =====&gt;  (nextCase == null) &amp;&amp; ((nextCase.getNumberCaseGlimpse()) &lt; 0)
+
+((((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))  =====&gt;  (((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
+
+(etat.getTeam().isObjective(res.getName())) &amp;&amp; (!(nextCase.getMoveOn()))  =====&gt;  (etat.getTeam().isObjective(res.getName())) || (!(nextCase.getMoveOn()))
+
+((nextCase3.isOnMap()) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))  =====&gt;  (nextCase3.isOnMap()) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
+
+((checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) || (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName())))  =====&gt;  (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))
+
+((((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) || (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName())))  =====&gt;  (((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "MEDIUM", "EASY", res.getName()))) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "EASY", res.getName()))
+
+(next != null) &amp;&amp; (!(next.isOnMap()))  =====&gt;  (next != null) || (!(next.isOnMap()))
+
+(((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN))))  =====&gt;  ((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap())) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))
+
+((etat.getPA()) &lt; (paForStop())) || (equipe.noMoreObjectives())  =====&gt;  ((etat.getPA()) &lt; (paForStop())) &amp;&amp; (equipe.noMoreObjectives())
+
+(((nextCase3.isOnMap()) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) &amp;&amp; (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE))))  =====&gt;  ((nextCase3.isOnMap()) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.OCEAN)))) || (!(nextCase3.hasBiome(fr.unice.polytech.ogl.islba.model.Biome.LAKE)))
+
+((numberWithoutExploit) &lt; 0) &amp;&amp; (exploitPossible)  =====&gt;  ((numberWithoutExploit) &lt; 0) || (exploitPossible)
+
+((nextCase3 != null) &amp;&amp; (nextCase3.isOnMap()))  =====&gt;  (nextCase3 != null) || (nextCase3.isOnMap())
+
+(numberOfExploit &lt; 1) &amp;&amp; exploit  =====&gt;  (numberOfExploit &lt; 1) || exploit
+
+((checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) || (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName())))  =====&gt;  (checkAmountAndCondOnCase(currentCase, "MEDIUM", "FAIR", res.getName())) &amp;&amp; (checkAmountAndCondOnCase(currentCase, "HIGH", "FAIR", res.getName()))
+
+((nextCase != null) || (nextCase.hasBiome(biome))) &amp;&amp; (!(nextCase.getMoveOn()))  =====&gt;  ((nextCase != null) || (nextCase.hasBiome(biome))) || (!(nextCase.getMoveOn()))
+
+((!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) &amp;&amp; (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON))))  =====&gt;  (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.COMMON))) || (!(rarity.equals(fr.unice.polytech.ogl.islba.model.Rarity.UNCOMMON)))
+
+((amountRes != null) &amp;&amp; (condRes != null))  =====&gt;  (amountRes != null) || (condRes != null)
+
+(((amountRes != null) || (condRes != null)) &amp;&amp; (amountRes.equals(amount))) &amp;&amp; (condRes.equals(cond))  =====&gt;  (((amountRes != null) || (condRes != null)) &amp;&amp; (amountRes.equals(amount))) || (condRes.equals(cond))
+
+(((amountRes != null) || (condRes != null)) &amp;&amp; (amountRes.equals(amount)))  =====&gt;  ((amountRes != null) || (condRes != null)) || (amountRes.equals(amount))
+
+((coo2.getX()) == (getX())) &amp;&amp; ((coo2.getY()) == (getY()))  =====&gt;  ((coo2.getX()) == (getX())) || ((coo2.getY()) == (getY()))
+
+(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives()))) &amp;&amp; ((equipe2.getMen()) == (this.men))  =====&gt;  (((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives()))) || ((equipe2.getMen()) == (this.men))
+
+(maxMen &lt;= 0) || (objectives == null)  =====&gt;  (maxMen &lt;= 0) &amp;&amp; (objectives == null)
+
+(!(inventory.containsKey(res))) || ((inventory.get(res)) &lt; (objective.getObjectives().get(res)))  =====&gt;  (!(inventory.containsKey(res))) &amp;&amp; ((inventory.get(res)) &lt; (objective.getObjectives().get(res)))
+
+(!(inventory.containsKey(resource))) || ((inventory.get(resource)) &lt; (amount[i]))  =====&gt;  (!(inventory.containsKey(resource))) &amp;&amp; ((inventory.get(resource)) &lt; (amount[i]))
+
+(((equipe2.getMAXMEN()) == (this.MAXMEN)) &amp;&amp; (equipe2.getObjectives().equals(getObjectives())))  =====&gt;  ((equipe2.getMAXMEN()) == (this.MAXMEN)) || (equipe2.getObjectives().equals(getObjectives()))
+
+(objectives.containsKey(res)) || (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())))  =====&gt;  (objectives.containsKey(res)) &amp;&amp; (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())))
+
+(amount &gt;= (rar.amount)) &amp;&amp; ((rar.amount) &gt;= newAmount)  =====&gt;  (amount &gt;= (rar.amount)) || ((rar.amount) &gt;= newAmount)
+
 </diffs>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionScout" name="test" time="0.002">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionScout" name="test" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.ConditionScout.isOK(ConditionScout.java:15)
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionScout.test(TestConditionScout.java:31)
@@ -149,7 +202,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionGlimpse" name="test" time="0.001">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionGlimpse" name="test" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.ConditionGlimpse.isOK(ConditionGlimpse.java:15)
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionGlimpse.test(TestConditionGlimpse.java:30)
@@ -220,9 +273,9 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestObjective" name="testObjectivesAsPrimaryResources" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestObjective" name="testObjectivesAsPrimaryResources" time="0.005"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestObjective" name="testSecondaryResourcesObjectives" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestObjective" name="testWithPlank" time="0">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestObjective" name="testWithPlank" time="0.001">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -260,7 +313,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestObjective" name="testGetRarityOf" time="0">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestObjective" name="testGetRarityOf" time="0.001">
     <failure message="expected:&lt;RARE&gt; but was:&lt;COMMON&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;RARE&gt; but was:&lt;COMMON&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -378,7 +431,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionExploit" name="test" time="0.006">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionExploit" name="test" time="0">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -415,7 +468,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestconditionMoveIfNoWater" name="test" time="0">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestconditionMoveIfNoWater" name="test" time="0.005">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -453,7 +506,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeScout" name="test" time="0.002">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeScout" name="test" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.ConditionScout.isOK(ConditionScout.java:15)
 	at fr.unice.polytech.ogl.islba.ia.secondIA.link.Link.isNextNode(Link.java:47)
@@ -525,7 +578,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStop" name="test" time="0.013">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStop" name="test" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.model.Equipe.noMoreObjectives(Equipe.java:82)
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.ConditionStop.isOK(ConditionStop.java:11)
@@ -564,11 +617,11 @@
 </error>
   </testcase>
 <testcase classname="fr.unice.polytech.ogl.islba.parser.TestJSONParser" name="testJSONtoString" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.parser.TestJSONParser" name="testStringtoJSONFalse" time="0.001"/>
-<testcase classname="fr.unice.polytech.ogl.islba.parser.TestJSONParser" name="testStringtoJSON" time="0.001"/>
+<testcase classname="fr.unice.polytech.ogl.islba.parser.TestJSONParser" name="testStringtoJSONFalse" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.parser.TestJSONParser" name="testStringtoJSON" time="0.003"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestIaFirstIA" name="testIA" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestIaFirstIA" name="testIAOnMap" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA2" name="testTransform" time="0.001">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA2" name="testTransform" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.model.Equipe.canCreate(Equipe.java:108)
 	at fr.unice.polytech.ogl.islba.ia.FirstIA.transform(FirstIA.java:77)
@@ -608,16 +661,16 @@
   </testcase>
 <testcase classname="fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource" name="testGetComponentsNeeded" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource" name="testToString" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource" name="testGetComponent" time="0.003"/>
+<testcase classname="fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource" name="testGetComponent" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.resource.TestSecondaryResource" name="testGetAmount" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestMoveNorth" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestMoveNorth" time="0.001"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestMoveSouth" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestMajEdJ" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestMauvaiseDirection" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestMoveEast" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestMoveWest" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestEffetDeBord" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestDeuxMoves" time="0">
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandMove" name="TestDeuxMoves" time="0.002">
     <failure message="Values should be different. Actual: fr.unice.polytech.ogl.islba.model.Coordonnees@36422" type="java.lang.AssertionError">java.lang.AssertionError: Values should be different. Actual: fr.unice.polytech.ogl.islba.model.Coordonnees@36422
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failEquals(Assert.java:185)
@@ -655,7 +708,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNothingToDo" name="test" time="0.006">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNothingToDo" name="test" time="0">
     <failure message="expected:&lt;W&gt; but was:&lt;S&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;W&gt; but was:&lt;S&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -694,10 +747,10 @@
 </failure>
   </testcase>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestEtatDeJeu" name="testCreation" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestEtatDeJeu" name="testCreationVide" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestEtatDeJeu" name="testCreationVide" time="0.001"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestEtatDeJeu" name="testGestionCase" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestEtatDeJeu" name="testGestionPA" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.link.TestMoveWhenResourceLink" name="test" time="0">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestEtatDeJeu" name="testGestionPA" time="0.001"/>
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.link.TestMoveWhenResourceLink" name="test" time="0.001">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.ConditionResourceAndOnMap.isOK(ConditionResourceAndOnMap.java:17)
 	at fr.unice.polytech.ogl.islba.ia.secondIA.link.Link.isNextNode(Link.java:47)
@@ -733,7 +786,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeMove" name="test" time="0.001">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeMove" name="test" time="0">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -772,12 +825,12 @@
   </testcase>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestCoordonnees" name="testAdd" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestCoordonnees" name="testCreateCoordonnees" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestCoordonnees" name="testMultiplyBy" time="0.001"/>
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestCoordonnees" name="testMultiplyBy" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestCase" name="testAddRessource" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestCase" name="testAddBiome" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestCase" name="testAddBiome" time="0.001"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestCase" name="testGlimpse" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestCase" name="testMoveAndScout" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestCase" name="testResourceWithAmountAndCond" time="0.004">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestCase" name="testResourceWithAmountAndCond" time="0.001">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.model.Case.getResourcesWithAmountAndCond(Case.java:49)
 	at fr.unice.polytech.ogl.islba.model.TestCase.testResourceWithAmountAndCond(TestCase.java:97)
@@ -887,8 +940,8 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandGlimpse" name="testToString" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandGlimpse" name="outOfMap" time="0">
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandGlimpse" name="testToString" time="0.001"/>
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandGlimpse" name="outOfMap" time="0.003">
     <failure message="expected:&lt;0&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;-1&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -926,7 +979,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandGlimpse" name="testResult" time="0">
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandGlimpse" name="testResult" time="0.001">
     <failure message="expected:&lt;0&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;-1&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -965,7 +1018,7 @@
 </failure>
   </testcase>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testInventory" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testExploitResource" time="0.003"/>
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testExploitResource" time="0.001"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testIsObjective" time="0.001">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
@@ -1003,7 +1056,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testNoMoreObjectives" time="0.003">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testNoMoreObjectives" time="0.001">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.model.Equipe.noMoreObjectives(Equipe.java:82)
 	at fr.unice.polytech.ogl.islba.model.TestEquipe.testNoMoreObjectives(TestEquipe.java:113)
@@ -1040,7 +1093,7 @@
   </testcase>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testLandMen" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testLoseMen" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testCanCreate" time="0.002">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testCanCreate" time="0.001">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.model.Equipe.canCreate(Equipe.java:108)
 	at fr.unice.polytech.ogl.islba.model.TestEquipe.testCanCreate(TestEquipe.java:166)
@@ -1075,7 +1128,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testObjectivesByRarity" time="0.003">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testObjectivesByRarity" time="0.007">
     <failure message="expected:&lt;UNCOMMON&gt; but was:&lt;COMMON&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;UNCOMMON&gt; but was:&lt;COMMON&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1113,7 +1166,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testWithAFewPlanks" time="0.002">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testWithAFewPlanks" time="0.004">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -1150,7 +1203,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testEquipe" time="0.003">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testEquipe" time="0.002">
     <failure message="Values should be different. Actual: fr.unice.polytech.ogl.islba.model.Equipe@cf9a327c" type="java.lang.AssertionError">java.lang.AssertionError: Values should be different. Actual: fr.unice.polytech.ogl.islba.model.Equipe@cf9a327c
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failEquals(Assert.java:185)
@@ -1225,7 +1278,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testExceptionEquipe" time="0.001">
+<testcase classname="fr.unice.polytech.ogl.islba.model.TestEquipe" name="testExceptionEquipe" time="0.002">
     <failure message="Expected exception: java.lang.IllegalArgumentException" type="java.lang.AssertionError">java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
 	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:32)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
@@ -1251,7 +1304,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.link.TestScoutLink" name="test" time="0.001">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.link.TestScoutLink" name="test" time="0.002">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -1288,7 +1341,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.model.RarityTest" name="test" time="0">
+<testcase classname="fr.unice.polytech.ogl.islba.model.RarityTest" name="test" time="0.001">
     <failure message="expected:&lt;UNCOMMON&gt; but was:&lt;COMMON&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;UNCOMMON&gt; but was:&lt;COMMON&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1362,7 +1415,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStart" name="test" time="0.016">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeStart" name="test" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.model.Equipe.noMoreObjectives(Equipe.java:82)
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.ConditionStop.isOK(ConditionStop.java:11)
@@ -1400,17 +1453,17 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestMemeScout" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestMemeScout" time="0.001"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestScoutNorth" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestScoutSouth" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestScoutSouth" time="0.001"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestMajEdJ" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestScoutEast" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestScoutWest" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestMauvaiseDirection" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="testResource" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandScout" name="TestEffetDeBord" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.link.TestBeginningLandLink" name="test" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNoWaterCheckMoveOn" name="test" time="0.001">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.link.TestBeginningLandLink" name="test" time="0.015"/>
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionMoveIfNoWaterCheckMoveOn" name="test" time="0">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -1448,7 +1501,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testExploit" time="0.028">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testExploit" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.ia.FirstIA.glimpse(FirstIA.java:100)
 	at fr.unice.polytech.ogl.islba.ia.FirstIA.takeDecision(FirstIA.java:55)
@@ -1485,7 +1538,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testIfNoResourceNearUs" time="0.002">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testIfNoResourceNearUs" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.ia.FirstIA.glimpse(FirstIA.java:100)
 	at fr.unice.polytech.ogl.islba.ia.FirstIA.takeDecision(FirstIA.java:55)
@@ -1559,8 +1612,8 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testBeginning" time="0.001"/>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testGlimpseAfterSeveralMoves" time="0.001">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testBeginning" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testGlimpseAfterSeveralMoves" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.ia.FirstIA.glimpse(FirstIA.java:100)
 	at fr.unice.polytech.ogl.islba.ia.FirstIA.takeDecision(FirstIA.java:55)
@@ -1597,7 +1650,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testMoveWithBiomeResources" time="0.002">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.TestFirstIA" name="testMoveWithBiomeResources" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.ia.FirstIA.glimpse(FirstIA.java:100)
 	at fr.unice.polytech.ogl.islba.ia.FirstIA.takeDecision(FirstIA.java:55)
@@ -1635,8 +1688,8 @@
 </error>
   </testcase>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestStop" name="testToJSON" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandExploit" name="exploitInexistant" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandExploit" name="testToJSON" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandExploit" name="exploitInexistant" time="0.008"/>
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandExploit" name="testToJSON" time="0.001"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandTransform" name="initTransform" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandTransform" name="initTransformNULL" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandTransform" name="testdoResult" time="0"/>
@@ -1648,7 +1701,7 @@
 <testcase classname="fr.unice.polytech.ogl.islba.model.resource.TestResourcesType" name="testIsPrimaryResource" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestResource" name="testCreationRessource" time="0"/>
 <testcase classname="fr.unice.polytech.ogl.islba.model.TestResource" name="testEqualityRessource" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeLand" name="test" time="0.006">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.node.TestNodeLand" name="test" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.ConditionScout.isOK(ConditionScout.java:15)
 	at fr.unice.polytech.ogl.islba.ia.secondIA.link.Link.isNextNode(Link.java:47)
@@ -1685,7 +1738,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop" name="testConditionStopWithObjective" time="0.004">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop" name="testConditionStopWithObjective" time="0">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -1722,7 +1775,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop" name="testConditionStopWithNoObjective" time="0.003">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop" name="testConditionStopWithNoObjective" time="0">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -1759,7 +1812,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop" name="testConditionStopWithPA" time="0.005">
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop" name="testConditionStopWithPA" time="0.001">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at fr.unice.polytech.ogl.islba.model.Equipe.noMoreObjectives(Equipe.java:82)
 	at fr.unice.polytech.ogl.islba.ia.secondIA.condition.ConditionStop.isOK(ConditionStop.java:11)
@@ -1795,8 +1848,8 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop" name="testNextNode" time="0.001"/>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandExplore" name="testDoResult" time="0"/>
-<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandExplore" name="testToJSON" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionStop" name="testNextNode" time="0"/>
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandExplore" name="testDoResult" time="0.001"/>
+<testcase classname="fr.unice.polytech.ogl.islba.command.TestCommandExplore" name="testToJSON" time="0.001"/>
 </Mutation>
 </testsuite>
