@@ -68,8 +68,8 @@ Pour relier chaque partie du framework, nous utilisons des scripts shell.
 <li>Le processus de transformation est indépendant du projet à tester.</li>
 <li>Nous pouvons ajouter des opérateurs supplémentaires assez facilement : Il suffit d'ajouter la nouvelle classe au spoonProcess, et d'ajouter cet opérateur dans la liste du Main.</li>
 <li>La chaîne de production gère les erreurs de compilation ainsi que de tests. Les opérateurs disponibles sont capables de générer ces deux types d'erreurs.</li>
-<li>Les opérateurs que nous avons choisi d'implémenter. Car ils ne s'attaquent pas seulement à des changements d'opérateurs, mais à des aspect orienté objets tel que l'héritage, et des attributs d'instance</li>
-<li>Il est possible de muter un gros projet</li>
+<li>Les opérateurs que nous avons choisi d'implémenter. Car ils ne s'attaquent pas seulement à des changements d'opérateurs, mais à des aspects orientés objets tels que l'héritage, et des attributs d'instance</li>
+<li>Il est possible de muter de gros projets</li>
 </ul>
 
 #### Faiblessses : #

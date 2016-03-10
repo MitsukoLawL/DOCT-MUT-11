@@ -13,7 +13,7 @@ le faire fonctionner (avoir ces 3 dossiers à tels endroits, compiler ce machin,
 2. Dans le dossier <b>mutatedCode/</b> :
     1. Ajouter ses classes de <b>tests</b> unitaires dans <b>mutatedCode/src/test/</b>
     2. Ajouter son fichier <b>POM.xml</b>
-3. Ajouter les dépendences du pom.xml du projet à muter dans le pom.xml de spoonProcess
+3. Ajouter les <b>dépendences</b> du pom.xml du projet à muter dans le <b>pom.xml de spoonProcess</b>
 
 <br/>
 <br/>
