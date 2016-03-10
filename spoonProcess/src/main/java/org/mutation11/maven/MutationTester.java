@@ -122,7 +122,7 @@ public class MutationTester<T> {
 				mutator.process(op);
 
 				// Write on a file the diff
-				transformation.println(e.toString() + "  =====>  " + op.toString());
+				transformation.println(e.toString() + "  ===>  " + op.toString()+" ..... ");
 				transformation.println("");
 				// temporarily replacing the original AST node with the mutated element
 				replace(e, op);
@@ -137,7 +137,7 @@ public class MutationTester<T> {
 					mutants.add(klass);
 //				System.out.println(klass.toString());
 				} catch (ParentNotInitializedException e1) {
-					System.out.println("Problem with "+e.toString() + "  =====>  " + op.toString()+"<br/>");
+					System.out.println("Problem with "+e.toString() + "  ===>  " + op.toString()+" ..... ");
 				}
 
 

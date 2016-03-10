@@ -39,3 +39,5 @@ Vous trouverez le rapport dans <b>Report/index.html</b>
 ![Exemple index.html](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/index.png "Exemple de rapport final HTML")
 Le rapport est consitué d'un histogramme regroupant les résultats des tests, ainsi qu'un diagramme circulaire résumant le nombre de mutants tués/vivants/mort-nés.
 De plus, chaque itération est illustrée par un tableau détaillant le résultat de chaque test pour chaque classe (cliquez sur le bouton "<b>Résultats</b>") ainsi que le détail des modifications des candidats (cliquez sur le bouton "<b>Transformation</b>").
+
+Cliquez sur une <b>colonne</b> de l'histogramme pour dérouler vers l'itération correspondante.

@@ -4,9 +4,9 @@
 <testcase>
 <compilation_error>compilation error</compilation_error>
 </testcase>
-<diffs>private static int a = 0;  =====&gt;  private int a = 0;
+<diffs>private static int a = 0;  ===&gt;  private int a = 0; ..... 
 
-private static int a = 0;  =====&gt;  private int a = 0;
+private static int a = 0;  ===&gt;  private int a = 0; ..... 
 
 </diffs>
 </Mutation>

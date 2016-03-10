@@ -55,7 +55,7 @@ Pour relier chaque partie du framework, nous utilisons des scripts shell.
 </ul>
 ![Exemple consoleInterface](https://github.com/MitsukoLawL/DOCT-MUT-11/blob/master/doc/img/consoleInterface.png "Exemple d'utilisation de consoleInterface")
     <p>Lorsque l'on entrera "exit", cela mettra fin au traitement de mutant et un HTML sera généré (grâce à l'appel de la fonction CreatHTML.java)</p>
-<ul><li> $ ./execution.sh
+<ul><li> <b>$ ./execution.sh</b>
     Où nous ajoutons les lignes <i>./process.sh "Dossier Source" "mutant" "selecteur"</i>
     Pour autant de mutation que nous souhaitons appliquer.</li>
 </ul>
@@ -66,7 +66,10 @@ Pour relier chaque partie du framework, nous utilisons des scripts shell.
 --------
 <ul>
 <li>Le processus de transformation est indépendant du projet à tester.</li>
-<li>On peut ajouter des opérateurs supplémentaires assez facilement : Il suffit d'ajouter la nouvelle classe au spoonProcess, et d'ajouter cet opérateur dans la liste du Main.</li>
+<li>Nous pouvons ajouter des opérateurs supplémentaires assez facilement : Il suffit d'ajouter la nouvelle classe au spoonProcess, et d'ajouter cet opérateur dans la liste du Main.</li>
+<li>La chaîne de production gère les erreurs de compilation ainsi que de tests. Les opérateurs disponibles sont capables de générer ces deux types d'erreurs.</li>
+<li>Les opérateurs que nous avons choisi d'implémenter. Car ils ne s'attaquent pas seulement à des changements d'opérateurs, mais à des aspect orienté objets tel que l'héritage, et des attributs d'instance</li>
+<li>Il est possible de muter un gros projet</li>
 </ul>
 
 #### Faiblessses : #
@@ -75,7 +78,9 @@ Pour relier chaque partie du framework, nous utilisons des scripts shell.
 <ul>
 <li>Sources dupliquées</li>
 <li>Le programme spoonProcess est peut-être un peu trop gros pour ce qu'il fait</li>
-<li>On ne peut appliquer au code qu'un seul opérateur à la fois</li>
+<li>Nous ne pouvons appliquer au code qu'un seul opérateur à la fois</li>
+<li>Le choix de selecteur est limité à un percentage</li>
+<li>Peu d'opérateurs actuellement, mais facile à intégrer par la suite</li>
 <li>Pour que le projet puisse être muté, il faut que les dépendances de son pom.xml soit dans celui de spoonProcess</li>
 <li>Portabilité : La gestion des étapes se fait en shell</li>
 </ul>
