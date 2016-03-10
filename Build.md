@@ -4,13 +4,20 @@ le faire fonctionner (avoir ces 3 dossiers à tels endroits, compiler ce machin,
  donc tout ce qui est nécessaire niveau techniuqe-->
 # Build #
 
-1. Déposer ses sources dans <b>spoonProcess/toBeMutated/</b>
-2. Déposer ses sources dans <b>mutatedCode/src</b>
-3. Ajouter son projet en entier dans <b>mutatedCode/</b>
-    1. Ajouter ses tests dans <b>mutatedCode/test/</b>
-    2. Ajouter son fichier <b>POM.xml</b>
-    3. Ajouter les fichiers complémentaires
 
+1. Déposer ses <b>sources</b> dans les <b>deux</b> répertoires :
+    - <b>spoonProcess/toBeMutated/</b> <b>(**)</b>
+    - <b>mutatedCode/src/</b>
+2. Dans le dossier <b>mutatedCode/</b> :
+    1. Ajouter ses classes de <b>tests</b> unitaires dans <b>mutatedCode/test/</b>
+    2. Ajouter son fichier <b>POM.xml</b>
+
+
+<br/>
+<br/>
+<b>(**)</b> le répertoire toBeMutated/ peut être remplacé par n'importe quel autre repertoire,
+ tant que c'est un dossier contenant une copie originale des sources du projet à tester.
+ Il faudra alors préciser le chemin de ce dossier. <br/>Mais, pour simplifier, nous conseillons d'utiliser ce dossier toBeMutated/
 
 -
 ### Projet testé #
