@@ -1,4 +1,55 @@
-package fr.unice.polytech.ogl.islba.model; 
+public class Coordonnees {
+    private int x;
+
+    private int y;
+
+    public Coordonnees(int x ,int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public static fr.unice.polytech.ogl.islba.model.Coordonnees multiplyBy(fr.unice.polytech.ogl.islba.model.Coordonnees c, int mult) {
+        int newX = (c.getX()) * mult;
+        int newY = (c.getY()) * mult;
+        return new fr.unice.polytech.ogl.islba.model.Coordonnees(newX , newY);
+    }
+
+    public static fr.unice.polytech.ogl.islba.model.Coordonnees add(fr.unice.polytech.ogl.islba.model.Coordonnees coo1, fr.unice.polytech.ogl.islba.model.Coordonnees coo2) {
+        int newX = (coo1.getX()) + (coo2.getX());
+        int newY = (coo1.getY()) + (coo2.getY());
+        return new fr.unice.polytech.ogl.islba.model.Coordonnees(newX , newY);
+    }
+
+    @java.lang.Override
+    public boolean equals(java.lang.Object obj) {
+        if ((this) == obj) {
+            return true;
+        } else if (obj instanceof fr.unice.polytech.ogl.islba.model.Coordonnees) {
+            fr.unice.polytech.ogl.islba.model.Coordonnees coo2 = ((fr.unice.polytech.ogl.islba.model.Coordonnees)(obj));
+            if (((coo2.getX()) == (getX())) && ((coo2.getY()) == (getY()))) {
+                return true;
+            } 
+        } 
+        return false;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+        int cle = 17;
+        int code = 769;
+        code = (code * cle) + (x);
+        code = (code / cle) + (y);
+        return code;
+    }
+}
 public class Equipe {
     private int MAXMEN;
 
@@ -9,7 +60,7 @@ public class Equipe {
     private java.util.Map<fr.unice.polytech.ogl.islba.model.resource.Resource, java.lang.Integer> inventory;
 
     public Equipe(int maxMen ,java.util.Map<java.lang.String, java.lang.Integer> objectives) {
-        if ((maxMen <= 0) && (objectives == null)) {
+        if ((maxMen <= 0) || (objectives == null)) {
             throw new java.lang.IllegalArgumentException("maxMen should be positive in Equipe and the objectives Map shouldn't be null.");
         } 
         this.MAXMEN = maxMen;
@@ -79,7 +130,7 @@ public class Equipe {
 
     public boolean noMoreObjectives() {
         for (fr.unice.polytech.ogl.islba.model.resource.Resource res : objective.getObjectives().keySet()) {
-            if ((!(inventory.containsKey(res))) && ((inventory.get(res)) < (objective.getObjectives().get(res)))) {
+            if ((!(inventory.containsKey(res))) || ((inventory.get(res)) < (objective.getObjectives().get(res)))) {
                 return false;
             } 
         }
@@ -105,7 +156,7 @@ public class Equipe {
             int i;
             for (i = 0 ; i < (resourcesNeeded.length) ; i++) {
                 fr.unice.polytech.ogl.islba.model.resource.Resource resource = new fr.unice.polytech.ogl.islba.model.resource.Resource(resourcesNeeded[i].toString());
-                if ((!(inventory.containsKey(resource))) && ((inventory.get(resource)) < (amount[i]))) {
+                if ((!(inventory.containsKey(resource))) || ((inventory.get(resource)) < (amount[i]))) {
                     break;
                 } 
             }
@@ -119,7 +170,7 @@ public class Equipe {
             int i;
             java.util.List<java.lang.Integer> amounts = new java.util.ArrayList<java.lang.Integer>();
             for (i = 0 ; i < (resourcesNeeded.length) ; i++) {
-                int montant = ((int)((inventory.get(new fr.unice.polytech.ogl.islba.model.resource.Resource(resourcesNeeded[i].toString()))) / (amount[i])));
+                int montant = ((int)((inventory.get(new fr.unice.polytech.ogl.islba.model.resource.Resource(resourcesNeeded[i].toString()))) + (amount[i])));
                 amounts.add(montant);
             }
             int min = amounts.get(0);
@@ -139,52 +190,4 @@ public class Equipe {
     }
 
     public java.util.Map<fr.unice.polytech.ogl.islba.model.resource.SecondaryResource, java.lang.Integer> whatWeNeed() {
-        java.util.Map<fr.unice.polytech.ogl.islba.model.resource.SecondaryResource, java.lang.Integer> secondaryObjectives = objective.getSecondaryResourcesObjectives();
-        java.util.Map<fr.unice.polytech.ogl.islba.model.resource.SecondaryResource, java.lang.Integer> whatWeNeed = new java.util.HashMap<fr.unice.polytech.ogl.islba.model.resource.SecondaryResource, java.lang.Integer>();
-        for (fr.unice.polytech.ogl.islba.model.resource.SecondaryResource res : secondaryObjectives.keySet()) {
-            fr.unice.polytech.ogl.islba.model.resource.Resource resource = new fr.unice.polytech.ogl.islba.model.resource.Resource(res.toString());
-            if (!(inventory.containsKey(resource))) {
-                whatWeNeed.put(res, secondaryObjectives.get(res));
-            } else if ((inventory.get(resource)) < (secondaryObjectives.get(res))) {
-                whatWeNeed.put(res, ((secondaryObjectives.get(res)) - (inventory.get(resource))));
-            } 
-        }
-        return whatWeNeed;
-    }
-
-    public int getMAXMEN() {
-        return MAXMEN;
-    }
-
-    public int getMen() {
-        return men;
-    }
-
-    public java.util.Map<fr.unice.polytech.ogl.islba.model.resource.Resource, java.lang.Integer> getObjectives() {
-        return objective.getObjectives();
-    }
-
-    public java.util.Map<fr.unice.polytech.ogl.islba.model.resource.Resource, java.lang.Integer> getInventory() {
-        return inventory;
-    }
-
-    @java.lang.Override
-    public boolean equals(java.lang.Object obj) {
-        if (obj instanceof fr.unice.polytech.ogl.islba.model.Equipe) {
-            fr.unice.polytech.ogl.islba.model.Equipe equipe2 = ((fr.unice.polytech.ogl.islba.model.Equipe)(obj));
-            return (((equipe2.getMAXMEN()) == (this.MAXMEN)) && (equipe2.getObjectives().equals(getObjectives()))) || ((equipe2.getMen()) == (this.men));
-        } 
-        return false;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-        int cle = 11;
-        int code = 337;
-        code = (code * cle) + (MAXMEN);
-        code = (code * cle) + (objective.hashCode());
-        code = (code * cle) + (men);
-        code = (code * cle) + (inventory.hashCode());
-        return code;
-    }
-}
+        java.util.Map<fr.unice.polytech.ogl.islba.model.resource.SecondaryResource, java.lang.Integer> secondaryObjectives = objective.getSecondaryResourcesObj

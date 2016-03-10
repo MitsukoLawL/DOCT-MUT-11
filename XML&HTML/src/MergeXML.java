@@ -17,7 +17,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stream.StreamSource;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,25 +32,49 @@ public class MergeXML {
          * 1 l'operateur de mutation appliqué
          * 2 le selecteur appliqué
          * 3 repértoire destination
+         * 4 nom fichier txt
          *
          * */
 
+//            String txt = fileReader(args[3] + args[4]);
+            String txt = fileReader(args[3]+args[1]+"-"+args[2]+".txt");
+
         try {
-            Merge(getAllXML(args[0], ".\\.xml" ), args[0], args[1], args[2], args[3]);
-            //TODO chimin du html
-        } catch (TransformerException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
+            Merge(getAllXML(args[0], ".\\.xml" ), args[0], args[1], args[2], args[3], txt);
+        } catch (TransformerException e1) {
+            e1.printStackTrace();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        } catch (SAXException e1) {
+            e1.printStackTrace();
+        } catch (ParserConfigurationException e1) {
+            e1.printStackTrace();
         }
-
-
-
     }
+
+
+    public static String fileReader(String nomfichier) {
+
+        String chaine="";
+        String fichier =nomfichier;
+
+        //lecture du fichier texte
+        try{
+            InputStream ips=new FileInputStream(fichier);
+            InputStreamReader ipsr=new InputStreamReader(ips);
+            BufferedReader br=new BufferedReader(ipsr);
+            String ligne;
+            while ((ligne=br.readLine())!=null){
+                chaine+=ligne+"\n";
+            }
+            br.close();
+        }
+        catch (Exception e){
+            System.out.println(e.toString());
+        }
+        return chaine;
+    }
+
 
     public static List<String> getAllXML(String path, String regx ) {
 
@@ -69,7 +92,7 @@ public class MergeXML {
         return listeFichiers;
     }
 
-    public static String Merge(List<String> allXML, String path, String op, String select, String resultPath ) throws TransformerException, IOException, SAXException, ParserConfigurationException {
+    public static String Merge(List<String> allXML, String path, String op, String select, String resultPath, String  txt) throws TransformerException, IOException, SAXException, ParserConfigurationException {
         String fileName = resultPath + op +"-"+select +".xml ";
         //System.out.println(allXML.toString());
         String fileresult = allXML.get(0);
@@ -81,14 +104,10 @@ public class MergeXML {
         Document doc = builder.parse(new File(path + fileresult));
         //System.out.println(doc.toString());
         NodeList nodes = doc.getElementsByTagName("testcase");
-        //TODO
         int failure = Integer.parseInt(nodes.item(0).getParentNode().getAttributes().getNamedItem("failures").getNodeValue());
-        //int failure = Integer.parseInt(((Node) doc.getElementsByTagName("testsuite"))..getAttributes().getNamedItem("failures").getNodeValue());
 
         for(String tmp : allXML) {
             Document doc1 = builder.parse(new File(path + tmp));
-            //TODO
-            //failure = Integer.parseInt(((Node) doc.getElementsByTagName("testsuite")).getAttributes().getNamedItem("failures").getNodeValue());
             NodeList nodes1 = doc1.getElementsByTagName("testcase");
             failure += Integer.parseInt(nodes1.item(0).getParentNode().getAttributes().getNamedItem("failures").getNodeValue());
             for (int i = 0; i < nodes1.getLength(); i = i + 1) {
@@ -103,6 +122,9 @@ public class MergeXML {
         nElem.setAttribute("operateur", op );
         nElem.setAttribute("selecteur", select );
         nElem.setAttribute("failures",  ""+ failure);
+        Element txtE = doc.createElement("diffs");
+        txtE.setTextContent(txt);
+        nElem.appendChild(txtE);
         nodes.item(0).getParentNode().insertBefore(nElem, nodes.item(0));
 
         for(int i = 0; i < nodes.getLength(); i++){
@@ -123,25 +145,6 @@ public class MergeXML {
         output.close();
         System.out.println("merge complete");
         return path + fileresult;
-    }
-
-    public static void traitement(String xmlFile, String resultPath, String xslFile ) {
-        try
-        {
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Source xmlDoc = new StreamSource(xmlFile);
-            Source xslDoc = new StreamSource(xslFile);
-
-            String outputFileName = resultPath;
-            OutputStream htmlFile = new FileOutputStream(outputFileName);
-
-            Transformer transformer = tFactory.newTransformer(xslDoc);
-            transformer.transform(xmlDoc, new StreamResult(htmlFile));
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
     }
 
 }

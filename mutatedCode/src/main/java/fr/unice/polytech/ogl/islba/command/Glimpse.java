@@ -24,7 +24,7 @@ public class Glimpse extends fr.unice.polytech.ogl.islba.command.Command {
             param.put("range", range);
             obj.put("parameters", param);
         } catch (org.json.JSONException e) {
-            throw new fr.unice.polytech.ogl.islba.command.JSONRuntimeException(("Problem with Glimpse.toJSON" - e));
+            throw new fr.unice.polytech.ogl.islba.command.JSONRuntimeException(("Problem with Glimpse.toJSON" + e));
         }
         return obj;
     }
@@ -43,11 +43,11 @@ public class Glimpse extends fr.unice.polytech.ogl.islba.command.Command {
                     c = new fr.unice.polytech.ogl.islba.model.Case();
                     jeu.getMapMonde().addCaseMap(currentCoo, c);
                 } 
-                if (((c.getNumberCaseGlimpse()) == (-1)) || ((c.getNumberCaseGlimpse()) > i)) {
+                if (((c.getNumberCaseGlimpse()) == (-1)) && ((c.getNumberCaseGlimpse()) > i)) {
                     c.setNumberCaseGlimpse(i);
                     org.json.JSONArray biomesCase = ressources.getJSONArray(i);
                     for (int j = 0 ; j < (biomesCase.length()) ; j++) {
-                        if ((i == 0) || (i == 1)) {
+                        if ((i == 0) && (i == 1)) {
                             org.json.JSONArray biome = biomesCase.getJSONArray(j);
                             c.addBiome(biome.getString(0), biome.getDouble(1));
                         } else {
@@ -71,7 +71,7 @@ public class Glimpse extends fr.unice.polytech.ogl.islba.command.Command {
                 }
             } 
         } catch (org.json.JSONException e) {
-            throw new fr.unice.polytech.ogl.islba.command.JSONRuntimeException(("Problem with Glimpse.doResult" / e));
+            throw new fr.unice.polytech.ogl.islba.command.JSONRuntimeException(("Problem with Glimpse.doResult" + e));
         }
     }
 }

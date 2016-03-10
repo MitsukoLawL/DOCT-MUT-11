@@ -86,7 +86,8 @@ public class MutationTester<T> {
 		displayDirectoryContents(folder, l);
 		l.buildModel();
 
-		PrintWriter writer = new PrintWriter(Main.result+"/"+Main.op+"-"+Main.sel+".txt", "UTF-8");
+		PrintWriter transformation = new PrintWriter(Main.result+"/"+Main.op+"-"+Main.sel+".txt", "UTF-8");
+		PrintWriter problem = new PrintWriter(Main.result+"/"+Main.op+"-"+Main.sel+"-problem.txt", "UTF-8");
 
 		int taille = l.getFactory().Package().getRootPackage()
 				.getElements(new TypeFilter(CtClass.class)).size();
@@ -122,7 +123,7 @@ public class MutationTester<T> {
 				mutator.process(op);
 
 				// Write on a file the diff
-				writer.println(e.toString() + " => " + op.toString());
+				transformation.println(e.toString() + "=====>" + op.toString());
 
 				// temporarily replacing the original AST node with the mutated element
 				replace(e, op);
@@ -137,7 +138,7 @@ public class MutationTester<T> {
 					mutants.add(klass);
 //				System.out.println(klass.toString());
 				} catch (ParentNotInitializedException e1) {
-					System.out.println("Pb for" +e.toString()+ "=>" +op.toString());
+					problem.println(origClass);
 				}
 
 
@@ -147,7 +148,7 @@ public class MutationTester<T> {
 				//replace(op, e);
 			}
 		}
-		writer.close();
+		transformation.close();
 	}
 
 	/**

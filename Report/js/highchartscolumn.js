@@ -1,12 +1,12 @@
 function isInArray(value, array) {
-  return array.indexOf(value) > -1;
+    return array.indexOf(value) > -1;
 }
 
 function removeEmpty(array) {
     if (isInArray("", array)) {
         var index = array.indexOf("");
         array.splice(index, 1);
-    }    
+    }
 }
 
 $(function () {
@@ -15,7 +15,7 @@ $(function () {
 
     var iter = $('.iter').text();
 
-    console.log(iter);
+    /*    console.log(iter);*/
     var tot = testTot.split(".");
     var suc = testSuc.split(".");
     var iter = iter.split(" :");
@@ -23,8 +23,8 @@ $(function () {
     removeEmpty(tot);
     removeEmpty(suc);
 
-    for(var i=0; i<tot.length;i++) tot[i] = parseInt(tot[i]);
-    for(var i=0; i<suc.length;i++) suc[i] = parseInt(suc[i]);
+    for (var i = 0; i < tot.length; i++) tot[i] = parseInt(tot[i]);
+    for (var i = 0; i < suc.length; i++) suc[i] = parseInt(suc[i]);
 
     $('#containerColumn').highcharts({
         chart: {
@@ -38,20 +38,6 @@ $(function () {
         },
         xAxis: {
             categories: iter,
-            //,categories: [
-            //     'Op12 - 100',
-            //     'Op1 - 100',
-            //     'Mar',
-            //     'Apr',
-            //     'May',
-            //     'Jun',
-            //     'Jul',
-            //     'Aug',
-            //     'Sep',
-            //     'Oct',
-            //     'Nov',
-            //     'Dec'
-            // ],
             crosshair: true
         },
         yAxis: {
@@ -78,8 +64,12 @@ $(function () {
                 point: {
                     events: {
                         click: function () {
-                            // window.location.href = '...';
-                            $('html, body').animate({ scrollTop: $('#mutantV').offset().top }, 'slow');
+                            var hId = this.category;
+                            hId = hId.substring(0, hId.length - 1);
+
+                            $('html, body').animate({
+                                scrollTop: $('#' + hId).offset().top
+                            }, 'slow');
                         }
                     }
                 }

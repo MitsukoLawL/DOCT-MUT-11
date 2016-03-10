@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="row">
-                            
+
                         </div>
                     </div>
                     <!-- PAGE-HEADER-->
@@ -130,16 +130,16 @@
                                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                                     <xsl:for-each select="Mutation">
                                         <div class="row">
-                                            <h2 class="iter"><xsl:value-of select="@operateur"/>-<xsl:value-of select="@selecteur"/>% :</h2>
+                                            <h2 id="{@operateur}-{@selecteur}" class=" iter"><xsl:value-of select="@operateur"/>-<xsl:value-of select="@selecteur"/>% :</h2>
                                             <table class="table table-striped table-bordered table-hover">
-                                                <tr class="success">
-                                                    <thead>
+                                                <thead>
+                                                    <tr class="success">
                                                         <th>Class</th>
                                                         <th>TestClass</th>
                                                         <th>Error</th>
                                                         <th>Time</th>
-                                                    </thead>
-                                                </tr>
+                                                    </tr>
+                                                </thead>
                                                 <tbody>
                                                     <xsl:for-each select="testcase">
                                                         <tr>
@@ -161,7 +161,7 @@
                                                     </xsl:for-each>
                                                 </tbody>
                                             </table>
-                                            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                                 Tests réussis :
                                                 <b><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/></b>/
                                                 <xsl:value-of select="count(testcase)" />
@@ -170,14 +170,22 @@
                                                 <xsl:value-of select="count(testcase)" />
                                                 <div class="hidden"><b>Test totaux : </b><span class="totTest"><xsl:value-of select="count(testcase)"/>.</span>
                                                     <b> Test success : </b><span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/>.</span></div>
+                                                <button class="btn btn-large btn-info pull-right" data-toggle="collapse" data-target="#demo{@operateur}-{@selecteur}">Transformations</button>
+
+                                                <div id="demo{@operateur}-{@selecteur}" class="collapse">
+                                                    <br/>
+                                                    <br/>
+                                                    <br/>
+                                                    <xsl:value-of select="diffs" />
+                                                </div>
                                             </div>
                                         </div>
 
                                     </xsl:for-each>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                    <p>Total Mutants tués : <span id="mutantT"><xsl:value-of select="count(//Mutation[@failures!='0'])"/></span>
-                                        <br/> Total Mutants vivants : <span id="mutantV"><xsl:value-of select="count(//Mutation) - count(//Mutation[@failures!='0']) - count(//compilation_error) "/></span>
+                                    <p>Total Mutants tués : <span id="mutantT"><xsl:value-of select="count(//Mutation[@failures!='0' ])"/></span>
+                                        <br/> Total Mutants vivants : <span id="mutantV"><xsl:value-of select="count(//Mutation) - count(//Mutation[@failures!='0']) - count(//compilation_error)"/></span>
                                         <br/> Total Mutants mort nés : <span id="mutantMN"><xsl:value-of select="count(//compilation_error)"/></span>
                                     </p>
                                 </div>

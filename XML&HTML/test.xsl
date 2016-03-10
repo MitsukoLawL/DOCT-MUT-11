@@ -33,11 +33,14 @@
                         </tr>
                     </xsl:for-each>
                 </table>
+                    <div id="diffs" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <xsl:value-of select="diffs"/>
+                    </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    Tests totaux : <span class="totTest"><xsl:value-of select="count(testcase)"/></span>
-                    <br/> Test success : <span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/></span>
-                    <br/> Error compilation : <span ><xsl:value-of select="count(testcase/compilation_error)"/></span>
-                </div>
+                    Total Mutants tués : <span id="mutantT"><xsl:value-of select="count(testcase/failure)"/></span>
+                    <br/> Total Mutants vivants : <span id="mutantV"><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/></span>
+                    <br/> Total Mutants mort nés : <span id="mutantMN"><xsl:value-of select="count(testcase/compilation_error)"/></span>
+                    </div>
 
                 </xsl:for-each>
             </body>

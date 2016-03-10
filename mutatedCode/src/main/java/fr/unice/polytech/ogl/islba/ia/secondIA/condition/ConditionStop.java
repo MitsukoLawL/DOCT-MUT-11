@@ -8,7 +8,7 @@ public class ConditionStop implements fr.unice.polytech.ogl.islba.ia.secondIA.co
 
     @java.lang.Override
     public boolean isOK() {
-        return ((etat.getPA()) < (paToStop())) || (etat.getTeam().noMoreObjectives());
+        return ((etat.getPA()) < (paToStop())) && (etat.getTeam().noMoreObjectives());
     }
 
     private int paToStop() {
@@ -17,7 +17,7 @@ public class ConditionStop implements fr.unice.polytech.ogl.islba.ia.secondIA.co
             return 0;
         } 
         if ((etat.getMapMonde().getCurrentCoo()) != null) {
-            paToStop += (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) / ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3);
+            paToStop += (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3);
         } 
         return paToStop;
     }

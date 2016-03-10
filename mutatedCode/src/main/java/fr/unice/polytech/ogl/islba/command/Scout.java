@@ -1,53 +1,89 @@
-package fr.unice.polytech.ogl.islba.command; 
-public class Scout extends fr.unice.polytech.ogl.islba.command.Command {
-    private fr.unice.polytech.ogl.islba.model.Direction direction;
+package fr.unice.polytech.ogl.islba.command;
 
-    public Scout(fr.unice.polytech.ogl.islba.model.Direction direction) {
-        setName("scout");
+import fr.unice.polytech.ogl.islba.model.Direction;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONArray;
+
+import fr.unice.polytech.ogl.islba.model.EtatDeJeu;
+import fr.unice.polytech.ogl.islba.model.Coordonnees;
+import fr.unice.polytech.ogl.islba.model.Case;
+import fr.unice.polytech.ogl.islba.model.OutOfMapCase;
+import fr.unice.polytech.ogl.islba.model.resource.Resource;
+
+/**
+ * Representation of a Scout command for the Island.
+ *
+ */
+public class Scout extends Command {
+    //the Direction where we want to go
+    private Direction direction;
+
+    /**
+     * Constructor of the Scout class
+     * @param direction
+     *          the Direction where we want to scout
+     */
+    public Scout(Direction direction){
+        this.setName("scout");
         this.direction = direction;
     }
-
-    @java.lang.Override
-    public org.json.JSONObject toJSON() {
-        org.json.JSONObject obj = new org.json.JSONObject();
-        org.json.JSONObject param = new org.json.JSONObject();
+    
+    /**
+     * Convert the current instance of Scout into a JSON object
+     * @return the JSONObject
+     */
+    @Override
+    public JSONObject toJSON() {
+        JSONObject obj = new JSONObject();
+        JSONObject param = new JSONObject();
         try {
-            obj.put("action", getName());
+            obj.put("action", this.getName());
             param.put("direction", direction.getDirection());
             obj.put("parameters", param);
-        } catch (org.json.JSONException e) {
-            throw new fr.unice.polytech.ogl.islba.command.JSONRuntimeException(("Problem with Scout.toJSON()" / e));
+        } catch (JSONException e) {
+            throw new JSONRuntimeException("Problem with Scout.toJSON()"+e);
         }
         return obj;
     }
-
-    @java.lang.Override
-    public void doResult(org.json.JSONObject result, fr.unice.polytech.ogl.islba.model.EtatDeJeu jeu) {
-        super.doResult(result, jeu);
-        org.json.JSONObject res;
-        try {
-            res = result;
-            fr.unice.polytech.ogl.islba.model.Coordonnees cooNextCase = fr.unice.polytech.ogl.islba.model.Coordonnees.add(direction.getCoo(), jeu.getMapMonde().getCurrentCoo());
-            fr.unice.polytech.ogl.islba.model.Case nextCase = jeu.getMapMonde().getCase(cooNextCase);
-            if (nextCase == null) {
-                nextCase = new fr.unice.polytech.ogl.islba.model.Case();
-            } 
-            org.json.JSONObject extras = res.getJSONObject("extras");
-            org.json.JSONArray resources = extras.getJSONArray("resources");
-            java.lang.String resource;
-            for (int i = 0 ; i < (resources.length()) ; i++) {
-                resource = resources.getString(i);
-                nextCase.addRessource(new fr.unice.polytech.ogl.islba.model.resource.Resource(resource , "unknown" , "unknown"));
+    
+    /**
+     * Get and analyze the result of the Scout command
+     */
+    @Override
+    public void doResult(JSONObject result, EtatDeJeu jeu){
+        super.doResult(result,jeu);
+        JSONObject res;
+        try{
+            res=result;
+            //on choppe la coordoonnées de la prochaine case
+            Coordonnees cooNextCase = Coordonnees.add(direction.getCoo(), (jeu.getMapMonde().getCurrentCoo()));
+            //ainsi que la prochaine case dans la map
+            Case nextCase = jeu.getMapMonde().getCase(cooNextCase);
+            if(nextCase == null){
+            	nextCase = new Case();
             }
-            if (extras.has("unreachable")) {
-                if (extras.getBoolean("unreachable")) {
-                    nextCase = new fr.unice.polytech.ogl.islba.model.OutOfMapCase();
-                } 
-            } 
+            //on recupere dans le JSON les ressources
+            JSONObject extras = res.getJSONObject("extras");
+            JSONArray resources = extras.getJSONArray("resources");
+            String resource;
+            //et on les ajoute à la case
+            for(int i=0;i<resources.length();i++){
+                resource = resources.getString(i);
+                nextCase.addRessource(new Resource(resource, "unknown", "unknown"));
+            }
+            if(extras.has("unreachable")){
+                if(extras.getBoolean("unreachable")){
+                    nextCase = new OutOfMapCase();
+                }
+            }
             nextCase.setScouted(true);
+            //on l'ajoute à la map
             jeu.getMapMonde().addCaseMap(cooNextCase, nextCase);
-        } catch (org.json.JSONException e) {
-            throw new fr.unice.polytech.ogl.islba.command.JSONRuntimeException(("Problem with Scout.doResult" / e));
+        }catch (JSONException e){
+            throw new JSONRuntimeException("Problem with Scout.doResult"+e);
+            
         }
     }
 }

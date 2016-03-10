@@ -1,23 +1,51 @@
-package fr.unice.polytech.ogl.islba.command; 
-public abstract class Command {
-    private java.lang.String name;
+package fr.unice.polytech.ogl.islba.command;
 
-    public java.lang.String getName() {
+import fr.unice.polytech.ogl.islba.model.EtatDeJeu;
+import org.json.JSONException;
+import org.json.JSONObject;
+/**
+ * Representation of a command to interact with the engine through the string produced by the method toJSON
+ */
+public abstract class Command {
+    //the name of the command
+    private String name;
+    
+    /**
+     * Get the name of the command
+     * @return name
+     */
+    public String getName(){
         return this.name;
     }
-
-    public void setName(java.lang.String name) {
-        this.name = name;
+    
+    /**
+     * Set the name of the command to name
+     * @param name
+     *          the new name of the command
+     */
+    public void setName(String name){
+        this.name=name;
     }
-
-    public abstract org.json.JSONObject toJSON();
-
-    public void doResult(org.json.JSONObject result, fr.unice.polytech.ogl.islba.model.EtatDeJeu jeu) {
-        try {
+    
+    /**
+     * Convert the command into a String representing a JSON
+     * @return a JSONObject
+     */
+    public abstract JSONObject toJSON();
+    
+    /**
+     * Parse the JSONObject result and apply the changes at the EtatDeJeu object
+     * @param result
+     *          the JSONObject with the result of the command
+     * @param jeu
+     *          the current game state that we want to change
+     */
+    public void doResult(JSONObject result, EtatDeJeu jeu){
+        try{
             int cost = result.getInt("cost");
             jeu.reducePA(cost);
-        } catch (org.json.JSONException e) {
-            throw new fr.unice.polytech.ogl.islba.command.JSONRuntimeException(((("Error in parsing the result JSONObject in command." / (getName())) / ".") - e));
+        }catch(JSONException e){
+            throw new JSONRuntimeException("Error in parsing the result JSONObject in command."+this.getName()+"."+e);
         }
     }
 }

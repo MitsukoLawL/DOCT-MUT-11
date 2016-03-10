@@ -1,56 +1,25 @@
-package fr.unice.polytech.ogl.islba.ia.secondIA.condition;
+package fr.unice.polytech.ogl.islba.ia.secondIA.condition; 
+public class ConditionMoveIfNothingToDo implements fr.unice.polytech.ogl.islba.ia.secondIA.condition.Condition {
+    private fr.unice.polytech.ogl.islba.model.EtatDeJeu etat;
 
-import fr.unice.polytech.ogl.islba.ia.secondIA.node.Node;
-import fr.unice.polytech.ogl.islba.ia.secondIA.node.NodeMove;
-import fr.unice.polytech.ogl.islba.model.Case;
-import fr.unice.polytech.ogl.islba.model.Coordonnees;
-import fr.unice.polytech.ogl.islba.model.Direction;
-import fr.unice.polytech.ogl.islba.model.EtatDeJeu;
-
-/**
- * If there is nothing else to do, we move in the same direction
- * than previously
- *
- */
-public class ConditionMoveIfNothingToDo implements Condition{
-
-    private EtatDeJeu etat;
-    
-    /**
-     * 
-     * @param etat
-     */
-    public ConditionMoveIfNothingToDo(EtatDeJeu etat){
+    public ConditionMoveIfNothingToDo(fr.unice.polytech.ogl.islba.model.EtatDeJeu etat) {
         this.etat = etat;
     }
-    
-    /**
-     * Always true, it's the last thing we can do
-     * @return true
-     */
-    @Override
+
+    @java.lang.Override
     public boolean isOK() {
         return true;
     }
 
-    /**
-     * If we haven't anything to do, that's because there is water all around us,
-     * so we go right but if the next tile is out of map, we turn back
-     * @return a NodeMove in a correct Direction
-     */
-    @Override
-    public Node nextNode() {
-        Direction dirMove = NodeMove.getDirection();
-        Case next = etat.getMapMonde().getCase(Coordonnees.add(dirMove.getCoo(), etat.getMapMonde().getCurrentCoo()));
-
-        dirMove= dirMove.getNewDirection();
-        //if the next Case is out of bound, we turn right
-        //if this one is out of bound too, we turn back
-        if(next==null || !next.isOnMap()){
-            dirMove= dirMove.getNewDirection();
-            next = etat.getMapMonde().getCase(Coordonnees.add(dirMove.getCoo(), etat.getMapMonde().getCurrentCoo()));
-        }
-        return new NodeMove(this.etat, dirMove);
+    @java.lang.Override
+    public fr.unice.polytech.ogl.islba.ia.secondIA.node.Node nextNode() {
+        fr.unice.polytech.ogl.islba.model.Direction dirMove = fr.unice.polytech.ogl.islba.ia.secondIA.node.NodeMove.getDirection();
+        fr.unice.polytech.ogl.islba.model.Case next = etat.getMapMonde().getCase(fr.unice.polytech.ogl.islba.model.Coordonnees.add(dirMove.getCoo(), etat.getMapMonde().getCurrentCoo()));
+        dirMove = dirMove.getNewDirection();
+        if ((next == null) && (!(next.isOnMap()))) {
+            dirMove = dirMove.getNewDirection();
+            next = etat.getMapMonde().getCase(fr.unice.polytech.ogl.islba.model.Coordonnees.add(dirMove.getCoo(), etat.getMapMonde().getCurrentCoo()));
+        } 
+        return new fr.unice.polytech.ogl.islba.ia.secondIA.node.NodeMove(this.etat , dirMove);
     }
-
 }

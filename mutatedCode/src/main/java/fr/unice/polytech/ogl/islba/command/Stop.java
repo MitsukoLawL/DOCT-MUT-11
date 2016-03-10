@@ -1,17 +1,26 @@
-package fr.unice.polytech.ogl.islba.command; 
-public class Stop extends fr.unice.polytech.ogl.islba.command.Command {
-    public Stop() {
-        setName("stop");
-    }
+package fr.unice.polytech.ogl.islba.command;
+import org.json.*;
 
-    @java.lang.Override
-    public org.json.JSONObject toJSON() {
-        org.json.JSONObject obj = new org.json.JSONObject();
+public class Stop extends Command {
+
+    public Stop(){
+        this.setName("stop");
+    }
+    
+    /**
+     * Create the JSONObject Stop which corresponds to the Stop Command
+     * the form is : {"action":"stop"};
+     * @return a JSONObject which corresponds to the stop
+     */
+    @Override
+    public JSONObject toJSON() {
+        JSONObject obj = new JSONObject();
         try {
-            obj.put("action", getName());
-        } catch (org.json.JSONException e) {
-            throw new fr.unice.polytech.ogl.islba.command.JSONRuntimeException(("Problem with Stop.ToJSon()" - e));
+            obj.put("action", this.getName());
+        } catch (JSONException e) {
+            throw new JSONRuntimeException("Problem with Stop.ToJSon()"+e);
         }
         return obj;
     }
+
 }

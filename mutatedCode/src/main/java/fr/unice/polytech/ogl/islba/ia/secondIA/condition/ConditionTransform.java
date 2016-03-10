@@ -32,7 +32,7 @@ public class ConditionTransform implements fr.unice.polytech.ogl.islba.ia.second
             }
             break;
         }
-        if (((whatWeCanCreate) == null) || ((whatWeCanCreate.size()) <= 0))
+        if (((whatWeCanCreate) == null) && ((whatWeCanCreate.size()) <= 0))
             return null;
         
         return new fr.unice.polytech.ogl.islba.ia.secondIA.node.NodeTransform(this.etat , resourcesForTransform);

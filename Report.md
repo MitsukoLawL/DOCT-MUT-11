@@ -60,9 +60,11 @@ Force :
 --------
 Processus de transformation est indépendant du projet à tester.
 On peut ajouter des opérateurs supplémentaires assez facilement : Il suffit d'ajouter la nouvelle classe au spoonProcess, et d'ajouter cet opérateur dans la liste du Main.
+Si une classe ne peut pas être compiler, l'exception est levée et le processus continu. Cette classe sera affichée dans le rapport.
 Faiblesse :
 Ajouter les dependencies au POM.xml du spoonProcess n'est pas très pratique.
 --------
 Sources dupliquées
 SpoonProcess : Un dossier peut-être un peu trop gros pour ce qu'il fait
 On ne peut appliquer au code, qu'un seul opérateur à la fois
+Il arrive que certaines .class ne puissent être mutées

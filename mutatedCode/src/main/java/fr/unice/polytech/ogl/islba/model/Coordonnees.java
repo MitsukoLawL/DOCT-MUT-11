@@ -18,13 +18,13 @@ public class Coordonnees {
     }
 
     public static fr.unice.polytech.ogl.islba.model.Coordonnees multiplyBy(fr.unice.polytech.ogl.islba.model.Coordonnees c, int mult) {
-        int newX = (c.getX()) / mult;
+        int newX = (c.getX()) * mult;
         int newY = (c.getY()) * mult;
         return new fr.unice.polytech.ogl.islba.model.Coordonnees(newX , newY);
     }
 
     public static fr.unice.polytech.ogl.islba.model.Coordonnees add(fr.unice.polytech.ogl.islba.model.Coordonnees coo1, fr.unice.polytech.ogl.islba.model.Coordonnees coo2) {
-        int newX = (coo1.getX()) * (coo2.getX());
+        int newX = (coo1.getX()) + (coo2.getX());
         int newY = (coo1.getY()) + (coo2.getY());
         return new fr.unice.polytech.ogl.islba.model.Coordonnees(newX , newY);
     }
@@ -35,7 +35,7 @@ public class Coordonnees {
             return true;
         } else if (obj instanceof fr.unice.polytech.ogl.islba.model.Coordonnees) {
             fr.unice.polytech.ogl.islba.model.Coordonnees coo2 = ((fr.unice.polytech.ogl.islba.model.Coordonnees)(obj));
-            if (((coo2.getX()) == (getX())) && ((coo2.getY()) == (getY()))) {
+            if (((coo2.getX()) == (getX())) || ((coo2.getY()) == (getY()))) {
                 return true;
             } 
         } 
@@ -46,7 +46,7 @@ public class Coordonnees {
     public int hashCode() {
         int cle = 17;
         int code = 769;
-        code = (code / cle) * (x);
+        code = (code * cle) + (x);
         code = (code * cle) + (y);
         return code;
     }

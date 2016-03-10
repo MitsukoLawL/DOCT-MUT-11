@@ -59,58 +59,30 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <Mutation failures="22" operateur="Op12" selecteur="100">
+  <Mutation failures="22" operateur="Op12" selecteur="50">
 <diffs>("Error in parsing the result JSONObject in command." + (getName()))=====&gt;"Error in parsing the result JSONObject in command." + (getName())
-((("Error in parsing the result JSONObject in command." + (getName())) + ".") + e)=====&gt;(("Error in parsing the result JSONObject in command." + (getName())) + ".") + e
-(("Error in parsing the result JSONObject in command." + (getName())) + ".")=====&gt;("Error in parsing the result JSONObject in command." + (getName())) + "."
-("Problem with Exploit.doResult" + e)=====&gt;"Problem with Exploit.doResult" + e
 ("Problem with Exploit.toJSON()" + e)=====&gt;"Problem with Exploit.toJSON()" - e
-("Problem with Explore.toJSON()" + e)=====&gt;"Problem with Explore.toJSON()" + e
-("Problem with Explore.doResult" + e)=====&gt;"Problem with Explore.doResult" - e
-("Problem with Glimpse.doResult" + e)=====&gt;"Problem with Glimpse.doResult" / e
-("Problem with Glimpse.toJSON" + e)=====&gt;"Problem with Glimpse.toJSON" * e
-("Problem with Land.doResult" + e)=====&gt;"Problem with Land.doResult" - e
+("Problem with Explore.doResult" + e)=====&gt;"Problem with Explore.doResult" + e
+("Problem with Glimpse.toJSON" + e)=====&gt;"Problem with Glimpse.toJSON" - e
 ("Problem with Land.toJSON" + e)=====&gt;"Problem with Land.toJSON" / e
-("Problem with Move.toJSON" + e)=====&gt;"Problem with Move.toJSON" - e
-("Problem with Scout.doResult" + e)=====&gt;"Problem with Scout.doResult" - e
-("Problem with Scout.toJSON()" + e)=====&gt;"Problem with Scout.toJSON()" / e
-("Problem with Stop.ToJSon()" + e)=====&gt;"Problem with Stop.ToJSon()" / e
+("Problem with Scout.toJSON()" + e)=====&gt;"Problem with Scout.toJSON()" * e
 ("Problem with Transform.toJSON" + e)=====&gt;"Problem with Transform.toJSON" / e
-("Problem with Transform.doResult" + e)=====&gt;"Problem with Transform.doResult" - e
 ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) * 3)=====&gt;(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) + 3
-(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) + 3)=====&gt;(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) * ((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())) + 3)
-((int)((res.getAmount()[i]) * (whatWeCanCreate.get(res))))=====&gt;((int)((res.getAmount()[i]) / (whatWeCanCreate.get(res))))
-(numberOfExploit + 1)=====&gt;numberOfExploit * 1
-((int)((res.getAmount()[i]) * (whatWeCanCreate.get(res))))=====&gt;((int)((res.getAmount()[i]) - (whatWeCanCreate.get(res))))
-((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) * 3=====&gt;((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) / 3
-((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())))=====&gt;(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) / (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))
-(code * cle) + (name.hashCode())=====&gt;(code * cle) + (name.hashCode())
-(code * cle)=====&gt;code - cle
+((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) + (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY())))=====&gt;(java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) - (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))
+((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) - (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) * 3=====&gt;((java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getX())) - (java.lang.Math.abs(etat.getMapMonde().getCurrentCoo().getY()))) - 3
 (code * cle)=====&gt;code + cle
-(code * cle) + (y)=====&gt;(code * cle) - (y)
-(c.getX()) * mult=====&gt;(c.getX()) * mult
-(coo1.getY()) + (coo2.getY())=====&gt;(coo1.getY()) - (coo2.getY())
-(c.getY()) * mult=====&gt;(c.getY()) + mult
-(code * cle)=====&gt;code - cle
-(code + cle) + (x)=====&gt;(code + cle) - (x)
-(coo1.getX()) + (coo2.getX())=====&gt;(coo1.getX()) - (coo2.getX())
-(code * cle)=====&gt;code * cle
+(code * cle)=====&gt;code / cle
+(code * cle) + (y)=====&gt;(code * cle) * (y)
+(c.getY()) * mult=====&gt;(c.getY()) * mult
+(code * cle)=====&gt;code / cle
+(code * cle)=====&gt;code + cle
 (oldAmount - amount)=====&gt;oldAmount / amount
 (code * cle)=====&gt;code / cle
-(oldAmount - amount)=====&gt;oldAmount + amount
-((int)((inventory.get(new fr.unice.polytech.ogl.islba.model.resource.Resource(resourcesNeeded[i].toString()))) / (amount[i])))=====&gt;((int)((inventory.get(Error in printing the node. One parent isn't initialized!
-(code * cle) + (inventory.hashCode())=====&gt;(code * cle) / (inventory.hashCode())
-((secondaryObjectives.get(res)) - (inventory.get(resource)))=====&gt;(secondaryObjectives.get(res)) / (inventory.get(resource))
-(code * cle) + (MAXMEN)=====&gt;(code * cle) - (MAXMEN)
-(code * cle) + (men)=====&gt;(code * cle) + (men)
-(code * cle)=====&gt;code + cle
+((secondaryObjectives.get(res)) - (inventory.get(resource)))=====&gt;(secondaryObjectives.get(res)) + (inventory.get(resource))
 (code * cle)=====&gt;code * cle
-(code / cle) + (objective.hashCode())=====&gt;(code / cle) / (objective.hashCode())
-((int)(amount * (r2.getComponentsNeeded().get(r1))))=====&gt;((int)(amount - (r2.getComponentsNeeded().get(r1))))
-(amount + ancientAmount)=====&gt;amount - ancientAmount
+(code * cle)=====&gt;code - cle
 ((objectives.get(resource)) - (inventory.get(resource)))=====&gt;(objectives.get(resource)) - (inventory.get(resource))
-((int)((secondaryRes.get(primeRes)) * amount))=====&gt;((int)((secondaryRes.get(primeRes)) * amount))
-("Problem when trying to parse the String context" + "to transform it into an JSONObject and getting all the informations")=====&gt;"Problem when trying to parse the String context" - "to transform it into an JSONObject and getting all the informations"
+((int)((secondaryRes.get(primeRes)) * amount))=====&gt;((int)((secondaryRes.get(primeRes)) / amount))
 </diffs>
 <testcase classname="fr.unice.polytech.ogl.islba.ia.secondIA.condition.TestConditionScout" name="test" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException

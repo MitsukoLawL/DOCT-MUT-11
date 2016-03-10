@@ -86,7 +86,7 @@ public class Objective {
     }
 
     public boolean isObjective(fr.unice.polytech.ogl.islba.model.resource.Resource res) {
-        return (objectives.containsKey(res)) || (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())));
+        return (objectives.containsKey(res)) && (objectivesAsPrimaryResources.containsKey(bank.getPrimaryResource(res.getName())));
     }
 
     public void updateObjectives(java.util.Map<fr.unice.polytech.ogl.islba.model.resource.Resource, java.lang.Integer> inventory) {
@@ -95,7 +95,7 @@ public class Objective {
             if ((inventory.get(resource)) == null) {
                 fillObjectivesAsPrimaryResources(resource.getName(), objectives.get(resource));
             } else if ((inventory.get(resource)) < (objectives.get(resource))) {
-                fillObjectivesAsPrimaryResources(resource.getName(), ((objectives.get(resource)) / (inventory.get(resource))));
+                fillObjectivesAsPrimaryResources(resource.getName(), ((objectives.get(resource)) - (inventory.get(resource))));
             } 
         }
     }
