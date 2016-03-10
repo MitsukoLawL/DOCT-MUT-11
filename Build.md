@@ -7,11 +7,11 @@ le faire fonctionner (avoir ces 3 dossiers à tels endroits, compiler ce machin,
 
 1. Déposer ses <b>sources</b> dans les <b>deux</b> répertoires :
     - <b>spoonProcess/toBeMutated/</b> <b>(**)</b>
-    - <b>mutatedCode/src/</b>
+    - <b>mutatedCode/src/main/java/</b>
 2. Dans le dossier <b>mutatedCode/</b> :
-    1. Ajouter ses classes de <b>tests</b> unitaires dans <b>mutatedCode/test/</b>
+    1. Ajouter ses classes de <b>tests</b> unitaires dans <b>mutatedCode/src/test/</b>
     2. Ajouter son fichier <b>POM.xml</b>
-
+3. Ajouter les dépendences du pom.xml du projet à muter dans le pom.xml de spoonProcess
 
 <br/>
 <br/>

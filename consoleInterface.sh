@@ -28,7 +28,7 @@ while true; do
 
     # If vars are not empty
     if [[ ! -z $folderSource && ! -z "$op" && ! -z "$s" ]]
-       then ./process.sh $folderSource $op $s
+       then ./process.sh $folderSource $op $s ../xmlResult/
        echo "\n $op $s applied"
     else echo "Wrong parameter, try again !"
     fi

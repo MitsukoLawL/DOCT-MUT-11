@@ -15,7 +15,7 @@ cd ../../
 cd spoonProcess
 
 mvn compile
-mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"  -Dexec.args="$1 $2 $3"
+mvn exec:java -Dexec.mainClass="org.mutation11.maven.Main"  -Dexec.args="$1 $2 $3 $4"
 
 if [ $? -eq 0 ]; then
 	echo COMPILATION OF ORIGINAL PROJECT SUCEEDED
@@ -31,7 +31,7 @@ if [ $? -eq 0 ]; then
 	if [ $? -eq 0 ]; then
 		# java CreateXML $2 $3 "mutatedCode/xmlResult/"
 		
-		cd mutatedCode
+		#cd mutatedCode
 		mvn test
 		# ./EcrireCompilation "SUCCESS"	
 

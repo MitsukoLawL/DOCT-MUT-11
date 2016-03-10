@@ -71,12 +71,7 @@
                         </div>
 
                         <div class="row">
-                            <!-- <div class="col-sm-12 col-lg-12">
-                                <p class="alert alert-success" style="text-transform:uppercase; display:inline-block; box-sizing:border-box; -moz-box-sizing:border-box;width:100%;"><span class="label label-important">Announcement:</span> Here goes your news and infos lorem ipsum Here goes your news and infos lorem ipsum
-                                </p>
-
-
-                            </div> -->
+                            
                         </div>
                     </div>
                     <!-- PAGE-HEADER-->
@@ -173,8 +168,8 @@
                                                 <br/> Tests ratés :
                                                 <b><xsl:value-of select="count(testcase/failure)"/></b>/
                                                 <xsl:value-of select="count(testcase)" />
-                                                <div class="hidden"><b>Test totaux : </b> <span class="totTest"><xsl:value-of select="count(testcase)"/></span>
-                                                    <b> Test success : </b><span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/></span></div>
+                                                <div class="hidden"><b>Test totaux : </b><span class="totTest"><xsl:value-of select="count(testcase)"/>.</span>
+                                                    <b> Test success : </b><span class="successTest"><xsl:value-of select="count(testcase) - (count(testcase/failure) + count(testcase/compilation_error))"/>.</span></div>
                                             </div>
                                         </div>
 

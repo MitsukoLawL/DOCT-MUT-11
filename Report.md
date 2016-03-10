@@ -61,6 +61,7 @@ Force :
 Processus de transformation est indépendant du projet à tester.
 On peut ajouter des opérateurs supplémentaires assez facilement : Il suffit d'ajouter la nouvelle classe au spoonProcess, et d'ajouter cet opérateur dans la liste du Main.
 Faiblesse :
+Ajouter les dependencies au POM.xml du spoonProcess n'est pas très pratique.
 --------
 Sources dupliquées
 SpoonProcess : Un dossier peut-être un peu trop gros pour ce qu'il fait

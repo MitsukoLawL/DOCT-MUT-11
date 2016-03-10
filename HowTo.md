@@ -5,9 +5,9 @@
 # How To #
 
 1. Déposer ses sources dans <b>spoonProcess/toBeMutated/</b>
-2. Déposer ses sources dans <b>mutatedCode/src</b>
+2. Déposer ses sources dans <b>mutatedCode/src/main</b>
 3. Ajouter son projet en entier dans <b>mutatedCode/</b>
-    1. Ajouter ses tests dans <b>mutatedCode/test/</b>
+    1. Ajouter ses tests dans <b>mutatedCode/src/test/</b>
     2. Ajouter son fichier <b>POM.xml</b>
     3. Ajouter les fichiers complémentaires
 

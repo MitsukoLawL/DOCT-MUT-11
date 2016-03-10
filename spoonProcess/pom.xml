@@ -15,7 +15,23 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-
+  <repositories>
+    <repository>
+      <id>oss.sonatype.org-releases</id>
+      <name>releases</name>
+      <url>http://oss.sonatype.org/content/repositories/releases</url>
+    </repository>
+    <repository>
+      <id>oss.sonatype.org-snapshots</id>
+      <name>snapshots</name>
+      <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+    </repository>
+    <repository>
+      <id>central</id>
+      <name>Maven repository</name>
+      <url>http://repo1.maven.org/maven2</url>
+    </repository>
+  </repositories>
 
   <dependencies>
 
@@ -31,13 +47,12 @@
       <version>1.2</version>
     </dependency>
 
-   <!-- <dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+      <version>4.12</version>
     </dependency>
-   -->
+    <!-- Ajoutez les dépendances en dessous-->
 
     <dependency>
       <groupId>org.apache.opennlp</groupId>
@@ -46,9 +61,14 @@
     </dependency>
 
     <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20140107</version>
+    </dependency>
+    <dependency>
+      <groupId>eu.ace-design</groupId>
+      <artifactId>island-player</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

@@ -11,10 +11,17 @@ import spoon.reflect.declaration.CtElement;
 
 
 public class Main {
+    public static String op;
+    public static String sel;
+    public static String theFolder;
+    public static String result;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
         // Copy ALL
-        String theFolder = args[0];
+        theFolder = args[0];
+        op = args[1];
+        sel = args[2];
+        result = args[3];
 //        String theFolder = "toBeMutated/";
 //        copyFile(theFolder, "../mutatedCode/src/main/java/minimal/");
         recursiveCopy(new File(theFolder), new File("../mutatedCode/src/main/java"));
@@ -28,7 +35,7 @@ public class Main {
         convertTheJava(args[0], paramToMutator(args[1]), Integer.parseInt(args[2]));
     }
 
-    private static void convertTheJava(String nameFile, AbstractProcessor<CtElement> mutator, int percentSelecteur) {
+    private static void convertTheJava(String nameFile, AbstractProcessor<CtElement> mutator, int percentSelecteur) throws FileNotFoundException, UnsupportedEncodingException {
         // we instantiate the mutation tester
 //        MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  listMutator().get(indexMutator));
         MutationTester<Racine> mutationTester = new MutationTester<Racine>(nameFile,  mutator);

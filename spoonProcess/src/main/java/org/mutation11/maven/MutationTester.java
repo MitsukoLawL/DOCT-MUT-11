@@ -1,14 +1,12 @@
 package org.mutation11.maven;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import org.mdkt.compiler.InMemoryJavaCompiler;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Random;
 
 import spoon.Launcher;
@@ -18,6 +16,7 @@ import spoon.reflect.code.CtStatement;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtElement;
 
+import spoon.reflect.declaration.ParentNotInitializedException;
 //import spoon.support.reflect.declaration.CtFieldImpl;
 import spoon.reflect.declaration.CtField;
 import spoon.reflect.visitor.Filter;
@@ -46,9 +45,7 @@ public class MutationTester<T> {
 
 	public MutationTester(String src, Processor mutator) {
 		this.sourceCodeToBeMutated = src;
-		//this.testDriver = tester;
 		this.mutator = mutator;
-//		this.otherClass = otherClass;
 	}
 
 
@@ -80,32 +77,24 @@ public class MutationTester<T> {
 		return compteur;
 	}
 	/** returns a list of mutant classes */
-	public void generateMutants(int percentSelecteur) {
+	public void generateMutants(int percentSelecteur) throws FileNotFoundException, UnsupportedEncodingException {
 		Launcher l = new Launcher();
 
 		/** get File on a folder **/
 		String theFolder = sourceCodeToBeMutated;
 		File folder = new File(theFolder);
 		displayDirectoryContents(folder, l);
-//		File[] listOfFiles = folder.listFiles();
-//
-//		for (int i = 0; i < listOfFiles.length; i++) {
-//			if (listOfFiles[i].isFile()) {
-////                convertTheJava("toBeMutated/"+listOfFiles[i].getName(), Integer.parseInt(args[0]));
-//				l.addInputResource(theFolder + listOfFiles[i].getName());
-//				System.out.println(theFolder + listOfFiles[i].getName());
-////                convertTheJava("toBeMutated/A.java");
-//			}
-//		}
-//		l.addInputResource(sourceCodeToBeMutated);
 		l.buildModel();
 
-//		for (int i = 0; i < listOfFiles.length; i++) {
-		for (int i = 0; i < countFile(folder); i++) {
+		PrintWriter writer = new PrintWriter(Main.result+"/"+Main.op+"-"+Main.sel+".txt", "UTF-8");
+
+		int taille = l.getFactory().Package().getRootPackage()
+				.getElements(new TypeFilter(CtClass.class)).size();
+//		System.out.println("countFile(folder) = " + countFile(folder));
+		for (int i = 0; i < taille; i++) {
 
 			CtClass origClass = (CtClass) l.getFactory().Package().getRootPackage()
 					.getElements(new TypeFilter(CtClass.class)).get(i);
-			System.out.println(origClass.toString());
 
 			// now we apply a transformation
 			List<CtElement> elementsToBeMutated1 = origClass.getElements(new Filter<CtElement>() {
@@ -123,7 +112,6 @@ public class MutationTester<T> {
 
 			// elementsToBeMutated = liste des elements que l'on va transformer
 			for (CtElement e : elementsToBeMutated) {
-				System.out.println("element "+e.toString());
 				// this loop is the trickiest part
 				// because we want one mutation after the other
 
@@ -133,17 +121,25 @@ public class MutationTester<T> {
 				// mutate the element
 				mutator.process(op);
 
+				// Write on a file the diff
+				writer.println(e.toString() + " => " + op.toString());
+
 				// temporarily replacing the original AST node with the mutated element
 				replace(e, op);
 
-				// creating a new class containing the mutating code
-				CtClass klass = l.getFactory().Core().clone(op.getParent(CtClass.class));
-				// setting the package
-				klass.setParent(origClass.getParent());
+				try {
+					// creating a new class containing the mutating code
+					CtClass klass = l.getFactory().Core().clone(op.getParent(CtClass.class));
+					// setting the package
+					klass.setParent(origClass.getParent());
 
-				// adding the new mutant to the list
-				mutants.add(klass);
-				System.out.println(klass.toString());
+					// adding the new mutant to the list
+					mutants.add(klass);
+//				System.out.println(klass.toString());
+				} catch (ParentNotInitializedException e1) {
+					System.out.println("Pb for" +e.toString()+ "=>" +op.toString());
+				}
+
 
 
 				// restoring the original code - ici commente pour appliquer la mutation à TOUS le fichier
@@ -151,6 +147,7 @@ public class MutationTester<T> {
 				//replace(op, e);
 			}
 		}
+		writer.close();
 	}
 
 	/**
@@ -194,7 +191,7 @@ public class MutationTester<T> {
 		 	return;
 		 }
 
-		System.out.println(e.toString()+" "+op.toString());
+//		System.out.println(e.toString()+" "+op.toString());
 		throw new IllegalArgumentException(e.getClass()+" "+op.getClass());
 	}
 
@@ -212,18 +209,6 @@ public class MutationTester<T> {
 
 	}
 
-	/** applies the test driver of this mutation tester on each mutant instance */
-//	public void runTestsOnEachMutantInstance(List<T> mutantInstances) throws Exception {
-//		// now we run the mutants against the test class
-//		for (T t : mutantInstances) {
-//			try {
-//				testDriver.test(t);
-//				throw new MutantNotKilledException();
-//			} catch (AssertionError expected) {
-//				System.out.println("mutant killed!");
-//			}
-//		}
-//	}
 
 	/** instantiate the mutant classes using the default zero-arg constructor */
 	public List<T> instantiateMutants(List<Class> mutedJava)
